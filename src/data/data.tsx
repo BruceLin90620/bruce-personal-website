@@ -198,7 +198,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Explore Taipei's urban intelligence through stunning 
     visualizations. Collaborating for a smarter city experience. 
     Discover the unseen stories of Taipei`,
-    url: "",
+    url: "hexapod",
     image: porfoliodrone,
     tech: "React.js, Redux-Saga, Socket IO, Django",
     link: [
