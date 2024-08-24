@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import {portfolioItems,  SectionId, } from '../../data/data';
+import {portfolioItems,  SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
@@ -69,7 +69,6 @@ Fortunately, I could launch the Nav2 package and made this robot go to any desti
           <div className="flex flex-col gap-y-2">
             <h2 className="text-2xl font-bold text-white">AprilTag Control</h2>
             <p className="prose prose-sm text-gray-300 sm:prose-base">Then, I try to think how should I do after navigation, my director recommand me can try AprilTag things. So I try to let the robot can localize through AprilTag, and conbine the control command to make the robot move to a fixed distance relative to AprilTag. So I can move the AprilTag and the robot can following the AprilTag.
-
 AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode or a simplified QR Code. It contains a numeric ID code and can be used for location and orientation.</p>
           </div>
         </div>
@@ -90,8 +89,6 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
           </div>
         </div>
       </div>
-
-
     </Section>
   );
 });
