@@ -223,7 +223,7 @@ export const portfolioItems: PortfolioItem[] = [
     Rebuilding Ukraine together through collective wisdom 
     and sustainable interventions.
     `,
-    url: "",
+    url: "hexapod",
     image: porfolioHexapod_1,
     tech: "React.js, Redux-Saga, Babylon.js, Colyseus, Django, MySQL",
     link: [
@@ -243,7 +243,7 @@ export const portfolioItems: PortfolioItem[] = [
     Our cutting-edge AI model generates stunning cityscapes, 
     bringing vision to life. From familiar streets to extraordinary realms, 
     unleash artistic expression and shape the cities of tomorrow`,
-    url: "",
+    url: "hexapod",
     image: porfoliopangolin,
     tech: "React.js, Redux-Saga, Pytorch, FastAPI, Docker, PostgreSQL",
   },
@@ -251,7 +251,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Edge Device Detection Tracking",
     description:
       "Tensorflow Lite and OpenCV to detect and track object, used in HITCON PEACE 2022",
-    url: "https://ntut-club-animation.vercel.app",
+      url: "hexapod",
     image: porfolioPBL_3,
     tech: "Tensorflow Lite, OpenCV, Deep Sort, YoloV5, Coral Dev Board",
     link: [
@@ -266,7 +266,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Advocate citizens to shape their city. Comment on blueprint, 
     share thoughts on Taipei's areas, and influence policy decisions. 
     A data-driven platform connecting citizens and decision-makers.`,
-    url: "",
+    url: "hexapod",
     image: porfolioevpi,
     tech: "React.js, React Query, Tailwind CSS",
     link: [
@@ -281,7 +281,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `A fun-filled mission to tackle waste misclassification. 
     Earn points, learn proper waste sorting, and champion environmental 
     knowledge on campus`,
-    url: "",
+    url: "hexapod",
     image: porfolioquadruped,
     tech: "Unity, React.js, Arduino",
     link: [
@@ -301,7 +301,7 @@ export const portfolioItems: PortfolioItem[] = [
     unite with Japanese and Taiwanese college students. Combining Arduino, 
     C programming, and mechanical design, create 
     self-propelled car.`,
-    url: "",
+    url: "hexapod",
     image: porfoliospot,
     tech: "Arduino, C, Mechanical Design",
     link: [
