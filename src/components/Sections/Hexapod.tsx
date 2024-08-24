@@ -1,6 +1,6 @@
-import React, { FC, memo } from 'react';
+import React, {FC, memo} from 'react';
 import Image from 'next/image';
-import { SectionId } from '../../data/data';
+import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Hexapod_1 from '../../images/portfolio/Hexapod_1.jpg';
 import joyimage from '../../images/portfolio/hexapod/move.png';
@@ -15,6 +15,7 @@ import final_1 from '../../images/portfolio/hexapod/final_1.png';
 import final_2 from '../../images/portfolio/hexapod/final_2.png';
 import final_3 from '../../images/portfolio/hexapod/final_3.png';
 import final_flow from '../../images/portfolio/hexapod/final_flow.png';
+
 const About: FC = memo(() => {
   return (
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.About}>
@@ -235,7 +236,7 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
 
         <div className="mt-12">
           <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
-          <div className="relative w-full" style={{ paddingBottom: '50%' }}> {/* 这里确保容器是正方形的 */}
+          <div className="relative w-full" style={{ paddingBottom: '50%' }}>
             <iframe
               src="https://www.youtube.com/embed/V_spW_6svvg?si=hhJh3jpCkiOVblzl"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
