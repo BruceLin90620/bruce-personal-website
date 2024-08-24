@@ -14,7 +14,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfoliodrone from '../images/portfolio/drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi.jpg';
 import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
