@@ -9,22 +9,19 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfoliodrone from '../images/portfolio/drone.jpg';
+import porfolioevpi from '../images/portfolio/evpi.jpg';
+import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
+import porfoliopangolin from '../images/portfolio/pangolin.jpg';
+import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
+import porfolioquadruped from '../images/portfolio/quadruped.jpg';
+import porfoliospot from '../images/portfolio/spot.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -59,7 +56,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  // Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -69,18 +66,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Bruce Lin.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        {/* I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        registrar and site builder. */}
+        I'm a Robotics Researcher based in Taiwan, currently developing <strong className="text-stone-100">innovative robotic systems</strong> at CSL.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
+        {/* In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        <strong className="text-stone-100">Vancouver Island</strong>. */}
+        In my free time, you can catch me practicing my moves on the dance floor, enjoying outdoor activities, or shooting hoops on the basketball court.
       </p>
     </>
   ),
@@ -104,16 +103,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a Robotics Researcher based in Taiwan, currently developing innovative robotic systems at CSL. 
+  In my free time, you can catch me practicing my moves on the dance floor, enjoying outdoor activities, or shooting hoops on the basketball court.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Location', text: 'Taipei', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Taiwan', Icon: FlagIcon},
+    {label: 'Interests', text: 'Street Dance, Reading, Baskitball', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'City Science Lab@Taipei Tech, a cooperation with MIT Media Lab', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,74 +119,74 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+  // {
+  //   name: 'Spoken languages',
+  //   skills: [
+  //     {
+  //       name: 'English',
+  //       level: 10,
+  //     },
+  //     {
+  //       name: 'French',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Spanish',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'Frontend development',
+  //   skills: [
+  //     {
+  //       name: 'React',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Typescript',
+  //       level: 7,
+  //     },
+  //     {
+  //       name: 'GraphQL',
+  //       level: 6,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'Backend development',
+  //   skills: [
+  //     {
+  //       name: 'Node.js',
+  //       level: 8,
+  //     },
+  //     {
+  //       name: 'Rust',
+  //       level: 5,
+  //     },
+  //     {
+  //       name: 'Golang',
+  //       level: 4,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'Mobile development',
+  //   skills: [
+  //     {
+  //       name: 'React Native',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Flutter',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Swift',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
 ];
 
 /**
@@ -196,71 +194,171 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: "CSL x TUIC Smart Taipei",
+    description: `Explore Taipei's urban intelligence through stunning 
+    visualizations. Collaborating for a smarter city experience. 
+    Discover the unseen stories of Taipei`,
+    url: "",
+    image: porfoliodrone,
+    tech: "React.js, Redux-Saga, Socket IO, Django",
+    link: [
+      {
+        text: "Slides",
+        href: "https://docs.google.com/presentation/d/1H7_tLEYGnq9QImoCqG1hEHPcaFKUCPPrFXwjJ0VIuz0/edit?usp=sharing",
+      },
+      {
+        text: "React.js Made Slides Demo",
+        href: "https://taipei-basin-dashboard.vercel.app/",
+      },
+      {
+        text: "Facebook Post",
+        href: "https://www.facebook.com/photo/?fbid=773092807946615&set=pcb.773092944613268",
+      },
+    ],
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: "Planning Better Future: Kharkiv",
+    description: `Harness citizen voices for post-war reconstruction. 
+    Empowering urban planners with an open-source participatory tool. 
+    Rebuilding Ukraine together through collective wisdom 
+    and sustainable interventions.
+    `,
+    url: "",
+    image: porfolioHexapod_1,
+    tech: "React.js, Redux-Saga, Babylon.js, Colyseus, Django, MySQL",
+    link: [
+      {
+        text: "Slides",
+        href: "https://docs.google.com/presentation/d/1aE0SKLxjxAxnWkV3sbdbFs1VPCc4kx5RsHqHEcTutiY/edit?usp=sharing",
+      },
+      {
+        text: "Issue Discussion in City Science Summit 2022",
+        href: "https://www.youtube.com/watch?v=q2A-BApijoc&list=PLdxKi6kbAWz4A5EB4V9P84vUFUSYpJR8w",
+      },
+    ],
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: "CityGPT",
+    description: `Step into a world where imagination meets reality. 
+    Our cutting-edge AI model generates stunning cityscapes, 
+    bringing vision to life. From familiar streets to extraordinary realms, 
+    unleash artistic expression and shape the cities of tomorrow`,
+    url: "",
+    image: porfoliopangolin,
+    tech: "React.js, Redux-Saga, Pytorch, FastAPI, Docker, PostgreSQL",
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
+    title: "Edge Device Detection Tracking",
+    description:
+      "Tensorflow Lite and OpenCV to detect and track object, used in HITCON PEACE 2022",
+    url: "https://ntut-club-animation.vercel.app",
+    image: porfolioPBL_3,
+    tech: "Tensorflow Lite, OpenCV, Deep Sort, YoloV5, Coral Dev Board",
+    link: [
+      {
+        text: "HITCON PEACE 2022 News",
+        href: "https://www.inside.com.tw/article/28677-taiwan-hitcon-peace-2022",
+      },
+    ],
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
+    title: "Taipei Blueprint",
+    description: `Advocate citizens to shape their city. Comment on blueprint, 
+    share thoughts on Taipei's areas, and influence policy decisions. 
+    A data-driven platform connecting citizens and decision-makers.`,
+    url: "",
+    image: porfolioevpi,
+    tech: "React.js, React Query, Tailwind CSS",
+    link: [
+      {
+        text: "Blueprint Demo",
+        href: "https://taipei-blueprint.vercel.app/",
+      },
+    ],
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
+    title: "OpenHCI Campus Recycle Game",
+    description: `A fun-filled mission to tackle waste misclassification. 
+    Earn points, learn proper waste sorting, and champion environmental 
+    knowledge on campus`,
+    url: "",
+    image: porfolioquadruped,
+    tech: "Unity, React.js, Arduino",
+    link: [
+      {
+        text: "Youtube Video",
+        href: "https://youtu.be/LCSyyrT7GcY",
+      },
+      {
+        text: "Facebook Post",
+        href: "https://www.facebook.com/openhci/photos/pb.100057624692945.-2207520000./5433225003405588/?type=3",
+      },
+    ],
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
+    title: "Self Moving Car",
+    description: `Representing school in the PBL competition, 
+    unite with Japanese and Taiwanese college students. Combining Arduino, 
+    C programming, and mechanical design, create 
+    self-propelled car.`,
+    url: "",
+    image: porfoliospot,
+    tech: "Arduino, C, Mechanical Design",
+    link: [
+      {
+        text: "Post",
+        href: "https://johnsonafool.netlify.app/posts/pbl/",
+      },
+    ],
   },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  // {
+  //   title: "Programming Club Meeting App",
+  //   description: `Powered by Next.js 13, join our programming club's
+  //   immersive 3D web meeting room. Experience the future of discussions,
+  //   where in future will be Discord integration and an OpenAI-powered
+  //   chatbot elevate knowledge sharing. Develop with Turbo Repo,
+  //   `,
+  //   url: "",
+  //   image: porfolioImageMeetingRoom,
+  //   tech: "Next.js 13, Socket IO, Three.js, Tailwind CSS",
+  //   link: [
+  //     {
+  //       text: "App Demo",
+  //       href: "https://meeting-app-frontend.vercel.app/",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   title: "netflix web and native",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "j55",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "design institute",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "degital pet",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: "vue club animate",
+  //   description: "",
+  //   url: "https://timbaker.me",
+  //   image: porfolioImage9,
+  // },
 ];
 
 /**
@@ -340,23 +438,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'brucelin90620@gmail.com',
+      href: 'mailto:brucelin90620@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Taipei, Taiwan',
+      href: 'https://www.google.ca/maps/place/%E5%8F%B0%E5%8C%97%E5%B8%82/@25.0854061,121.5615012,11z',
     },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@tbakerx',
+    //   href: 'https://www.instagram.com/tbakerx/',
+    // },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'BruceLin',
+      href: 'https://github.com/BruceLin90620',
     },
   ],
 };
@@ -365,9 +463,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/BruceLin90620'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bruce-lin-231b9424a/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
