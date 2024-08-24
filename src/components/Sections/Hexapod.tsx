@@ -1,20 +1,21 @@
-import React, {FC, memo} from 'react';
 import Image from 'next/image';
+import React, {FC, memo} from 'react';
+
 import {SectionId} from '../../data/data';
-import Section from '../Layout/Section';
-import Hexapod_1 from '../../images/portfolio/Hexapod_1.jpg';
-import joyimage from '../../images/portfolio/hexapod/move.png';
-import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
-import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
-import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
-import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
-import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 import final_1 from '../../images/portfolio/hexapod/final_1.png';
 import final_2 from '../../images/portfolio/hexapod/final_2.png';
 import final_3 from '../../images/portfolio/hexapod/final_3.png';
 import final_flow from '../../images/portfolio/hexapod/final_flow.png';
+import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
+import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
+import joyimage from '../../images/portfolio/hexapod/move.png';
+import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
+import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
+import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
+import Hexapod_1 from '../../images/portfolio/Hexapod_1.jpg';
+import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   return (
@@ -30,11 +31,11 @@ const About: FC = memo(() => {
           </p>
           <div className="flex justify-center">
           <Image
-                src={Hexapod_1}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={Hexapod_1}
+                width={400}
               />
           </div>
         </div>
@@ -60,11 +61,11 @@ const About: FC = memo(() => {
               </p>
               <div className="flex justify-center">
               <Image
-                src={joyimage}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={joyimage}
+                width={400}
               />
               </div>
             </div>
@@ -80,11 +81,11 @@ const About: FC = memo(() => {
               </p>
               <div className="flex justify-center">
               <Image
-                  src={lidarimage}
                   alt="Drone"
-                  width={400}
-                  height={200}
                   className="rounded-lg"
+                  height={200}
+                  src={lidarimage}
+                  width={400}
                 />
               </div>
             </div>
@@ -102,18 +103,18 @@ I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cart
               </p>
               <div className="flex justify-center space-x-4">
               <Image
-                src={joymoveimage}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={joymoveimage}
+                width={400}
               />
               <Image
-                src={rviz2_mapimage}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={rviz2_mapimage}
+                width={400}
               />
               </div>
             </div>
@@ -131,20 +132,20 @@ Fortunately, I could launch the Nav2 package and made this robot go to any desti
               </p>
               <div className="flex justify-center mb-4">
               <Image
-                src={nav2_rvizimage}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={nav2_rvizimage}
+                width={400}
               />
               </div>
               <div className="flex justify-center">
               <Image
-                src={tf_treeimage}
                 alt="Drone"
-                width={600}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={tf_treeimage}
+                width={600}
               />
               </div>
             </div>
@@ -162,18 +163,18 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
               </p>
               <div className="flex justify-center space-x-4">
               <Image
-                src={apriltag_following}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={apriltag_following}
+                width={400}
               />
               <Image
-                src={apriltag_following2}
                 alt="Drone"
-                width={400}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={apriltag_following2}
+                width={400}
               />
               </div>
             </div>
@@ -189,11 +190,11 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
               </p>
               <div className="flex justify-center">
               <Image
-                src={final_flow}
                 alt="Drone"
-                width={600}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={final_flow}
+                width={600}
               />
               </div>
             </div>
@@ -203,31 +204,30 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              {/* <h2 className="text-2xl font-semibold mb-4">Mechnical Design & 3D Printer</h2> */}
               <p className="mb-4">
               So I can control the robot through joystick fisrt, and then change to the navigation mode its LED light would change to blue when it is navgating. Then it will change back to green when it is in the destination. Then the robot will change to AprilTag mode the search the AprilTag and then following the Tag.
               </p>
               <div className="flex justify-center space-x-6">
               <Image
+                alt="Drone"
+                className="rounded-lg"
+                height={200}
                 src={final_1}
-                alt="Drone"
                 width={200}
-                height={200}
-                className="rounded-lg"
               />
               <Image
+                alt="Drone"
+                className="rounded-lg"
+                height={200}
                 src={final_2}
-                alt="Drone"
                 width={200}
-                height={200}
-                className="rounded-lg"
               />
               <Image
-                src={final_3}
                 alt="Drone"
-                width={200}
-                height={200}
                 className="rounded-lg"
+                height={200}
+                src={final_3}
+                width={200}
               />
               </div>
             </div>
@@ -236,12 +236,12 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
 
         <div className="mt-12">
           <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
-          <div className="relative w-full" style={{ paddingBottom: '50%' }}>
+          <div className="relative w-full" style={{paddingBottom: '50%'}}>
             <iframe
-              src="https://www.youtube.com/embed/V_spW_6svvg?si=hhJh3jpCkiOVblzl"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/V_spW_6svvg?si=hhJh3jpCkiOVblzl"
             ></iframe>
           </div>
         </div>
