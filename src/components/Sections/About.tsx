@@ -6,7 +6,7 @@ import {aboutData, SectionId} from "../../data/data";
 import Section from "../Layout/Section";
 
 const About: FC = memo(() => {
-  const { profileImageSrc, description, aboutItems } = aboutData;
+  const {profileImageSrc, description, aboutItems} = aboutData;
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div
@@ -37,7 +37,7 @@ const About: FC = memo(() => {
             </p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {aboutItems.map(({ label, text }, idx) => (
+            {aboutItems.map(({label, text}, idx) => (
               <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
                 <span className="text-sm font-bold text-white">
                   {label}:
