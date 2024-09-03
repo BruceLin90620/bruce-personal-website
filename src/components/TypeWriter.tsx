@@ -1,4 +1,4 @@
-import React, { FC, memo, useEffect, useRef } from "react";
+import React, {FC, memo, useEffect, useRef} from "react";
 import Typed from "typed.js";
 
 const TypeWriter: FC = memo(() => {
