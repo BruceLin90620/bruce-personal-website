@@ -14,6 +14,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+// import heroImage from '../images/header-background.png';
 // import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfoliodrone from '../images/portfolio/drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi.jpg';
@@ -23,7 +24,7 @@ import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
 import porfolioquadruped from '../images/portfolio/quadruped.jpg';
 import porfoliospot from '../images/portfolio/spot.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+// import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -33,7 +34,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  // TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -204,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     link: [
       {
         text: "Slides",
-        href: "https://docs.google.com/presentation/d/1H7_tLEYGnq9QImoCqG1hEHPcaFKUCPPrFXwjJ0VIuz0/edit?usp=sharing",
+        href: "hexapod",
       },
       {
         text: "React.js Made Slides Demo",
@@ -366,67 +367,381 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: "June 2023",
+    location: "National Taipei University of Technology",
+    title: "Bachelor of Science in Electronic and Computer Engineering",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          During my time at university, I have acquired a several skill includes
+          understanding in programming languages like TypeScript, Python, and
+          C++ and C#. By making course homework or collaborating with peers in
+          projects.
+        </p>
+        <p>
+          In school, I enrolled some courses, like Algorithm, Digital Signal
+          Processing, Image Processing and Compression, Machine Learning,
+          Database Design, Web Development, Computer Network, Operating System,
+          help me to build a solid foundation in computer science and utilize
+          the knowledge when I am programming.
+        </p>
+        <p>
+          My involvement also includes active participation in the several
+          clubs, engagement in various extracurricular activities and
+          competitions, which broadened my skill set, and strengthened my
+          ability to collaborate, communicate effectively, and thrive in diverse
+          environments.
+        </p> */}
+      </div>
+    ),
   },
 ];
-
+export const awards: TimelineItem[] = [
+  {
+    date: "2023 Sep",
+    location:
+      "Organziers: City Science Lab @ Taipei Tech, Foxconn; Co-organizer: MIT Media Lab",
+    title: "First Prize in 2023 Science and AI Hackathon - AI on Wheels",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          As a college researcher selected by National Science and Technology
+          Council, I conducted a biomedical engineering project which is to
+          integrate physiological monitoring functions(heart rate, blood
+          pressure and body temperature, etc.) to a mouse in order to analyze
+          users' health conditions.
+        </p>
+        <p>
+          I actively contributed to design Digital Signal Algorithms like
+          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
+          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
+          (PPG) artifact noise.
+        </p>
+        <p>
+          Besides, I trained a Deep Neural Network to predict body temperature
+          through skin, ambient temperature and humidity
+        </p>
+        <p>
+          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
+          Algorithms
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "2022 June",
+    location: "National Taipei University of Technology",
+    title: "First Prize in College Project Competition",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          Working with a innovative projects including CityGPT, Agent-Based
+          Modeling with LLMs, dedicating on laveraging large language models
+          with real-time urban data.
+        </p>
+        <p>
+          My research includes large language models, data science(urban data).
+          I have developed the system that can overcomes the challenge of
+          spatial urban data query and analysis, and vectorize urban data in
+          real-time.
+        </p>
+        <p>
+          Skills: Large Language Models, Natural Language Processing, Data
+          Science and Engineering
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "June 2022 - Feb 2023",
+    location: "National Science and Technology Council",
+    title: "Selected as a College Researcher",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          Working with a insightful project in City Science, CityScope,
+          dedicating to leveraging data to solve complex problems in modern
+          cities. The CityScope project aimed to analyze vast amounts of urban
+          data, ranging from transportation patterns to energy consumption, in
+          order to gain insights into city dynamics and develop innovative
+          solutions.
+        </p>
+        <p>
+          My work include data analysis, data engineering, machine learning,
+          deep learning and visualization tools to uncover meaningful patterns
+          and trends. This allowed myself to gain insights into the functioning
+          of the city, detect inefficiencies, and propose data-driven solutions
+          for urban planning and development. Working here not only exposed me
+          to cutting-edge research methodologies but also fostered a culture of
+          collaboration and innovation.
+        </p>
+        <p>
+          Skills: Problem Solving, Collaboration, Interdisciplinary Research,
+          Data Engineering, Data Science, Predictive Modeling, Edge Computing
+          Programming, Web Development
+        </p> */}
+      </div>
+    ),
+  },
+];
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: "July 2023 - Present",
+    location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
+    title: "Researcher",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p>
+          As a researcher at City Science Lab, 
+          I have been involved in multiple innovative projects including EVπ, 
+          Quadruped Robot Spot, Biomimetic Robot, and Super Controller.
+          My work spans robotics, automation systems, and intelligent control.
+        </p>
+        <p>
+          - EVπ Project: Integrated Foxconn's HHEV.OS into the control system, verifying compatibility with ROS2. Redesigned the circuit system architecture, completing the process from schematic design to physical circuit board production.
+        </p>
+        <p>
+          - Quadruped Robot Spot: Developed an automated inspection system for industrial environments, implementing remote control and autonomous navigation. Integrated PTZ cameras and Lidar for real-time image transmission and environmental mapping.
+        </p>
+        <p>
+          - Biomimetic Robot: Developed a pangolin-inspired quadruped robot, responsible for circuit and control system development. Integrated depth cameras, SLAM technology, and Nav2 navigation system.
+        </p>
+        <p>
+          - Super Controller: Developed an innovative multi-robot control system using the "What You See is What You Control" concept, improving operational efficiency.
+        </p>
+        <p>
+          Additionally, I actively participate in guiding UROP (Undergraduate Research Opportunity Program) students, imparting robotics theory and directing students in laboratory projects.
+        </p>
+        <p>
+          Hard Skills: C++, Python, ROS2, HHEVOS, Zenoh, SLAM, Navigation, AprilTag, PCB Design, Welding, 
+        </p>
+        <p>
+          Soft Skills: Problem Solving, Collaboration, Interdisciplinary Research
+        </p>
+      </div>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: "Feburary 2023 - June 2023",
+    location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
+    title: "Undergraduate Research Opportunity Program",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p>
+          Key Project: Development of LiDAR SLAM and Navigation System for Hexapod Robot
+        </p>
+        <p>
+          This project aimed to develop a system for environmental mapping and navigation using 2D-LiDAR, integrated with camera and AprilTag for precise final positioning and calibration.
+        </p>
+        <p>
+          - Phase 1: Implemented basic motion control (movement, turning) for the hexapod robot and integrated joystick control using ROS2 as middleware.
+        </p>
+        <p>
+          - Phase 2: Utilized Cartographer as the SLAM (Simultaneous Localization and Mapping) algorithm to create 2D maps. Integrated the Nav2 navigation system to develop autonomous navigation capabilities for the hexapod robot within the map.
+        </p>
+        <p>
+          - Phase 3: Developed camera-based AprilTag detection for positioning. After LiDAR navigation to the target point, the system activates camera scanning of AprilTags for final movement calibration.
+        </p>
+        <p>
+          - Super Controller: Developed an innovative multi-robot control system using the "What You See is What You Control" concept, improving operational efficiency.
+        </p>
+        <p>
+          Additionally, I actively participate in guiding UROP (Undergraduate Research Opportunity Program) students, imparting robotics theory and directing students in laboratory projects.
+        </p>
+        <p>
+          Hard Skills: C++, Python, Control Systems, ROS2, SLAM, Navigation, AprilTag,
+        </p>
+        <p>
+          Soft Skills: Problem Solving, Collaboration
+        </p>
+      </div>
+    ),
+  },
+  {
+    date: "June 2022 - Feb 2023",
+    location: "National Science and Technology Council",
+    title: "College Researcher",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>
+          As a college researcher selected by National Science and Technology
+          Council, I conducted a biomedical engineering project which is to
+          integrate physiological monitoring functions(heart rate, blood
+          pressure and body temperature, etc.) to a mouse in order to analyze
+          users' health conditions.
+        </p>
+        <p>
+          I actively contributed to design Digital Signal Algorithms like
+          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
+          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
+          (PPG) artifact noise.
+        </p>
+        <p>
+          Besides, I trained a Deep Neural Network to predict body temperature
+          through skin, ambient temperature and humidity
+        </p>
+        <p>
+          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
+          Algorithms
+        </p>
+      </div>
     ),
   },
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
+export const skill: TimelineItem[] = [
+  {
+    date: "",
+    location: "Mandarin, English",
+    title: "Language",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>
+          {/* English: TOEIC: 925, TOEFL: 91, International volunteer, English
+          tutor, School international affair department volunteering */}
+        </p>
+        {/* <p>
+          Understanding in Mandarin, English, and basic Japanese give me chance
+          to actively participate in diverse international volunteer programs
+          and serve as an English tutor. These experiences have not only honed
+          my language skills but also instilled a deep appreciation for
+          cross-cultural communication. Additionally, I had the privilege of
+          contributing to my school's international affairs department as a
+          dedicated volunteer, where I played an instrumental role in organizing
+          and coordinating impactful international events and initiatives.
+        </p>
+        <p>
+          Moreover, my proficiency in basic Japanese allows me to navigate
+          everyday situations and effectively communicate in a multicultural
+          setting, showcasing my adaptability and eagerness to embrace new
+          languages and cultures.
+        </p>
+        <p>
+          The combination of my multilingual abilities and my diverse
+          experiences has provided me with a unique perspective and a strong
+          aptitude for connecting with individuals from diverse backgrounds. I
+          am confident that my linguistic versatility, coupled with my passion
+          for fostering intercultural understanding, will contribute to the
+          success of [company/organization name]. I am committed to continuously
+          expanding my linguistic horizons and making meaningful contributions
+          to further enhance communication and collaboration in diverse
+          environments.
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: `C, Python, Matlab, C++`,
+    title: "Computer Language",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          For me backend development is like a vivid book about what I learned
+          from courses. In networking, I have to consider IP addressing, TCP/IP,
+          UDP, DNS, and HTTP, according to need.
+        </p>
+        <p>
+          It has strong connection with operating systems, like async, process
+          management, threading, memory management, file systems, and . To make
+          the server scalable, they are all important.
+        </p>
+        <p>
+          Some of my friends like to joke around backend is really easy, since
+          stuff we done on course only about CRUD, and my experience in CSL give
+          me chance to design real system and consider more beyond that.
+        </p>
+        <p>
+          Recently I have extend my backend knowledge to learn MLOps and DevOps,
+          as working on deploy model on API and collect data continuously with
+          distributed task scheduler such Airflow.
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "",
+    location: ``,
+    // , Babylon.js, Three.js, WebGL, WebGPU
+    title: "Software Development",
+    content: (
+      <div className="flex flex-col gap-2">
+        {/* <p>
+          <span className="h-16 w-16">&#9679;</span>Full-Stack Web Development:
+          React, Django, FastAPI, Flask, SocketIO, HTML, CSS
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Artifical
+          Intelligence:LLaMA-2, Langchain, OpenAI, Transfomers
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Machine and Deep
+          Learning:Tensorflow, Pytorch, Transformers, scikit-learn
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Data Visualization: Mapbox,
+          DeckGL, QGIS, Open Street Map
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Database: MySQL, PostgreSQL,
+          MongoDB, Pinecone (Vector Database), Neo4j
+        </p> */}
+        {/* <p>
+          In CityScope project, there are many visualizations relating to urban,
+          We usually doing the stack with React.js, Redux-Saga, DeckGL, and
+          Mapboxgl to integrate with backend and database.
+        </p> */}
+      </div>
+    ),
+  },
+  // {
+  //   date: "",
+  //   location: "Postgres, MySQL, MongoDB, Redis, Neo4j, Prisma",
+  //   title: "Database Design & Management",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p></p>
+  //       <p></p>
+  //       <p></p>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "",
+  //   location: "Tensorflow, Scikit-Learn, Airflow, Kafka, Spark, Hadoop, Pandas",
+  //   title: "Data Engineering & Data Science",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>""""</p>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "",
+  //   location:
+  //     "Linux (Ubuntu), GCP, Git Flow, Github CI / CD, Docker, Nginx, Terraform",
+  //   title: "DevOps",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>""""</p>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "",
+  //   location: "Babylon.js, Three.js, Unity",
+  //   title: "Three Dimension Modeling & Rendering",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>
+  //         I also try 3D rendering before, and there are some difference between
+  //         WebGL and Unity Engine, I more prefer to use Three.js for the the
+  //         convenience of integrating with React.js.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
+];
 
 /**
  * Contact section
