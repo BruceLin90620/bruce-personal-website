@@ -17,7 +17,7 @@ import heroImage from '../images/header-background.webp';
 // import heroImage from '../images/header-background.png';
 // import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfoliodrone from '../images/portfolio/drone.jpg';
-import porfolioevpi from '../images/portfolio/evpi01.jpg';
+import porfolioevpi from '../images/portfolio/evpi_1.jpg';
 import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
 import porfoliopangolin from '../images/portfolio/pangolin01.jpg';
 import porfolioPBL_3 from '../images/portfolio/PBL_3.png';

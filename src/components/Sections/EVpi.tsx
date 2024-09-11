@@ -14,7 +14,7 @@ import {SectionId} from '../../data/data';
 // import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-import evpi01 from '../../images/portfolio/evpi01.jpg';
+import evpi01 from '../../images/portfolio/evpi_1.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
