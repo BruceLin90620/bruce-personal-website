@@ -2,9 +2,9 @@ import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
+import Drone from '../components/Sections/Drone';
 // import Contact from '../components/Sections/Contact';
 import Footer from '../components/Sections/Footer';
-import Drone from '../components/Sections/Drone';
 // import Testimonials from '../components/Sections/Testimonials';
 import {homePageMeta} from '../data/data';
 
