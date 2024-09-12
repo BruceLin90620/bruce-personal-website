@@ -2,6 +2,10 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
+import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
+import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
+import mechanical from '../../images/portfolio/pangolin/mechanical.png';
+import software_framework from '../../images/portfolio/pangolin/software_framework.jpg';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 // import final_1 from '../../images/portfolio/hexapod/final_1.png';
@@ -15,10 +19,6 @@ import {SectionId} from '../../data/data';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import pangolin01 from '../../images/portfolio/pangolin01.jpg';
-import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
-import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
-import mechanical from '../../images/portfolio/pangolin/mechanical.png';
-import software_framework from '../../images/portfolio/pangolin/software_framework.jpg';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
