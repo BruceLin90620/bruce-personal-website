@@ -14,8 +14,8 @@ import {SectionId} from '../../data/data';
 // import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 import PBL_2 from '../../images/portfolio/pbl/PBL_2.jpg';
-import PBL_3 from '../../images/portfolio/PBL_3.png';
 import pbl_flowchart from '../../images/portfolio/pbl/未命名绘图.drawio (1).png';
+import PBL_3 from '../../images/portfolio/PBL_3.png';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
