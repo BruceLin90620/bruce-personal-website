@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-
 import supercontroll_2 from '../../images/portfolio/supercontroller/supercontroll_2.png';
 import supercontroll_framework from '../../images/portfolio/supercontroller/supercontroll_framework.png';
 import Section from '../Layout/Section';
