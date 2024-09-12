@@ -17,9 +17,9 @@ import {SectionId} from '../../data/data';
 import pangolin01 from '../../images/portfolio/pangolin01.jpg';
 import Section from '../Layout/Section';
 
-const About: FC = memo(() => {
+const Pangolin: FC = memo(() => {
   return (
-    <Section className="bg-neutral-800 text-white" sectionId={SectionId.About}>
+    <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
           <h1 className="text-4xl font-bold mb-4">Bionic Robot - Pangolin</h1>
@@ -249,5 +249,5 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
   );
 });
 
-About.displayName = 'About';
-export default About;
+Pangolin.displayName = 'About';
+export default Pangolin;

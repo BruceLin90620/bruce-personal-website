@@ -22,6 +22,7 @@ import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
 import porfoliopangolin from '../images/portfolio/pangolin01.jpg';
 import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
 import porfoliospot from '../images/portfolio/spot.jpg';
+import porfoliosupercontroller from '../images/portfolio/SuperController.png';
 import profilepic from '../images/profilepic.jpg';
 // import testimonialImage from '../images/testimonial.webp';
 import {
@@ -56,6 +57,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
+  None: "none"
   // Testimonials: 'testimonials',
 } as const;
 
@@ -245,6 +247,26 @@ export const portfolioItems: PortfolioItem[] = [
     url: "Pangolin",
     image: porfoliopangolin,
     tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
+  },
+  {
+    title: "Super Controller",
+    description: `Super Controller introduces a "What You See is What You Control" concept for managing multiple robots. 
+    Unlike traditional joystick pairing, 
+    users can scan tags on robots using mobile device cameras and select them to control corresponding robots in the environment. 
+    This approach aims to improve usability for workers managing multiple robots simultaneously.`,
+    url: "super_controller",
+    image: porfoliosupercontroller,
+    tech: "Zenoh, ROS2, AprilTags",
+    // link: [
+      // {
+      //   text: "Youtube Video",
+      //   href: "https://youtu.be/LCSyyrT7GcY",
+      // },
+      // {
+      //   text: "Facebook Post",
+      //   href: "https://www.facebook.com/openhci/photos/pb.100057624692945.-2207520000./5433225003405588/?type=3",
+      // },
+    // ],
   },
   {
     title: "CSL UROP Project - Hexapod Robot",

@@ -19,7 +19,7 @@ import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   return (
-    <Section className="bg-neutral-800 text-white" sectionId={SectionId.About}>
+    <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
           <h1 className="text-4xl font-bold mb-4">Ummanned Vehicle - EVπ</h1>
