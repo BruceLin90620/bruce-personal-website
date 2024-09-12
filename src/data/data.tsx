@@ -198,7 +198,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Developed an automated inspection system using Boston Dynamics' Spot robot for industrial environments. 
     Implemented remote control and autonomous navigation using Graph Nav API. 
     Utilized Lidar for PCD map generation and precise localization via ROS2. Provided a visualization interface for remote monitoring.`,
-    url: "Spot",
+    url: "spot",
     image: porfoliospot,
     tech: "Python, ROS2, GraphNav",
     // link: [
@@ -252,7 +252,7 @@ export const portfolioItems: PortfolioItem[] = [
       `Developing a 2D-LiDAR-based mapping and navigation system for a hexapod robot. 
       Utilized Cartographer for SLAM and Nav2 for autonomous navigation. 
       Integrated camera-based AprilTag detection for precise final positioning and correction after LiDAR navigation to target locations.`,
-      url: "hexapod",
+    url: "hexapod",
     image: porfolioHexapod_1,
     tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
     // link: [

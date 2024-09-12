@@ -13,8 +13,9 @@ import {SectionId} from '../../data/data';
 // import joyimage from '../../images/portfolio/hexapod/move.png';
 // import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
-// import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
+import PBL_2 from '../../images/portfolio/pbl/PBL_2.jpg';
 import PBL_3 from '../../images/portfolio/PBL_3.png';
+import pbl_flowchart from '../../images/portfolio/pbl/未命名绘图.drawio (1).png';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
@@ -24,29 +25,25 @@ const About: FC = memo(() => {
         <div className="py-12">
           <h1 className="text-4xl font-bold mb-4">PBL Competetion - Self Moving Car</h1>
           <p className="text-xl text-gray-300 mb-8">
-          Representing school in the PBL competition, 
-    unite with Japanese and Taiwanese college students. Combining Arduino, 
-    C programming, and mechanical design, create 
-    self-propelled car.
+          Osaka Institute of Technology, New Taipei Municipal Zhonghe Senior High School, and National Taipei University of Technology.
           </p>
           <div className="flex justify-center">
-          <Image
+              <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
-                src={PBL_3}
-                width={400}
+                height={400}
+                src={PBL_2}
+                width={600}
               />
-          </div>
+              </div>
         </div>
 
-        {/* <div className="space-y-12">
+        <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
+              <h2 className="text-2xl font-semibold mb-4">Rule</h2>
               <p className="mb-4">
-                This is my UROP(Undergrade Reasearch Opportunity Program) project at City Science Lab @ Taipei Tech / a coorperation with MIT Media Lab.
-                I really like any kind of robots, but it is my first time to have the project with legged robot and integrate ROS2 on this hexapod robot. I want to know the fundamental for the SLAM and Navigation ,therefore, I join the CSL UROP project.
+              The rule of this competition is that there is 4 obstacles area on the corner of the field. sand, grass, white rock, and water area respectively. There is a high heel area in the center of the field, so we must overcome these obstacles and catch the red ball as much as possible.
               </p>
             </div>
           </div>
@@ -55,17 +52,28 @@ const About: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">ROS2 & Joystick Control</h2>
+              <h2 className="text-2xl font-semibold mb-4">Tools</h2>
               <p className="mb-4">
-              First, I used python to control this robot and made it can move e.g. linear and angular move control and stnace control. Then I create a node for subscribe the cmd_vel and joy, so that I can get the joy data and twist msg through ROS2 DDS to control this robot.
+              We used a pixy camera connected to Arduino mega board. We didn’t have to do some image processing, because this camera could help us process the images and send some information to us. Like the width and height of the red ball. About the actuator, we have two 12V DC motors to drive the car and a 7V servo motor that let the catcher can lift and down. An ultrasonic sensor can detect the wall and tell the car to turn around to avoid the wall.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">Design</h2>
+              <p className="mb-4">
+              We designed a catcher with some ropes just like the table tennis collector, and then this catcher will put the red ball into the container behind the robot.
               </p>
               <div className="flex justify-center">
               <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
-                src={joyimage}
-                width={400}
+                height={400}
+                src={PBL_3}
+                width={600}
               />
               </div>
             </div>
@@ -73,6 +81,38 @@ const About: FC = memo(() => {
         </div>
 
         <div className="space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">Program Flow</h2>
+              <p className="mb-4">
+              We have three steps. First, we used the ultrasonic sensor to check the wall distance. When the car hit the wall, it will turn around. Second, when the camera sees the red ball, it will check whether the ball is in the center of the camera. If not, just turn right or turn left. And then if the Y-axis coordination of the red ball is more than 180, that means, the red ball is right in front of you. Just put down the catcher and get the red ball.
+              </p>
+              <div className="flex justify-center">
+              <Image
+                alt="Drone"
+                className="rounded-lg"
+                height={200}
+                src={pbl_flowchart}
+                width={300}
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Competetion Video</h2>
+          <div className="relative w-full" style={{paddingBottom: '50%'}}>
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/kQCo3CS-FRM?si=KHJXWE41Am6aSMOx"
+            ></iframe>
+          </div>
+        </div>
+
+        {/* <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-4">Mechnical Design & 3D Printer</h2>
