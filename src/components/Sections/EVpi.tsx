@@ -3,11 +3,11 @@ import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import computer from '../../images/portfolio/evpi/computer.jpg';
-import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
-import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
 import evpi01 from '../../images/portfolio/evpi_1.jpg';
+import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
+import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
