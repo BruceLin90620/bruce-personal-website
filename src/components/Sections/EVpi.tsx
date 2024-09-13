@@ -3,8 +3,8 @@ import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import computer from '../../images/portfolio/evpi/computer.jpg';
-import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
-import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
+import demo_csl from '../../images/portfolio/evpi/demo_csl.png';
+import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.png';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
 import evpi01 from '../../images/portfolio/evpi_1.jpg';
@@ -97,7 +97,7 @@ const About: FC = memo(() => {
               <Image
                 alt="Drone"
                 className="rounded-lg"
-                src={demo_german}
+                src={demo_csl}
                 width={400}
               />
               </div>
