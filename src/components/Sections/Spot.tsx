@@ -15,6 +15,7 @@ import {SectionId} from '../../data/data';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import spot from '../../images/portfolio/spot.jpg';
+import showcase from '../../images/portfolio/spot/showcase.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
@@ -38,6 +39,48 @@ const About: FC = memo(() => {
               />
           </div>
         </div>
+
+        <div className="space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">Factory Inspection</h2>
+              <p className="mb-4">
+              The project's primary objective was to adapt Boston Dynamics' Spot robot for automated inspection tasks in industrial settings. At its core, the system aimed to develop an advanced area patrol and remote monitoring system while strictly adhering to TSMC's network security protocols.
+              </p>
+              <p className="mb-4">
+              Leveraging Spot's Graph Nav API, we developed precise remote control capabilities, enabling the robot to navigate autonomously to any specified location within designated areas. The integration of a PTZ camera allowed for high-quality image capture based on remote commands, with real-time transmission to the IT department for AI image analysis.
+              </p>
+              <p className="mb-4">
+              Utilizing the Lidar mounted on Spot, we collected environmental point cloud data to generate accurate maps in PCD (Point Cloud Data) format. We implemented the Lidar localization system from the ROS2 (Robot Operating System 2) framework to achieve precise positioning of the robot in complex environments.
+              </p>
+              <div className="relative w-full" style={{paddingBottom: '50%'}}>
+                <iframe
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/iKIyHdZ6tuc?si=oydx8rjL7pa4P9R0"
+                ></iframe>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">Spot Showcase</h2>
+              <div className="flex justify-center">
+              <Image
+                    alt="Drone"
+                    className="rounded-lg"
+                    src={showcase}
+                    width={600}
+                  />
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         {/* <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
