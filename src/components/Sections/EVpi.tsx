@@ -2,6 +2,11 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
+import computer from '../../images/portfolio/evpi/computer.jpg';
+import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
+import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
+import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
+import pcb from '../../images/portfolio/evpi/pcb.jpg';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 // import final_1 from '../../images/portfolio/hexapod/final_1.png';
@@ -15,11 +20,6 @@ import {SectionId} from '../../data/data';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import evpi01 from '../../images/portfolio/evpi_1.jpg';
-import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
-import pcb from '../../images/portfolio/evpi/pcb.jpg';
-import computer from '../../images/portfolio/evpi/computer.jpg';
-import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
-import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
