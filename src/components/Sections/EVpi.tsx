@@ -7,18 +7,6 @@ import demo_german from '../../images/portfolio/evpi/demo_german.jpg';
 import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.jpg';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
-// import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
-// import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
-// import final_1 from '../../images/portfolio/hexapod/final_1.png';
-// import final_2 from '../../images/portfolio/hexapod/final_2.png';
-// import final_3 from '../../images/portfolio/hexapod/final_3.png';
-// import final_flow from '../../images/portfolio/hexapod/final_flow.png';
-// import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
-// import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
-// import joyimage from '../../images/portfolio/hexapod/move.png';
-// import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
-// import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
-// import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import evpi01 from '../../images/portfolio/evpi_1.jpg';
 import Section from '../Layout/Section';
 
@@ -27,7 +15,7 @@ const About: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
-          <h1 className="text-4xl font-bold mb-4">Ummanned Vehicle - EVπ </h1>
+          <h1 className="text-4xl font-bold mb-4">Ummanned Vehicle - EVπ</h1>
           <p className="text-xl text-gray-300 mb-8">
           Collaborated with Foxconn on integrating HHEV.OS into EVπ control system, 
     ensuring compatibility with ROS2 navigation and localization while enhancing security. 
