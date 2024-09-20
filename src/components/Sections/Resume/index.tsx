@@ -15,20 +15,20 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Work">
+        <ResumeSection title="Works">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Award">
+        <ResumeSection title="Competitions">
           {awards.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          <p className="pb-8" >Software: ROS, ROS2, Linux</p>
-          <p className="pb-8">Hardware: Kicad, PCB Layout</p>
-          <p className="pb-8">Mechnical Design: Solidworks, Fusion 360</p>
+          <p className="pb-8" ><strong >Software:</strong> C, C++, Python, ROS, ROS2, Linux</p>
+          <p className="pb-8"><strong >Hardware:</strong> Kicad, PCB Layout</p>
+          <p className="pb-8"><strong >Mechnical Design:</strong> Solidworks, Fusion 360</p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />

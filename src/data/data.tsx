@@ -13,8 +13,9 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-// import heroImage from '../images/header-background.png';
+// import heroImage from '../images/header-background.webp';
+// import heroImage from '../images/header-background.webp';
+import heroImage from '../images/background.png';
 // import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfoliodrone from '../images/portfolio/drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi_1.jpg';
@@ -72,16 +73,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        {/* I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder. */}
-        I'm a Robotics Researcher based in Taiwan, currently developing <strong className="text-stone-100">innovative robotic systems</strong> at CSL.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        {/* In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>. */}
-        In my free time, you can catch me practicing my moves on the dance floor, enjoying outdoor activities, or shooting hoops on the basketball court.
+        I'm Bruce, Jung-Peng Lin(林容鵬), a college student from Taipei. I am now interesting in <strong className="text-stone-100">innovative robotics</strong>, currently working as a researcher in <strong className="text-stone-100">City Science Lab @ Taipei Tech</strong> a cooperation with <strong className="text-stone-100">MIT Media Lab</strong>.
       </p>
     </>
   ),
@@ -92,11 +84,11 @@ export const heroData: Hero = {
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
 };
 
@@ -105,14 +97,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a Robotics Researcher based in Taiwan, currently developing innovative robotic systems at CSL. 
-  In my free time, you can catch me practicing my moves on the dance floor, enjoying outdoor activities, or shooting hoops on the basketball court.`,
+  description: `I graduated from the Department of Mechanical Engineering at National Taipei University of Technology. 
+  Currently, I am a researcher at City Science Lab, where my primary focus is on Robotics. 
+  My work involves developing innovative robots and integrating various cutting-edge technologies for applications in factories and urban environments.`,
   aboutItems: [
     {label: 'Location', text: 'Taipei', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Taiwan', Icon: FlagIcon},
-    {label: 'Interests', text: 'Street Dance, Reading, Basketball', Icon: SparklesIcon},
-    {label: 'Study', text: 'National Taipei University of Technology', Icon: AcademicCapIcon},
+    {label: 'Email', text: 'brucelin90620@gmail.com', Icon: SparklesIcon},
+    {label: 'Study', text: 'Mechanical Engineering, National Taipei University of Technology', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Researcher at City Science Lab@Taipei Tech, a cooperation with MIT Media Lab', Icon: BuildingOffice2Icon},
   ],
 };
@@ -121,74 +114,7 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  // {
-  //   name: 'Spoken languages',
-  //   skills: [
-  //     {
-  //       name: 'English',
-  //       level: 10,
-  //     },
-  //     {
-  //       name: 'French',
-  //       level: 4,
-  //     },
-  //     {
-  //       name: 'Spanish',
-  //       level: 3,
-  //     },
-  //   ],
-  // },
-  // {
-  //   name: 'Frontend development',
-  //   skills: [
-  //     {
-  //       name: 'React',
-  //       level: 9,
-  //     },
-  //     {
-  //       name: 'Typescript',
-  //       level: 7,
-  //     },
-  //     {
-  //       name: 'GraphQL',
-  //       level: 6,
-  //     },
-  //   ],
-  // },
-  // {
-  //   name: 'Backend development',
-  //   skills: [
-  //     {
-  //       name: 'Node.js',
-  //       level: 8,
-  //     },
-  //     {
-  //       name: 'Rust',
-  //       level: 5,
-  //     },
-  //     {
-  //       name: 'Golang',
-  //       level: 4,
-  //     },
-  //   ],
-  // },
-  // {
-  //   name: 'Mobile development',
-  //   skills: [
-  //     {
-  //       name: 'React Native',
-  //       level: 9,
-  //     },
-  //     {
-  //       name: 'Flutter',
-  //       level: 4,
-  //     },
-  //     {
-  //       name: 'Swift',
-  //       level: 3,
-  //     },
-  //   ],
-  // },
+
 ];
 
 /**
@@ -203,20 +129,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: "spot",
     image: porfoliospot,
     tech: "Python, ROS2, GraphNav",
-    // link: [
-      // {
-      //   text: "Slides",
-      //   href: "hexapod",
-      // },
-      // {
-      //   text: "React.js Made Slides Demo",
-      //   href: "https://taipei-basin-dashboard.vercel.app/",
-      // },
-      // {
-      //   text: "Facebook Post",
-      //   href: "https://www.facebook.com/photo/?fbid=773092807946615&set=pcb.773092944613268",
-      // },
-    // ],
   },
   {
     title: "Ummanned Vehicle - EVπ",
@@ -320,55 +232,6 @@ export const portfolioItems: PortfolioItem[] = [
       // },
     // ],
   },
-
-  // {
-  //   title: "Programming Club Meeting App",
-  //   description: `Powered by Next.js 13, join our programming club's
-  //   immersive 3D web meeting room. Experience the future of discussions,
-  //   where in future will be Discord integration and an OpenAI-powered
-  //   chatbot elevate knowledge sharing. Develop with Turbo Repo,
-  //   `,
-  //   url: "",
-  //   image: porfolioImageMeetingRoom,
-  //   tech: "Next.js 13, Socket IO, Three.js, Tailwind CSS",
-  //   link: [
-  //     {
-  //       text: "App Demo",
-  //       href: "https://meeting-app-frontend.vercel.app/",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   title: "netflix web and native",
-  //   description: "",
-  //   url: "https://timbaker.me",
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: "j55",
-  //   description: "",
-  //   url: "https://timbaker.me",
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: "design institute",
-  //   description: "",
-  //   url: "https://timbaker.me",
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: "degital pet",
-  //   description: "",
-  //   url: "https://timbaker.me",
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: "vue club animate",
-  //   description: "",
-  //   url: "https://timbaker.me",
-  //   image: porfolioImage9,
-  // },
 ];
 
 /**
@@ -378,10 +241,16 @@ export const education: TimelineItem[] = [
   {
     date: "June 2023",
     location: "National Taipei University of Technology",
-    title: "Bachelor of Science in Electronic and Computer Engineering",
+    title: "Bachelor of Science in Mechanical Engineering",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
+        {
+          <ul>
+            <li>
+              Academic Excellent Award for 4 semesters
+            </li>
+          </ul>
+            /* <p>
           During my time at university, I have acquired a several skill includes
           understanding in programming languages like TypeScript, Python, and
           C++ and C#. By making course homework or collaborating with peers in
@@ -407,88 +276,50 @@ export const education: TimelineItem[] = [
 ];
 export const awards: TimelineItem[] = [
   {
-    date: "2023 Sep",
+    date: "2022 Nov",
     location:
-      "Organziers: City Science Lab @ Taipei Tech, Foxconn; Co-organizer: MIT Media Lab",
-    title: "First Prize in 2023 Science and AI Hackathon - AI on Wheels",
+      "Taichung, Taiwan",
+    title: "TSPE Research Project and Paper Competition",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
-          As a college researcher selected by National Science and Technology
-          Council, I conducted a biomedical engineering project which is to
-          integrate physiological monitoring functions(heart rate, blood
-          pressure and body temperature, etc.) to a mouse in order to analyze
-          users' health conditions.
-        </p>
-        <p>
-          I actively contributed to design Digital Signal Algorithms like
-          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
-          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
-          (PPG) artifact noise.
-        </p>
-        <p>
-          Besides, I trained a Deep Neural Network to predict body temperature
-          through skin, ambient temperature and humidity
-        </p>
-        <p>
-          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
-          Algorithms
-        </p> */}
       </div>
     ),
   },
   {
-    date: "2022 June",
-    location: "National Taipei University of Technology",
-    title: "First Prize in College Project Competition",
+    date: "2022 Oct",
+    location:
+      "Tainan, Taiwan ",
+    title: "2022 Taiwan TDK Robocon",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
-          Working with a innovative projects including CityGPT, Agent-Based
-          Modeling with LLMs, dedicating on laveraging large language models
-          with real-time urban data.
-        </p>
-        <p>
-          My research includes large language models, data science(urban data).
-          I have developed the system that can overcomes the challenge of
-          spatial urban data query and analysis, and vectorize urban data in
-          real-time.
-        </p>
-        <p>
-          Skills: Large Language Models, Natural Language Processing, Data
-          Science and Engineering
-        </p> */}
       </div>
     ),
   },
   {
-    date: "June 2022 - Feb 2023",
-    location: "National Science and Technology Council",
-    title: "Selected as a College Researcher",
+    date: "2022 Aug",
+    location:
+      "Taipei, Taiwan",
+    title: "International PBL Competition - Best Team",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
-          Working with a insightful project in City Science, CityScope,
-          dedicating to leveraging data to solve complex problems in modern
-          cities. The CityScope project aimed to analyze vast amounts of urban
-          data, ranging from transportation patterns to energy consumption, in
-          order to gain insights into city dynamics and develop innovative
-          solutions.
-        </p>
-        <p>
-          My work include data analysis, data engineering, machine learning,
-          deep learning and visualization tools to uncover meaningful patterns
-          and trends. This allowed myself to gain insights into the functioning
-          of the city, detect inefficiencies, and propose data-driven solutions
-          for urban planning and development. Working here not only exposed me
-          to cutting-edge research methodologies but also fostered a culture of
-          collaboration and innovation.
-        </p>
-        <p>
-          Skills: Problem Solving, Collaboration, Interdisciplinary Research,
-          Data Engineering, Data Science, Predictive Modeling, Edge Computing
-          Programming, Web Development
-        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "2018 Aug",
+    location: "Montréal, CA",
+    title: "RoboCupJunior CoSpace Rescue Challenge - Semifinal",
+    content: (
+      <div className="flex flex-col gap-4">
+      </div>
+    ),
+  },
+  {
+    date: "2017 Jul",
+    location: "Washington, D.C.",
+    title: "FIRST Global Challenge robotics competition - (17/163)",
+    content: (
+      <div className="flex flex-col gap-4">
       </div>
     ),
   },
@@ -500,7 +331,7 @@ export const experience: TimelineItem[] = [
     title: "Researcher",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
+        {/* <p>
           As a researcher at City Science Lab, 
           I have been involved in multiple innovative projects including EVπ, 
           Quadruped Robot Spot, Biomimetic Robot, and Super Controller.
@@ -526,17 +357,17 @@ export const experience: TimelineItem[] = [
         </p>
         <p>
           Soft Skills: Problem Solving, Collaboration, Interdisciplinary Research
-        </p>
+        </p> */}
       </div>
     ),
   },
   {
     date: "Feburary 2023 - June 2023",
     location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
-    title: "Undergraduate Research Opportunity Program",
+    title: "Undergraduate Research Opportunity Program(UROP)",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
+        {/* <p>
           Key Project: Development of LiDAR SLAM and Navigation System for Hexapod Robot
         </p>
         <p>
@@ -562,37 +393,27 @@ export const experience: TimelineItem[] = [
         </p>
         <p>
           Soft Skills: Problem Solving, Collaboration
-        </p>
+        </p> */}
       </div>
     ),
   },
   {
-    date: "June 2022 - Feb 2023",
-    location: "National Science and Technology Council",
-    title: "College Researcher",
+    date: "Nov 2022 - Jan 2023",
+    location: "Aeroprobing Inc.",
+    title: "Assistant Engineer (intern)",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
-          As a college researcher selected by National Science and Technology
-          Council, I conducted a biomedical engineering project which is to
-          integrate physiological monitoring functions(heart rate, blood
-          pressure and body temperature, etc.) to a mouse in order to analyze
-          users' health conditions.
-        </p>
-        <p>
-          I actively contributed to design Digital Signal Algorithms like
-          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
-          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
-          (PPG) artifact noise.
-        </p>
-        <p>
-          Besides, I trained a Deep Neural Network to predict body temperature
-          through skin, ambient temperature and humidity
-        </p>
-        <p>
-          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
-          Algorithms
-        </p>
+
+      </div>
+    ),
+  },
+  {
+    date: "Jul 2021 - Aug 2022",
+    location: "HIWIN TECHNOLOGIES CORPORATION",
+    title: "Summer Intern",
+    content: (
+      <div className="flex flex-col gap-4">
+
       </div>
     ),
   },
@@ -609,33 +430,6 @@ export const skill: TimelineItem[] = [
           {/* English: TOEIC: 925, TOEFL: 91, International volunteer, English
           tutor, School international affair department volunteering */}
         </p>
-        {/* <p>
-          Understanding in Mandarin, English, and basic Japanese give me chance
-          to actively participate in diverse international volunteer programs
-          and serve as an English tutor. These experiences have not only honed
-          my language skills but also instilled a deep appreciation for
-          cross-cultural communication. Additionally, I had the privilege of
-          contributing to my school's international affairs department as a
-          dedicated volunteer, where I played an instrumental role in organizing
-          and coordinating impactful international events and initiatives.
-        </p>
-        <p>
-          Moreover, my proficiency in basic Japanese allows me to navigate
-          everyday situations and effectively communicate in a multicultural
-          setting, showcasing my adaptability and eagerness to embrace new
-          languages and cultures.
-        </p>
-        <p>
-          The combination of my multilingual abilities and my diverse
-          experiences has provided me with a unique perspective and a strong
-          aptitude for connecting with individuals from diverse backgrounds. I
-          am confident that my linguistic versatility, coupled with my passion
-          for fostering intercultural understanding, will contribute to the
-          success of [company/organization name]. I am committed to continuously
-          expanding my linguistic horizons and making meaningful contributions
-          to further enhance communication and collaboration in diverse
-          environments.
-        </p> */}
       </div>
     ),
   },
@@ -645,26 +439,7 @@ export const skill: TimelineItem[] = [
     title: "Computer Language",
     content: (
       <div className="flex flex-col gap-4">
-        {/* <p>
-          For me backend development is like a vivid book about what I learned
-          from courses. In networking, I have to consider IP addressing, TCP/IP,
-          UDP, DNS, and HTTP, according to need.
-        </p>
-        <p>
-          It has strong connection with operating systems, like async, process
-          management, threading, memory management, file systems, and . To make
-          the server scalable, they are all important.
-        </p>
-        <p>
-          Some of my friends like to joke around backend is really easy, since
-          stuff we done on course only about CRUD, and my experience in CSL give
-          me chance to design real system and consider more beyond that.
-        </p>
-        <p>
-          Recently I have extend my backend knowledge to learn MLOps and DevOps,
-          as working on deploy model on API and collect data continuously with
-          distributed task scheduler such Airflow.
-        </p> */}
+
       </div>
     ),
   },
@@ -675,81 +450,11 @@ export const skill: TimelineItem[] = [
     title: "Software Development",
     content: (
       <div className="flex flex-col gap-2">
-        {/* <p>
-          <span className="h-16 w-16">&#9679;</span>Full-Stack Web Development:
-          React, Django, FastAPI, Flask, SocketIO, HTML, CSS
-        </p>
-        <p>
-          <span className="h-16 w-16">&#9679;</span>Artifical
-          Intelligence:LLaMA-2, Langchain, OpenAI, Transfomers
-        </p>
-        <p>
-          <span className="h-16 w-16">&#9679;</span>Machine and Deep
-          Learning:Tensorflow, Pytorch, Transformers, scikit-learn
-        </p>
-        <p>
-          <span className="h-16 w-16">&#9679;</span>Data Visualization: Mapbox,
-          DeckGL, QGIS, Open Street Map
-        </p>
-        <p>
-          <span className="h-16 w-16">&#9679;</span>Database: MySQL, PostgreSQL,
-          MongoDB, Pinecone (Vector Database), Neo4j
-        </p> */}
-        {/* <p>
-          In CityScope project, there are many visualizations relating to urban,
-          We usually doing the stack with React.js, Redux-Saga, DeckGL, and
-          Mapboxgl to integrate with backend and database.
-        </p> */}
+
       </div>
     ),
   },
-  // {
-  //   date: "",
-  //   location: "Postgres, MySQL, MongoDB, Redis, Neo4j, Prisma",
-  //   title: "Database Design & Management",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //       <p></p>
-  //       <p></p>
-  //       <p></p>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   date: "",
-  //   location: "Tensorflow, Scikit-Learn, Airflow, Kafka, Spark, Hadoop, Pandas",
-  //   title: "Data Engineering & Data Science",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //       <p>""""</p>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   date: "",
-  //   location:
-  //     "Linux (Ubuntu), GCP, Git Flow, Github CI / CD, Docker, Nginx, Terraform",
-  //   title: "DevOps",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //       <p>""""</p>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   date: "",
-  //   location: "Babylon.js, Three.js, Unity",
-  //   title: "Three Dimension Modeling & Rendering",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //       <p>
-  //         I also try 3D rendering before, and there are some difference between
-  //         WebGL and Unity Engine, I more prefer to use Three.js for the the
-  //         convenience of integrating with React.js.
-  //       </p>
-  //     </div>
-  //   ),
-  // },
+
 ];
 
 /**
@@ -790,6 +495,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/BruceLin90620'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bruce-lin-231b9424a/'},
-  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'mailto:brucelin90620@gmail.com'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
