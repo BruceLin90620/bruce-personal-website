@@ -75,26 +75,6 @@ const Hexapod: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Mechnical Design & 3D Printer</h2>
-              <p className="mb-4">
-              Then I had to add a Lidar to do the SLAM thing, so I used the 3D printer the print a LiDAR base.
-              </p>
-              <div className="flex justify-center">
-              <Image
-                  alt="Drone"
-                  className="rounded-lg"
-                  height={200}
-                  src={lidarimage}
-                  width={400}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
               <h2 className="text-2xl font-semibold mb-4">SLAM</h2>
               <p className="mb-4">
               I face some problem when I search how to do the SLAM because most of the algorithms for SLAM need IMU or Camera to fusion the odometry to make the map better. So I learn how to revise the parameter to choose whehter I need the IMU or Camera.

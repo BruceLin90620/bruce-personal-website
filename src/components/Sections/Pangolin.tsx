@@ -197,6 +197,12 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
+        Developed a biomimetic pangolin quadruped robot in collaboration with a designer. 
+    Responsible for electrical and control systems using Nvidia Orin Nano and Dynamixel servos. 
+    Integrated Realsense D435 camera with Nvidia Isaac ROS VSLAM and AprilTag SLAM for precise indoor localization. 
+    Implemented autonomous navigation using Nav2 system.
+
+    
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">

@@ -97,9 +97,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I graduated from the Department of Mechanical Engineering at National Taipei University of Technology. 
-  Currently, I am a researcher at City Science Lab, where my primary focus is on Robotics. 
-  My work involves developing innovative robots and integrating various cutting-edge technologies for applications in factories and urban environments.`,
+  description: `He graduated from the Department of Mechanical Engineering at National Taipei University of Technology. Currently, he is a researcher at City Science Lab, where his primary focus is on Robotics. His work involves developing innovative robots and integrating various cutting-edge technologies for applications in factories and urban environments.`,
   aboutItems: [
     {label: 'Location', text: 'Taipei', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
@@ -123,18 +121,14 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: "Boston Dynamics Spot",
-    description: `Developed an automated inspection system using Boston Dynamics' Spot robot for industrial environments. 
-    Implemented remote control and autonomous navigation using Graph Nav API. 
-    Utilized Lidar for PCD map generation and precise localization via ROS2. Provided a visualization interface for remote monitoring.`,
+    description: `An industrial inspection system was developed using Boston Dynamics' Spot. Implementing SLAM and Navigation via Spot SDK on ROS2, it features remote monitoring through a visualization interface. A Spot simulation in Isaac Sim validates algorithms and creates a Digital Twin.`,
     url: "spot",
     image: porfoliospot,
     tech: "Python, ROS2, GraphNav",
   },
   {
     title: "Ummanned Vehicle - EVπ",
-    description: `Collaborated with Foxconn on integrating HHEV.OS into EVπ control system, 
-    ensuring compatibility with ROS2 navigation and localization while enhancing security. 
-    Responsible for circuit board design and fabrication, including schematic design, PCB layout, and physical production.
+    description: `EVπ is an open-source, modular platform for autonomous vehicle research. Its key feature is customizable hardware and software, adapting to specific research needs. This versatility suits various applications from testing to cybersecurity research in autonomous vehicles.
     `,
     url: "EVpi",
     image: porfolioevpi,
@@ -152,19 +146,23 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "Bionic Robot - Pangolin",
-    description: `Developed a biomimetic pangolin quadruped robot in collaboration with a designer. 
-    Responsible for electrical and control systems using Nvidia Orin Nano and Dynamixel servos. 
-    Integrated Realsense D435 camera with Nvidia Isaac ROS VSLAM and AprilTag SLAM for precise indoor localization. 
-    Implemented autonomous navigation using Nav2 system.`,
+    description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
     url: "Pangolin",
+    image: porfoliopangolin,
+    tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
+  },
+
+  {
+    title: "Bionic Robot - Triceratops (VSLAM)",
+    description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
+    url: "Triceratops",
     image: porfoliopangolin,
     tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
   },
   {
     title: "Super Controller",
-    description: `Super Controller introduces a "What You See is What You Control" concept for managing multiple robots. 
-    Unlike traditional joystick pairing, 
-    users can scan tags on robots using mobile device cameras and select them to control corresponding robots in the environment. 
+    description: `Super Controller introduces "What You See is What You Control" for managing multiple robots. 
+    Unlike traditional joystick pairing, users scan tags on robots using mobile cameras and select them to control corresponding robots. 
     This approach aims to improve usability for workers managing multiple robots simultaneously.`,
     url: "super_controller",
     image: porfoliosupercontroller,
@@ -218,10 +216,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "PBL Competetion - Self Moving Car",
-    description: `Representing school in the PBL competition, 
-    unite with Japanese and Taiwanese college students. Combining Arduino, 
-    C programming, and mechanical design, create 
-    self-propelled car.`,
+    description: `Representing our school in the PBL competition, we unite with Japanese and Taiwanese college students. 
+    Combining Arduino, C programming, and mechanical design, we create a self-moving car.`,
     url: "PBL",
     image: porfolioPBL_3,
     tech: "Arduino, C, Mechanical Design",
