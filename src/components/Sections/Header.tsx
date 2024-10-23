@@ -21,6 +21,7 @@ const Header: FC = memo(() => {
   );
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
+    // console.log(section)
     section && setCurrentSection(section);
   }, []);
 
@@ -43,7 +44,9 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
-          {navSections.map(section => (
+          {
+          navSections.map(section => (
+            // console.log(currentSection)
             <NavItem
               activeClass={activeClass}
               current={section === currentSection}

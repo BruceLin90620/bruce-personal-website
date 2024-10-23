@@ -3,7 +3,7 @@ import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import computer from '../../images/portfolio/evpi/computer.jpg';
-import demo_csl from '../../images/portfolio/evpi/demo_csl.png';
+import evpi from '../../images/portfolio/evpi/evpi.jpg';
 import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.png';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
@@ -15,7 +15,7 @@ const About: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
-          <h1 className="text-4xl font-bold mb-4">Ummanned Vehicle - EVπ</h1>
+          <h1 className="text-4xl font-bold mb-4">Autonomous Vehicle - EVπ</h1>
           <p className="text-xl text-gray-300 mb-8">
           Collaborated with Foxconn on integrating HHEV.OS into EVπ control system, 
     ensuring compatibility with ROS2 navigation and localization while enhancing security. 
@@ -25,7 +25,7 @@ const About: FC = memo(() => {
           <Image
                 alt="Drone"
                 className="rounded-lg"
-                src={evpi01}
+                src={evpi}
                 width={600}
               />
           </div>
@@ -94,7 +94,7 @@ const About: FC = memo(() => {
         </div>
 
 
-        <div className="space-y-12">
+        {/* <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-4">Event Photos</h2>
@@ -116,7 +116,7 @@ const About: FC = memo(() => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
       </div>

@@ -6,6 +6,7 @@ import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
 import software_framework from '../../images/portfolio/pangolin/software_framework.jpg';
+import pangolinbot from '../../images/portfolio/pangolin/pangolinbot.jpg';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 // import final_1 from '../../images/portfolio/hexapod/final_1.png';
@@ -44,8 +45,8 @@ const Pangolin: FC = memo(() => {
           <Image
                 alt="Drone"
                 className="rounded-lg"
-                src={pangolin01}
-                width={400}
+                src={pangolinbot}
+                width={800}
               />
           </div>
         </div>

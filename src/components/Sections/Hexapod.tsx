@@ -9,7 +9,7 @@ import final_2 from '../../images/portfolio/hexapod/final_2.png';
 import final_3 from '../../images/portfolio/hexapod/final_3.png';
 import final_flow from '../../images/portfolio/hexapod/final_flow.png';
 import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
-import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
+// import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
 import joyimage from '../../images/portfolio/hexapod/move.png';
 import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';

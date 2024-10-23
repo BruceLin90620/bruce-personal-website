@@ -15,12 +15,13 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 // import heroImage from '../images/header-background.webp';
 // import heroImage from '../images/header-background.webp';
-import heroImage from '../images/background.png';
+import heroImage from '../images/background.jpg';
 // import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfoliodrone from '../images/portfolio/drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi_1.jpg';
 import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
 import porfoliopangolin from '../images/portfolio/pangolin01.jpg';
+import porfoliotriceratops from '../images/portfolio/triceratops.png';
 import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
 import porfoliospot from '../images/portfolio/spot.jpg';
 import porfoliosupercontroller from '../images/portfolio/SuperController.png';
@@ -127,7 +128,7 @@ export const portfolioItems: PortfolioItem[] = [
     tech: "Python, ROS2, GraphNav",
   },
   {
-    title: "Ummanned Vehicle - EVπ",
+    title: "Autonomous Vehicle - EVπ",
     description: `EVπ is an open-source, modular platform for autonomous vehicle research. Its key feature is customizable hardware and software, adapting to specific research needs. This versatility suits various applications from testing to cybersecurity research in autonomous vehicles.
     `,
     url: "EVpi",
@@ -149,15 +150,15 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
     url: "Pangolin",
     image: porfoliopangolin,
-    tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
+    tech: "Control System、ROS2",
   },
 
   {
     title: "Bionic Robot - Triceratops (VSLAM)",
-    description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
+    description: `Developed a biomimetic triceratops robot using ROS2 and computer vision, integrating Realsense D435 camera with Nvidia Isaac ROS VSLAM and AprilTag SLAM for indoor localization, while implementing Nav2 for autonomous navigation capabilities.`,
     url: "Triceratops",
-    image: porfoliopangolin,
-    tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
+    image: porfoliotriceratops,
+    tech: "ROS2、SLAM、Navigation、AprilTag",
   },
   {
     title: "Super Controller",
@@ -240,32 +241,14 @@ export const education: TimelineItem[] = [
     title: "Bachelor of Science in Mechanical Engineering",
     content: (
       <div className="flex flex-col gap-4">
-        {
           <ul>
-            <li>
-              Academic Excellent Award for 4 semesters
+            <li style={{listStyleType: "none"}}>
+              <strong>Class Rank:</strong> 2/51
+            </li>
+            <li style={{listStyleType: "none"}}>
+            <strong>Academic Excellence Award: </strong>awarded for 4 times, respectively in 2/2022, 6/2022, 2/2023, and 6/2023
             </li>
           </ul>
-            /* <p>
-          During my time at university, I have acquired a several skill includes
-          understanding in programming languages like TypeScript, Python, and
-          C++ and C#. By making course homework or collaborating with peers in
-          projects.
-        </p>
-        <p>
-          In school, I enrolled some courses, like Algorithm, Digital Signal
-          Processing, Image Processing and Compression, Machine Learning,
-          Database Design, Web Development, Computer Network, Operating System,
-          help me to build a solid foundation in computer science and utilize
-          the knowledge when I am programming.
-        </p>
-        <p>
-          My involvement also includes active participation in the several
-          clubs, engagement in various extracurricular activities and
-          competitions, which broadened my skill set, and strengthened my
-          ability to collaborate, communicate effectively, and thrive in diverse
-          environments.
-        </p> */}
       </div>
     ),
   },
@@ -326,70 +309,46 @@ export const experience: TimelineItem[] = [
     location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
     title: "Researcher",
     content: (
-      <div className="flex flex-col gap-4">
-        {/* <p>
-          As a researcher at City Science Lab, 
-          I have been involved in multiple innovative projects including EVπ, 
-          Quadruped Robot Spot, Biomimetic Robot, and Super Controller.
-          My work spans robotics, automation systems, and intelligent control.
-        </p>
-        <p>
-          - EVπ Project: Integrated Foxconn's HHEV.OS into the control system, verifying compatibility with ROS2. Redesigned the circuit system architecture, completing the process from schematic design to physical circuit board production.
-        </p>
-        <p>
-          - Quadruped Robot Spot: Developed an automated inspection system for industrial environments, implementing remote control and autonomous navigation. Integrated PTZ cameras and Lidar for real-time image transmission and environmental mapping.
-        </p>
-        <p>
-          - Biomimetic Robot: Developed a pangolin-inspired quadruped robot, responsible for circuit and control system development. Integrated depth cameras, SLAM technology, and Nav2 navigation system.
-        </p>
-        <p>
-          - Super Controller: Developed an innovative multi-robot control system using the "What You See is What You Control" concept, improving operational efficiency.
-        </p>
-        <p>
-          Additionally, I actively participate in guiding UROP (Undergraduate Research Opportunity Program) students, imparting robotics theory and directing students in laboratory projects.
-        </p>
-        <p>
-          Hard Skills: C++, Python, ROS2, HHEVOS, Zenoh, SLAM, Navigation, AprilTag, PCB Design, Welding, 
-        </p>
-        <p>
-          Soft Skills: Problem Solving, Collaboration, Interdisciplinary Research
-        </p> */}
+      <div className="px-4">
+        <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project:
+        <ul className="list-disc ml-4 space-y-2">      
+          <li className=" ml-8 mt-2 space-y-2">
+          Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
+          </li>
+        </ul>
+
+        <strong>Pangolin-Inspired Quadruped Bionic Robot </strong> - PMP Tech. Industry-Academia Research Project:
+
+        <ul className="list-disc ml-4 space-y-2">      
+          <li className=" ml-8 mt-2 space-y-2">
+          Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
+          </li>
+        </ul>
+
+        <strong>Evπ (Autonomous Vehicle) </strong> - Foxconn Technology Industry-Academia Research Project:
+        <ul className="list-disc ml-4 space-y-2">      
+          <li className=" ml-8 mt-2 space-y-2">
+          Aim: To deploy HHEV.OS and test effective communication and functional compatibility with ROS2 system
+          </li>
+          <li className=" ml-8 mt-2 space-y-2">
+          Produced various circuit boards needed for the task, including initial schematic design (such as voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) and PCB layout planning
+          </li>
+        </ul>
       </div>
     ),
   },
   {
-    date: "Feburary 2023 - June 2023",
+    date: "Feb 2023 - Jun 2023",
     location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
-    title: "Undergraduate Research Opportunity Program(UROP)",
+    title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
-      <div className="flex flex-col gap-4">
-        {/* <p>
-          Key Project: Development of LiDAR SLAM and Navigation System for Hexapod Robot
-        </p>
-        <p>
-          This project aimed to develop a system for environmental mapping and navigation using 2D-LiDAR, integrated with camera and AprilTag for precise final positioning and calibration.
-        </p>
-        <p>
-          - Phase 1: Implemented basic motion control (movement, turning) for the hexapod robot and integrated joystick control using ROS2 as middleware.
-        </p>
-        <p>
-          - Phase 2: Utilized Cartographer as the SLAM (Simultaneous Localization and Mapping) algorithm to create 2D maps. Integrated the Nav2 navigation system to develop autonomous navigation capabilities for the hexapod robot within the map.
-        </p>
-        <p>
-          - Phase 3: Developed camera-based AprilTag detection for positioning. After LiDAR navigation to the target point, the system activates camera scanning of AprilTags for final movement calibration.
-        </p>
-        <p>
-          - Super Controller: Developed an innovative multi-robot control system using the "What You See is What You Control" concept, improving operational efficiency.
-        </p>
-        <p>
-          Additionally, I actively participate in guiding UROP (Undergraduate Research Opportunity Program) students, imparting robotics theory and directing students in laboratory projects.
-        </p>
-        <p>
-          Hard Skills: C++, Python, Control Systems, ROS2, SLAM, Navigation, AprilTag,
-        </p>
-        <p>
-          Soft Skills: Problem Solving, Collaboration
-        </p> */}
+      <div className="px-4">
+        <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
+        <ul className="list-disc ml-4 space-y-2">      
+          <li className=" ml-8 mt-2 space-y-2">
+          Aim: To develop a system using 2D-LiDAR for SLAM and navigation by integrating camera and AprilTag for precise final target localization and correction
+          </li>
+        </ul>
       </div>
     ),
   },
@@ -398,8 +357,16 @@ export const experience: TimelineItem[] = [
     location: "Aeroprobing Inc.",
     title: "Assistant Engineer (intern)",
     content: (
-      <div className="flex flex-col gap-4">
-
+      <div className="">
+        {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
+        <ul className="">      
+          <li className=" ml-8 mt-2 ">
+          Integrated ROS and Yolov5 to control drones in Airsim for object detection and tracking to simulate drone inspection tasks in factory environments
+          </li>
+          <li className=" ml-8 mt-2">
+          Utilized the Xilinx KV260 FPGA control board as the drone's control computer, and leveraged the Vitis AI system on FPGA to accelerate image processing and AI image recognition
+          </li>
+        </ul>
       </div>
     ),
   },
@@ -408,8 +375,17 @@ export const experience: TimelineItem[] = [
     location: "HIWIN TECHNOLOGIES CORPORATION",
     title: "Summer Intern",
     content: (
-      <div className="flex flex-col gap-4">
+      <div className="">
+        {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
+        <ul className="">      
+          <li className=" ml-8 mt-2 ">
+          Completed a project titled "Improvement of Automated Robotic Arm Utilization Rate", aimed at optimizing the operational processes of production line robotic arms and increasing engineers' willingness and efficiency to use robotic arms for material handling
+          </li>
+          <li className=" ml-8 mt-2">
+          Operated CNC machines, interpreted design blueprints, and learned CNC languages
 
+          </li>
+        </ul>
       </div>
     ),
   },

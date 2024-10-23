@@ -90,7 +90,7 @@ const About: FC = memo(() => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/V_spW_6svvg?si=hhJh3jpCkiOVblzl"
+              src="https://www.youtube.com/embed/iEp8NJe1Z8A?si=giUsoE4eCEe8Wd-R"
             ></iframe>
           </div>
         </div>

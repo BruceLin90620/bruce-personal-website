@@ -17,6 +17,8 @@ import {SectionId} from '../../data/data';
 import spot from '../../images/portfolio/spot.jpg';
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
+import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';
+import spot_stair from '../../images/portfolio/spot/spot_stair.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
@@ -26,20 +28,15 @@ const About: FC = memo(() => {
         <div className="py-12">
           <h1 className="text-4xl font-bold mb-4">Boston Dynamics Spot</h1>
           <p className="text-xl text-gray-300 mb-8">
-          在工廠中的巡檢
+          This project focuses on implementing Boston Dynamics' Spot robot for automated inspection tasks in industrial environments. Under strict cybersecurity regulations, we have developed an advanced automated site inspection and remote monitoring system. This system aims to enhance automation levels and monitoring efficiency in industrial environments, bringing significant operational benefits and competitive advantages to enterprises.
           </p>
-          {/* <p className="text-xl text-gray-300 mb-8">
-          Developed an automated inspection system using Boston Dynamics' Spot robot for industrial environments. 
-    Implemented remote control and autonomous navigation using Graph Nav API. 
-    Utilized Lidar for PCD map generation and precise localization via ROS2. Provided a visualization interface for remote monitoring.
-          </p> */}
           <div className="flex justify-center">
           <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
-                src={spot}
-                width={400}
+                // height={200}
+                src={spot_stair}
+                width={500}
               />
           </div>
         </div>
@@ -49,7 +46,7 @@ const About: FC = memo(() => {
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-4">lidar localizaioon</h2>
               <p className="mb-4">
-              需要將大地圖切成好幾塊
+              Spot uses its onboard LiDAR sensor to scan the surrounding environment in real-time, generating precise three-dimensional point cloud data. The system compares these real-time collected 3D point cloud information with pre-established environmental maps. Through the 3D NDT (Normal Distributions Transform) algorithm, Spot can accurately calculate its position and orientation in space.
               </p>
               <div className="flex justify-center space-x-4">
               <Image
@@ -67,15 +64,6 @@ const About: FC = memo(() => {
                 width={450}
               />
               </div>
-              {/* <p className="mb-4">
-              The project's primary objective was to adapt Boston Dynamics' Spot robot for automated inspection tasks in industrial settings. At its core, the system aimed to develop an advanced area patrol and remote monitoring system while strictly adhering to TSMC's network security protocols.
-              </p>
-              <p className="mb-4">
-              Leveraging Spot's Graph Nav API, we developed precise remote control capabilities, enabling the robot to navigate autonomously to any specified location within designated areas. The integration of a PTZ camera allowed for high-quality image capture based on remote commands, with real-time transmission to the IT department for AI image analysis.
-              </p>
-              <p className="mb-4">
-              Utilizing the Lidar mounted on Spot, we collected environmental point cloud data to generate accurate maps in PCD (Point Cloud Data) format. We implemented the Lidar localization system from the ROS2 (Robot Operating System 2) framework to achieve precise positioning of the robot in complex environments.
-              </p> */}
             </div>
           </div>
         </div>
@@ -83,19 +71,18 @@ const About: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">frame work</h2>
+              <h2 className="text-2xl font-semibold mb-4">switch map system</h2>
               <p className="mb-4">
-              需要將大地圖切成好幾塊
+              To address the challenge of loading complete maps in large factory environments, we developed a map switching system that utilizes AprilTag markers as Spot's initial position reference points across different maps. The system automatically switches to corresponding area maps based on Spot's current location, while strategically placed AprilTag markers serve as reference points to ensure accurate positioning during map transitions. This solution not only reduces the system's computational load but also enhances navigation accuracy and reliability. By dividing large spaces into smaller area maps and integrating AprilTag positioning capabilities, we successfully achieved seamless navigation for Spot throughout extensive factory environments.
               </p>
-              {/* <p className="mb-4">
-              The project's primary objective was to adapt Boston Dynamics' Spot robot for automated inspection tasks in industrial settings. At its core, the system aimed to develop an advanced area patrol and remote monitoring system while strictly adhering to TSMC's network security protocols.
-              </p>
-              <p className="mb-4">
-              Leveraging Spot's Graph Nav API, we developed precise remote control capabilities, enabling the robot to navigate autonomously to any specified location within designated areas. The integration of a PTZ camera allowed for high-quality image capture based on remote commands, with real-time transmission to the IT department for AI image analysis.
-              </p>
-              <p className="mb-4">
-              Utilizing the Lidar mounted on Spot, we collected environmental point cloud data to generate accurate maps in PCD (Point Cloud Data) format. We implemented the Lidar localization system from the ROS2 (Robot Operating System 2) framework to achieve precise positioning of the robot in complex environments.
-              </p> */}
+              <div className="flex justify-center">
+                <Image
+                alt="Drone"
+                className="rounded-lg"
+                src={switch_map_framework}
+                width={900}
+                />
+          </div>
             </div>
           </div>
         </div>
@@ -103,25 +90,15 @@ const About: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Factory Inspection</h2>
+              <h2 className="text-2xl font-semibold mb-4">Video</h2>
               <p className="mb-4">
-              小範圍巡檢與時時定位監控
               </p>
-              {/* <p className="mb-4">
-              The project's primary objective was to adapt Boston Dynamics' Spot robot for automated inspection tasks in industrial settings. At its core, the system aimed to develop an advanced area patrol and remote monitoring system while strictly adhering to TSMC's network security protocols.
-              </p>
-              <p className="mb-4">
-              Leveraging Spot's Graph Nav API, we developed precise remote control capabilities, enabling the robot to navigate autonomously to any specified location within designated areas. The integration of a PTZ camera allowed for high-quality image capture based on remote commands, with real-time transmission to the IT department for AI image analysis.
-              </p>
-              <p className="mb-4">
-              Utilizing the Lidar mounted on Spot, we collected environmental point cloud data to generate accurate maps in PCD (Point Cloud Data) format. We implemented the Lidar localization system from the ROS2 (Robot Operating System 2) framework to achieve precise positioning of the robot in complex environments.
-              </p> */}
               <div className="relative w-full" style={{paddingBottom: '50%'}}>
                 <iframe
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
-                  src="https://www.youtube.com/embed/bti88o-4x0s?si=_yUovIaktIwj5hxg"
+                  src="https://www.youtube.com/embed/ZL_bb400D3o?si=lHmiUasgPyHoBmuP"
                 ></iframe>
               </div>  
             </div>

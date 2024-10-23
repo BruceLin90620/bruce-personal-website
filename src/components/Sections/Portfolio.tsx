@@ -22,7 +22,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        {/* <h2 className="text-xl font-bold text-black">Portfolio</h2> */}
+        <h2 className="text-xl font-bold text-white">Portfolio</h2>
         {/* <div className="grid-col-2 md:grid-col-3 lg:grid-col-4 grid w-full"> */}
         <div className="grid w-full grid-cols-1  gap-20  md:grid-cols-2">
           {portfolioItems.map((item, index) => {

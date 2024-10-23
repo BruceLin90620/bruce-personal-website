@@ -3,9 +3,10 @@ import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
-import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
+// import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
+import main from '../../images/portfolio/triceratops/main.png';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 // import final_1 from '../../images/portfolio/hexapod/final_1.png';
@@ -26,7 +27,7 @@ const Pangolin: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12">
-          <h1 className="text-4xl font-bold mb-4">Bionic Robot - Pangolin</h1>
+          <h1 className="text-4xl font-bold mb-4">Bionic Robot - Triceratops</h1>
           <p className="text-xl text-gray-300 mb-8">
           This project integrates biomimetics, software architecture, 
           and control systems to teach students how to use the ROS2 robot operating system for modular system design. 
