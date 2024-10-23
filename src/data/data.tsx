@@ -21,7 +21,7 @@ import porfoliodrone from '../images/portfolio/drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi_1.jpg';
 import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
 import porfoliopangolin from '../images/portfolio/pangolin01.jpg';
-import porfoliotriceratops from '../images/portfolio/triceratops.png';
+import porfoliotriceratops from '../images/portfolio/triceratops.jpg';
 import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
 import porfoliospot from '../images/portfolio/spot.jpg';
 import porfoliosupercontroller from '../images/portfolio/SuperController.png';

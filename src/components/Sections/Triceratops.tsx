@@ -6,7 +6,7 @@ import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 // import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
-import main from '../../images/portfolio/triceratops/main.png';
+// import main from '../../images/portfolio/triceratops/main.png';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
 // import final_1 from '../../images/portfolio/hexapod/final_1.png';

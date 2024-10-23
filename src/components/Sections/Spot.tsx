@@ -14,7 +14,7 @@ import {SectionId} from '../../data/data';
 // import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-import spot from '../../images/portfolio/spot.jpg';
+// import spot from '../../images/portfolio/spot.jpg';
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
 import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';

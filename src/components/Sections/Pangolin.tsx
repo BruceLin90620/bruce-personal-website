@@ -19,7 +19,7 @@ import pangolinbot from '../../images/portfolio/pangolin/pangolinbot.jpg';
 // import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-import pangolin01 from '../../images/portfolio/pangolin01.jpg';
+// import pangolin01 from '../../images/portfolio/pangolin01.jpg';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
