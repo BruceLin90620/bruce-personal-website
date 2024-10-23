@@ -5,7 +5,6 @@ import {SectionId} from '../../data/data';
 import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 // import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
-import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
 // import main from '../../images/portfolio/triceratops/main.png';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
@@ -20,6 +19,7 @@ import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import pangolin01 from '../../images/portfolio/pangolin01.jpg';
+import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
