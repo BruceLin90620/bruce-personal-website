@@ -17,8 +17,8 @@ import {SectionId} from '../../data/data';
 // import spot from '../../images/portfolio/spot.jpg';
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
-import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';
 import spot_stair from '../../images/portfolio/spot/spot_stair.jpg';
+import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
