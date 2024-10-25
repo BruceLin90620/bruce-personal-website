@@ -22,7 +22,7 @@ const About: FC = memo(() => {
                 alt="Drone"
                 className="rounded-lg"
                 src={supercontroll_2}
-                width={800}
+                width={600}
               />
           </div>
         </div>

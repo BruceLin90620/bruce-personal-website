@@ -36,7 +36,7 @@ const About: FC = memo(() => {
                 className="rounded-lg"
                 // height={200}
                 src={spot_stair}
-                width={500}
+                width={600}
               />
           </div>
         </div>

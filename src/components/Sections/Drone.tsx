@@ -39,9 +39,8 @@ const About: FC = memo(() => {
           <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
                 src={drone}
-                width={400}
+                width={600}
               />
           </div>
         </div>

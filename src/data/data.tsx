@@ -80,7 +80,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'public/Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -310,30 +310,32 @@ export const experience: TimelineItem[] = [
     title: "Researcher",
     content: (
       <div className="px-4">
-        <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project:
-        <ul className="list-disc ml-4 space-y-2">      
-          <li className=" ml-8 mt-2 space-y-2">
-          Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
-          </li>
-        </ul>
+        <li>  <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project: 
+          <ul className="list-disc ml-4 space-y-2">      
+            <li className=" ml-8 mt-2 space-y-2">
+            Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
+            </li>
+          </ul>
+        </li>
 
-        <strong>Pangolin-Inspired Quadruped Bionic Robot </strong> - PMP Tech. Industry-Academia Research Project:
+        <li> <strong>Pangolin-Inspired Bionic Robot </strong> - PMP Tech. Industry-Academia Research Project:
+          <ul className="list-disc ml-4 space-y-2">      
+            <li className=" ml-8 mt-2 space-y-2">
+            Aim: Focused on the circuit and control system development using Nvidia Orin Nano as the control computer to replicate the pangolin's unique curling ability
+            </li>
+          </ul>
+        </li>
 
-        <ul className="list-disc ml-4 space-y-2">      
-          <li className=" ml-8 mt-2 space-y-2">
-          Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
-          </li>
-        </ul>
-
-        <strong>Evπ (Autonomous Vehicle) </strong> - Foxconn Technology Industry-Academia Research Project:
-        <ul className="list-disc ml-4 space-y-2">      
-          <li className=" ml-8 mt-2 space-y-2">
-          Aim: To deploy HHEV.OS and test effective communication and functional compatibility with ROS2 system
-          </li>
-          <li className=" ml-8 mt-2 space-y-2">
-          Produced various circuit boards needed for the task, including initial schematic design (such as voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) and PCB layout planning
-          </li>
-        </ul>
+        <li><strong>Evπ (Autonomous Vehicle) </strong> - Foxconn Technology Industry-Academia Research Project:
+          <ul className="list-disc ml-4 space-y-2">      
+            <li className=" ml-8 mt-2 space-y-2">
+            Aim: To deploy HHEV.OS and test effective communication and functional compatibility with ROS2 system
+            </li>
+            <li className=" ml-8 mt-2 space-y-2">
+            Produced various circuit boards needed for the task, including initial schematic design (such as voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) and PCB layout planning
+            </li>
+          </ul>
+        </li>
       </div>
     ),
   },
@@ -343,12 +345,13 @@ export const experience: TimelineItem[] = [
     title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
       <div className="px-4">
-        <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
-        <ul className="list-disc ml-4 space-y-2">      
-          <li className=" ml-8 mt-2 space-y-2">
-          Aim: To develop a system using 2D-LiDAR for SLAM and navigation by integrating camera and AprilTag for precise final target localization and correction
-          </li>
-        </ul>
+        <li><strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
+          <ul className="list-disc ml-4 space-y-2">      
+            <li className=" ml-8 mt-2 space-y-2">
+            Aim: To develop a system using 2D-LiDAR for SLAM and navigation by integrating camera and AprilTag for precise final target localization and correction
+            </li>
+          </ul>
+        </li>
       </div>
     ),
   },

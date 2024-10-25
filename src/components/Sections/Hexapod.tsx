@@ -24,18 +24,14 @@ const Hexapod: FC = memo(() => {
         <div className="py-12">
           <h1 className="text-4xl font-bold mb-4">Hexapod Robot Project</h1>
           <p className="text-xl text-gray-300 mb-8">
-            A ROS2 project for a hexapod robot with LiDAR mapping, AprilTag following, and joystick control. 
-            This project involves a hexapod robot using ROS2, equipped with a LiDAR for mapping and navigation, and
-            an AprilTag for following. The robot can be controlled via a joystick and is capable of autonomous
-            navigation and tasks like automatic charging.
+          A comprehensive ROS2-based hexapod robot implementation featuring LiDAR-based mapping, AprilTag tracking capabilities, and manual control interface. The system integrates autonomous navigation with visual marker following and remote operation functionality, including features such as self-charging capabilities.
           </p>
           <div className="flex justify-center">
           <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
                 src={Hexapod_1}
-                width={400}
+                width={600}
               />
           </div>
         </div>
@@ -45,8 +41,7 @@ const Hexapod: FC = memo(() => {
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
               <p className="mb-4">
-                This is my UROP(Undergrade Reasearch Opportunity Program) project at City Science Lab @ Taipei Tech / a coorperation with MIT Media Lab.
-                I really like any kind of robots, but it is my first time to have the project with legged robot and integrate ROS2 on this hexapod robot. I want to know the fundamental for the SLAM and Navigation ,therefore, I join the CSL UROP project.
+              This project was conducted as part of the Undergraduate Research Opportunity Program (UROP) at City Science Lab @ Taipei Tech, in collaboration with MIT Media Lab. While I had prior robotics experience, this marked my first venture into legged robotics and ROS2 integration. The project provided an excellent opportunity to develop a deeper understanding of Simultaneous Localization and Mapping (SLAM) and autonomous navigation systems.
               </p>
             </div>
           </div>
@@ -55,9 +50,9 @@ const Hexapod: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">ROS2 & Joystick Control</h2>
+              <h2 className="text-2xl font-semibold mb-4">ROS2 Implementation & Control Interface</h2>
               <p className="mb-4">
-              First, I used python to control this robot and made it can move e.g. linear and angular move control and stnace control. Then I create a node for subscribe the cmd_vel and joy, so that I can get the joy data and twist msg through ROS2 DDS to control this robot.
+              The initial phase involved developing Python-based control systems for the hexapod's movement, including linear and angular motion control along with stance management. I subsequently implemented a ROS2 node architecture to handle cmd_vel and joy topic subscriptions, enabling robot control through ROS2's Data Distribution Service (DDS).
               </p>
               <div className="flex justify-center">
               <Image
@@ -75,11 +70,9 @@ const Hexapod: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">SLAM</h2>
+              <h2 className="text-2xl font-semibold mb-4">SLAM Integration</h2>
               <p className="mb-4">
-              I face some problem when I search how to do the SLAM because most of the algorithms for SLAM need IMU or Camera to fusion the odometry to make the map better. So I learn how to revise the parameter to choose whehter I need the IMU or Camera.
-
-I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cartographer to be my result, because I don't have odometry. So Cartographer is the better choose. I used the joystick to control the hexapod robot moving around my Lab and using Cartographer to SLAM building the map for my Lab.
+              The SLAM implementation presented unique challenges, as many conventional algorithms rely on sensor fusion between IMU and camera data for optimal odometry estimation. Through extensive testing of various solutions including Lio-SAM, Gmapping, and Cartographer, I selected Cartographer as the most suitable option due to its robust performance without odometry requirements. The system was successfully tested by mapping our laboratory environment using joystick-controlled navigation.
               </p>
               <div className="flex justify-center space-x-4">
               <Image
@@ -104,11 +97,9 @@ I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cart
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Navigation</h2>
+              <h2 className="text-2xl font-semibold mb-4">Navigation System</h2>
               <p className="mb-4">
-              Then I try to do the navigation, if I wanted to use ROS2 support navigation package(Navigation2), I need to create the tf tree. The map to odom I used the AMCL, and I use laser_scan_matcher this algorithm to use Lidar calculate the odometry of the robot. And then I used a static_transform_publisher to define the relation between base_link and laser.
-
-Fortunately, I could launch the Nav2 package and made this robot go to any destination in the map.
+              The navigation implementation required establishing a comprehensive tf tree for ROS2's Navigation2 framework. I utilized AMCL (Adaptive Monte Carlo Localization) for map-to-odometry transformations and implemented laser_scan_matcher for LiDAR-based odometry calculation. The spatial relationship between the base_link and laser frames was defined using static_transform_publisher. This configuration enabled successful deployment of the Nav2 package, allowing for autonomous navigation to designated waypoints within the mapped environment.
               </p>
               <div className="flex justify-center mb-4">
               <Image
@@ -135,11 +126,9 @@ Fortunately, I could launch the Nav2 package and made this robot go to any desti
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">AprilTag Control</h2>
+              <h2 className="text-2xl font-semibold mb-4">AprilTag Integration</h2>
               <p className="mb-4">
-              Then, I try to think how should I do after navigation, my director recommand me can try AprilTag things. So I try to let the robot can localize through AprilTag, and conbine the control command to make the robot move to a fixed distance relative to AprilTag. So I can move the AprilTag and the robot can following the AprilTag.
-
-AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode or a simplified QR Code. It contains a numeric ID code and can be used for location and orientation.
+              To enhance the robot's capabilities, I implemented AprilTag-based localization and tracking. AprilTag, developed at the University of Michigan, functions as a simplified 2D barcode system that provides both identification and pose estimation. The system was configured to maintain a specified relative position to detected AprilTags, enabling dynamic target following behavior.
               </p>
               <div className="flex justify-center space-x-4">
               <Image
@@ -164,10 +153,15 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Final</h2>
+              <h2 className="text-2xl font-semibold mb-4">System Integration</h2>
               <p className="mb-4">
-              Finally, I conbine the every function I create above. And use twist_mux node to manage any kind of cmd_vel topic, give each one a priority. Fisrt is the joystick, I need to make sure I can control the robot any time I wnat. Second is the AprilTag. Third is the Navigation.
+              The final implementation incorporated all developed functionalities through a priority-based control system using the twist_mux node to manage multiple cmd_vel sources:
               </p>
+              <ul list-style-type="lower-roman" className='space-y-2 ml-4'>
+                <li list-style-type="lower-roman">Priority 1: Joystick control (highest priority) - ensuring operator override capability</li>
+                <li list-style-type="lower-roman">Priority 2: AprilTag following behavior</li>
+                <li list-style-type="lower-roman">Priority 3: Autonomous navigation</li>
+              </ul>
               <div className="flex justify-center">
               <Image
                 alt="Drone"
@@ -185,7 +179,15 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
           <div className=" rounded-lg overflow-hidden">
             <div className="p-6">
               <p className="mb-4">
-              So I can control the robot through joystick fisrt, and then change to the navigation mode its LED light would change to blue when it is navgating. Then it will change back to green when it is in the destination. Then the robot will change to AprilTag mode the search the AprilTag and then following the Tag.
+              The robot's operational state is indicated through LED feedback:
+              </p>
+              <ul list-style-type="lower-roman" className='space-y-2 ml-4'>
+                <li list-style-type="lower-roman" >Green: Standard operation mode</li>
+                <li list-style-type="lower-roman">Blue: Active navigation state</li>
+                <li list-style-type="lower-roman ">Green (return): Navigation completion</li>
+              </ul>
+              <p className="mb-4 space-y-4">
+              This allows seamless transitions between manual control, navigation tasks, and AprilTag following behaviors while maintaining system stability and user control.
               </p>
               <div className="flex justify-center space-x-6">
               <Image
