@@ -2,9 +2,9 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
+// import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 // import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
-import mechanical from '../../images/portfolio/pangolin/mechanical.png';
+// import mechanical from '../../images/portfolio/pangolin/mechanical.png';
 // import main from '../../images/portfolio/triceratops/main.png';
 // import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
 // import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
