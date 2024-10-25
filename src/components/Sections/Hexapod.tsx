@@ -157,7 +157,7 @@ const Hexapod: FC = memo(() => {
               <p className="mb-4">
               The final implementation incorporated all developed functionalities through a priority-based control system using the twist_mux node to manage multiple cmd_vel sources:
               </p>
-              <ul list-style-type="lower-roman" className='space-y-2 ml-4'>
+              <ul className='space-y-2 ml-4' list-style-type="lower-roman">
                 <li list-style-type="lower-roman">Priority 1: Joystick control (highest priority) - ensuring operator override capability</li>
                 <li list-style-type="lower-roman">Priority 2: AprilTag following behavior</li>
                 <li list-style-type="lower-roman">Priority 3: Autonomous navigation</li>
@@ -181,7 +181,7 @@ const Hexapod: FC = memo(() => {
               <p className="mb-4">
               The robot's operational state is indicated through LED feedback:
               </p>
-              <ul list-style-type="lower-roman" className='space-y-2 ml-4'>
+              <ul className='space-y-2 ml-4' list-style-type="lower-roman">
                 <li list-style-type="lower-roman" >Green: Standard operation mode</li>
                 <li list-style-type="lower-roman">Blue: Active navigation state</li>
                 <li list-style-type="lower-roman ">Green (return): Navigation completion</li>

@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
+import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
+import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
 // import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 // import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 // import mechanical from '../../images/portfolio/pangolin/mechanical.png';
@@ -19,8 +21,6 @@ import {SectionId} from '../../data/data';
 // import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 // import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import move from '../../images/portfolio/triceratops/move.png';
-import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
-import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
