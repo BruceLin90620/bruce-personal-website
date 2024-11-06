@@ -246,7 +246,7 @@ export const education: TimelineItem[] = [
               <strong>Class Rank:</strong> 2/51
             </li>
             <li style={{listStyleType: "none"}}>
-            <strong>Academic Excellence Award: </strong>awarded for 4 times, respectively in 2/2022, 6/2022, 2/2023, and 6/2023
+            <strong>Academic Excellence Award: </strong>4 times
             </li>
           </ul>
       </div>
@@ -254,26 +254,26 @@ export const education: TimelineItem[] = [
   },
 ];
 export const awards: TimelineItem[] = [
-  {
-    date: "2022 Nov",
-    location:
-      "Taichung, Taiwan",
-    title: "TSPE Research Project and Paper Competition",
-    content: (
-      <div className="flex flex-col gap-4">
-      </div>
-    ),
-  },
-  {
-    date: "2022 Oct",
-    location:
-      "Tainan, Taiwan ",
-    title: "2022 Taiwan TDK Robocon",
-    content: (
-      <div className="flex flex-col gap-4">
-      </div>
-    ),
-  },
+  // {
+  //   date: "2022 Nov",
+  //   location:
+  //     "Taichung, Taiwan",
+  //   title: "TSPE Research Project and Paper Competition",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   date: "2022 Oct",
+  //   location:
+  //     "Tainan, Taiwan ",
+  //   title: "2022 Taiwan TDK Robocon",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //     </div>
+  //   ),
+  // },
   {
     date: "2022 Aug",
     location:
@@ -310,7 +310,7 @@ export const experience: TimelineItem[] = [
     title: "Researcher",
     content: (
       <div className="px-4">
-        <li>  <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project: 
+        {/* <li>  <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project: 
           <ul className="list-disc ml-4 space-y-2">      
             <li className=" ml-8 mt-2 space-y-2">
             Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
@@ -335,7 +335,7 @@ export const experience: TimelineItem[] = [
             Produced various circuit boards needed for the task, including initial schematic design (such as voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) and PCB layout planning
             </li>
           </ul>
-        </li>
+        </li> */}
       </div>
     ),
   },
@@ -345,13 +345,13 @@ export const experience: TimelineItem[] = [
     title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
       <div className="px-4">
-        <li><strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
+        {/* <li><strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
           <ul className="list-disc ml-4 space-y-2">      
             <li className=" ml-8 mt-2 space-y-2">
             Aim: To develop a system using 2D-LiDAR for SLAM and navigation by integrating camera and AprilTag for precise final target localization and correction
             </li>
           </ul>
-        </li>
+        </li> */}
       </div>
     ),
   },
@@ -362,14 +362,14 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="">
         {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
-        <ul className="">      
+        {/* <ul className="">      
           <li className=" ml-8 mt-2 ">
           Integrated ROS and Yolov5 to control drones in Airsim for object detection and tracking to simulate drone inspection tasks in factory environments
           </li>
           <li className=" ml-8 mt-2">
           Utilized the Xilinx KV260 FPGA control board as the drone's control computer, and leveraged the Vitis AI system on FPGA to accelerate image processing and AI image recognition
           </li>
-        </ul>
+        </ul> */}
       </div>
     ),
   },
@@ -380,7 +380,7 @@ export const experience: TimelineItem[] = [
     content: (
       <div className="">
         {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
-        <ul className="">      
+        {/* <ul className="">      
           <li className=" ml-8 mt-2 ">
           Completed a project titled "Improvement of Automated Robotic Arm Utilization Rate", aimed at optimizing the operational processes of production line robotic arms and increasing engineers' willingness and efficiency to use robotic arms for material handling
           </li>
@@ -388,7 +388,7 @@ export const experience: TimelineItem[] = [
           Operated CNC machines, interpreted design blueprints, and learned CNC languages
 
           </li>
-        </ul>
+        </ul> */}
       </div>
     ),
   },

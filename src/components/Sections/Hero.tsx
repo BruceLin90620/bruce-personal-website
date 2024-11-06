@@ -4,7 +4,7 @@ import {FC, memo} from "react";
 
 import {heroData, SectionId} from "../../data/data";
 import Section from "../Layout/Section";
-// import Socials from "../Socials";
+import Socials from "../Socials";
 import TypeWriter from "../TypeWriter";
 
 const Hero: FC = memo(() => {
@@ -26,9 +26,9 @@ const Hero: FC = memo(() => {
               <TypeWriter />
             </h1>
             {description}
-            {/* <div className="flex gap-x-4 text-neutral-100">
+            <div className="flex gap-x-4 text-neutral-100">
                 <Socials />
-              </div> */}
+              </div>
             <div className="flex w-full justify-center gap-x-4">
               {actions.map(({href, text, primary, Icon}) => (
                 <a
