@@ -63,7 +63,7 @@ const About: FC = memo(() => {
               <p className="text-xs sm:text-sm md:text-base mb-3">
                Participated in redesigning the circuit system architecture of EVpi, a layered power supply system with a 36V battery as the main power source, to meet the different voltage requirements of various modules. Responsible for producing the required circuit boards in the project, from initial schematic design (including voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) to PCB layout planning, and finally completing the physical circuit board production.
               </p>
-              <div className="grid grid-cols-2 gap-10">
+              <div className="grid grid-cols-2 gap-2">
               <div className="relative aspect-[5/3]">
               <Image
                 alt="Drone"
