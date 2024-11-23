@@ -105,7 +105,7 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Taiwan', Icon: FlagIcon},
     {label: 'Email', text: 'brucelin90620@gmail.com', Icon: SparklesIcon},
     {label: 'Study', text: 'Mechanical Engineering, National Taipei University of Technology', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Researcher at City Science Lab@Taipei Tech, a cooperation with MIT Media Lab', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Researcher at MIT City Science Lab@Taipei Tech', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -306,7 +306,7 @@ export const awards: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: "July 2023 - Present",
-    location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
+    location: "MIT City Science Lab@Taipei Tech",
     title: "Researcher",
     content: (
       <div className="px-4">
@@ -341,7 +341,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: "Feb 2023 - Jun 2023",
-    location: "City Science Lab@Taipei Tech, a cooperation with MIT Media Lab",
+    location: "MIT City Science Lab@Taipei Tech",
     title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
       <div className="px-4">
