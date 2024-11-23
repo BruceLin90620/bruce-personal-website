@@ -27,9 +27,9 @@ const Pangolin: FC = memo(() => {
   return (
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-12">
-          <h1 className="text-4xl font-bold mb-4">Bionic Robot - Triceratops</h1>
-          <p className="text-xl text-gray-300 mb-8">
+        <div className="py-8 sm:py-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Bionic Robot - Triceratops</h1>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           To enable autonomous and safe indoor mobility for the robot, we enhanced its environmental awareness by implementing a Realsense D435 depth camera. Through the integration of Nvidia Isaac ROS VSLAM and AprilTag SLAM technologies, the robot gained the ability to create real-time environmental maps and accurately determine its position. Finally, by incorporating the Nav2 navigation system, we achieved the robot's capability to independently plan routes, avoid obstacles, and successfully reach target destinations.
           </p>
           <div className="flex justify-center">
@@ -42,11 +42,11 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Isaac ROS VSLAM</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Isaac ROS VSLAM</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               The Triceratops robot employs an Intel RealSense D435 depth camera with Isaac ROS Visual SLAM for real-time localization. This stereo vision system, combined with the robot's IMU sensor, enables precise Visual-Inertial Odometry through GPU-accelerated feature matching. The solution provides reliable odometry and simultaneous mapping, ideal for GPS-limited indoor environments.
               </p>
               <div className="flex justify-center">
@@ -62,11 +62,11 @@ const Pangolin: FC = memo(() => {
         </div>
 
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">AprilTag localization system & Nav2</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">AprilTag localization system & Nav2</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               The AprilTag localization system determines a robot's position through a series of coordinate transformations. 
               When the system detects an AprilTag, it utilizes two key transformations: 
               the <strong>base_to_tag</strong> transform obtained from camera detection that represents the relationship between the robot's base and the tag, 
@@ -75,7 +75,7 @@ const Pangolin: FC = memo(() => {
               the system uses the AprilTag as a reference point to effectively bridge the robot's local coordinate system with the global map coordinate system, 
               thereby calculating the robot's precise position within the map frame.
               </p>
-              <p className="mb-4">
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               The Triceratops robot integrates ROS 2's Nav2 navigation framework, utilizing a DWB (Dynamic Window Based) local planner for real-time obstacle avoidance and global path planning to calculate optimal routes.
               </p>
 
@@ -104,11 +104,11 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
-        {/* <div className="space-y-12">
+        {/* <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Motivation</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
                 This is my UROP(Undergrade Reasearch Opportunity Program) project at City Science Lab @ Taipei Tech / a coorperation with MIT Media Lab.
                 I really like any kind of robots, but it is my first time to have the project with legged robot and integrate ROS2 on this hexapod robot. I want to know the fundamental for the SLAM and Navigation ,therefore, I join the CSL UROP project.
               </p>
@@ -122,11 +122,11 @@ const Pangolin: FC = memo(() => {
     Implemented autonomous navigation using Nav2 system.
 
     
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">ROS2 & Joystick Control</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">ROS2 & Joystick Control</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               First, I used python to control this robot and made it can move e.g. linear and angular move control and stnace control. Then I create a node for subscribe the cmd_vel and joy, so that I can get the joy data and twist msg through ROS2 DDS to control this robot.
               </p>
               <div className="flex justify-center">
@@ -142,11 +142,11 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Mechnical Design & 3D Printer</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Mechnical Design & 3D Printer</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               Then I had to add a Lidar to do the SLAM thing, so I used the 3D printer the print a LiDAR base.
               </p>
               <div className="flex justify-center">
@@ -162,11 +162,11 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">SLAM</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">SLAM</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               I face some problem when I search how to do the SLAM because most of the algorithms for SLAM need IMU or Camera to fusion the odometry to make the map better. So I learn how to revise the parameter to choose whehter I need the IMU or Camera.
 
 I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cartographer to be my result, because I don't have odometry. So Cartographer is the better choose. I used the joystick to control the hexapod robot moving around my Lab and using Cartographer to SLAM building the map for my Lab.
@@ -191,11 +191,11 @@ I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cart
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Navigation</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Navigation</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               Then I try to do the navigation, if I wanted to use ROS2 support navigation package(Navigation2), I need to create the tf tree. The map to odom I used the AMCL, and I use laser_scan_matcher this algorithm to use Lidar calculate the odometry of the robot. And then I used a static_transform_publisher to define the relation between base_link and laser.
 
 Fortunately, I could launch the Nav2 package and made this robot go to any destination in the map.
@@ -222,11 +222,11 @@ Fortunately, I could launch the Nav2 package and made this robot go to any desti
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">AprilTag Control</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">AprilTag Control</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               Then, I try to think how should I do after navigation, my director recommand me can try AprilTag things. So I try to let the robot can localize through AprilTag, and conbine the control command to make the robot move to a fixed distance relative to AprilTag. So I can move the AprilTag and the robot can following the AprilTag.
 
 AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode or a simplified QR Code. It contains a numeric ID code and can be used for location and orientation.
@@ -251,11 +251,11 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Final</h2>
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Final</h2>
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               Finally, I conbine the every function I create above. And use twist_mux node to manage any kind of cmd_vel topic, give each one a priority. Fisrt is the joystick, I need to make sure I can control the robot any time I wnat. Second is the AprilTag. Third is the Navigation.
               </p>
               <div className="flex justify-center">
@@ -271,10 +271,10 @@ AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode 
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
-            <div className="p-6">
-              <p className="mb-4">
+            <div className="p-4 sm:p-6">
+              <p className="text-sm sm:text-sm md:text-base mb-3">
               So I can control the robot through joystick fisrt, and then change to the navigation mode its LED light would change to blue when it is navgating. Then it will change back to green when it is in the destination. Then the robot will change to AprilTag mode the search the AprilTag and then following the Tag.
               </p>
               <div className="flex justify-center space-x-6">
