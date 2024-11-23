@@ -35,13 +35,13 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">HHEV.OS</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               HHEV.OS is a middleware designed specifically for automobiles. Its main feature is balancing the performance of various automotive components, achieving real-time communication and stability. This platform provides service containers and functions such as execution, startup, configuration, scheduling, monitoring, and communication management to support the computational needs of different modules like BCM, IVI, ADAS, and VCU.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               In automotive software architecture, there is a gradual shift from traditional point-to-point communication towards a service-oriented architecture (SOA). HHEV.OS is an implementation based on the vehicle software SOA architecture, building a foundation of coarse-grained, loosely coupled service systems, laying the groundwork for Software-Defined Cars.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               HHEV.OS is implemented based on DDS, using the same communication protocol as the original ROS2-based system architecture of EVpi, thus ensuring high compatibility between the two. In the early stages of research, we redefined the ROS2-based EVpi software architecture according to HHEV.OS's SOA design, and reimplemented system modules such as motor control, UWB, and Zed2 based on HHEV.OS's API. Subsequently, these functions were deployed to Raspberry Pi for stability testing. Currently, EVpi's software system can operate normally while running both ROS2 and HHEV.OS simultaneously.
               </p>
               <div className="flex justify-center">
@@ -60,7 +60,7 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Hardware circuit board production</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
                Participated in redesigning the circuit system architecture of EVpi, a layered power supply system with a 36V battery as the main power source, to meet the different voltage requirements of various modules. Responsible for producing the required circuit boards in the project, from initial schematic design (including voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) to PCB layout planning, and finally completing the physical circuit board production.
               </p>
               <div className="grid grid-cols-2 gap-10">

@@ -31,15 +31,15 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">The project encompasses the following key components:</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               1. Remote Control Software: A web-based application designed for ROS2, prioritizing convenience. 
               This software will allow users to access data from ROS2 devices and send control commands remotely using any computer or mobile device.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               2. Control Commands: The remote control software will empower managers to direct robot movements. For instance, 
               they can modify robot routes or instruct robots to navigate to specific locations.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               3. Real-time Data: Sensor data from ROS2 devices will be transmitted to the remote control software in real-time. 
           This information will be visually presented, allowing managers to intuitively understand the status of various devices and robots, 
           facilitating timely responses when necessary.
@@ -60,23 +60,23 @@ const About: FC = memo(() => {
                     width={800}
                   />
               </div>
-                <p className="text-sm sm:text-sm md:text-base mb-3">
+                <p className="text-xs sm:text-sm md:text-base mb-3">
                 The multi-robot communication system consists of front-end and back-end components, 
                 with data transferred between them via Socket connections. The front-end is a Unity-developed application for smartphones and tablets. 
                 This app uses the device's front camera to read AprilTags attached to robots. 
                 Users can select these tags to bind the control interface to the corresponding robot.
                 </p>
-                <p className="text-sm sm:text-sm md:text-base mb-3">
+                <p className="text-xs sm:text-sm md:text-base mb-3">
                 Control commands from the front-end are sent through Socket communication to a Socket server on a central Raspberry Pi. 
                 This server receives and organizes all control signals before forwarding them to a Zenoh Router. 
                 The Zenoh Router connects all robots, enabling inter-robot communication.
                 </p>
-                <p className="text-sm sm:text-sm md:text-base mb-3">
+                <p className="text-xs sm:text-sm md:text-base mb-3">
                 As the laboratory robots are developed using ROS2 middleware, 
                 and both ROS2 and Zenoh are DDS systems, we can easily utilize Zenoh's Bridge DDS feature. 
                 This allows us to convert ROS messages into Zenoh format and transmit them to target robots.
                 </p>
-                <p className="text-sm sm:text-sm md:text-base mb-3">
+                <p className="text-xs sm:text-sm md:text-base mb-3">
                 This unified communication protocol and platform facilitates convenient and efficient control of various robots, 
                 paving the way for more intelligent applications in multi-robot environments.
                 </p>

@@ -49,7 +49,7 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Motivation</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               Drone applications are expanding rapidly, from entertainment to military and industrial uses, 
               driving market growth. Taiwan's advantage in drone development stems from its strong ICT industry, 
               providing key components like batteries, chips, cameras, and antennas. 
@@ -68,12 +68,12 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Teamwork</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The project initially split into mechanical design and programming phases. 
               The drone's structure was conceived after studying various designs, then modeled in Solidworks and 3D printed. 
               Programming began with image recognition and flight control using Airsim's environment and API.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               Later, the team decided to use ROS and MAVROS for physical control. 
               Team members independently studied required knowledge, 
               sharing progress and challenges in regular meetings. 
@@ -96,22 +96,22 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Result</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               This project successfully assembled a quadcopter drone using Pixhawk 4 Mini as the flight control core, 
               with QGroundControl as the ground control station. 
               The drone integrates Jetson Xavier NX, optical flow sensor, LiDAR, IMX219-120 Camera, 
               and OpenCV for autonomous flight and image recognition.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               Key challenges addressed:
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               1. Image Recognition: To mitigate shadow interference and unclear recognition during flight, the image is segmented into multiple sections, reducing the risk of interference.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               2. Stable Flight: For indoor flights where GPS is unavailable, optical flow and LiDAR sensors were added to achieve stable takeoff and flight.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               These solutions enhance the drone's performance in image processing and flight stability, particularly in GPS-denied environments.
               </p>
               <div className="flex justify-center">

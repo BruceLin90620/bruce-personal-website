@@ -45,7 +45,7 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
           <div className="p-4 sm:p-6">
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">lidar localizaioon</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               Spot uses its onboard LiDAR sensor to scan the surrounding environment in real-time, generating precise three-dimensional point cloud data. The system compares these real-time collected 3D point cloud information with pre-established environmental maps. Through the 3D NDT (Normal Distributions Transform) algorithm, Spot can accurately calculate its position and orientation in space.
               </p>
               <div className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -72,7 +72,7 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">switch map system</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               To address the challenge of loading complete maps in large factory environments, we developed a map switching system that utilizes AprilTag markers as Spot's initial position reference points across different maps. The system automatically switches to corresponding area maps based on Spot's current location, while strategically placed AprilTag markers serve as reference points to ensure accurate positioning during map transitions. This solution not only reduces the system's computational load but also enhances navigation accuracy and reliability. By dividing large spaces into smaller area maps and integrating AprilTag positioning capabilities, we successfully achieved seamless navigation for Spot throughout extensive factory environments.
               </p>
               <div className="flex justify-center">
@@ -91,7 +91,7 @@ const About: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Video</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               </p>
               <div className="relative w-full" style={{paddingBottom: '50%'}}>
                 <iframe

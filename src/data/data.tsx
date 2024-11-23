@@ -162,9 +162,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: "Super Controller",
-    description: `Super Controller introduces "What You See is What You Control" for managing multiple robots. 
-    Unlike traditional joystick pairing, users scan tags on robots using mobile cameras and select them to control corresponding robots. 
-    This approach aims to improve usability for workers managing multiple robots simultaneously.`,
+    description: `Super Controller introduces "What You See is What You Control" for managing multi-robots. 
+    Unlike traditional joystick pairing, users scan tags on robots using cameras and select them to control corresponding robots. 
+    This approach aims to improve usability for workers managing multi-robots simultaneously.`,
     url: "super_controller",
     image: porfoliosupercontroller,
     tech: "Zenoh, ROS2, AprilTags",

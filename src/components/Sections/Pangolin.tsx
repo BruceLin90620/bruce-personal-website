@@ -55,7 +55,7 @@ const Pangolin: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-2xl font-semibold mb-4">Mechanical Design</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               We designed a two-stage quadruped robot base with a standardized chassis housing batteries and electronic control systems. 
               The base uses seven servo motors for leg movement (four), head rotation (two), and body actuation (one). 
               Its modular design allows users to easily change drive mechanisms without altering the chassis structure, 
@@ -71,18 +71,18 @@ const Pangolin: FC = memo(() => {
               />
               </div>
 
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               A forward underactuated leg mechanism was created using linkage combinations. 
               This design keeps legs vertical when standing, maximizing protection during movement. 
               It provides a cushioning effect when the pangolin robot rights itself after rolling over and uses a swinging motion for walking. We used 3D printing to develop an optimal foot structure for this walking style, 
               ensuring stable and efficient movement.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The active shell structure is designed as a separate component, 
               allowing for easy replacement or upgrade without affecting the body mechanism's functionality. 
               This design enhances the robot's flexibility and customizability for various application scenarios.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The tail device uses a wire-driven deformation mechanism, 
               enabling diverse tail movements like bending and swinging through precise control of wire tension. 
               This design enhances the robot's expressiveness and functionality, 
@@ -104,7 +104,7 @@ const Pangolin: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-2xl font-semibold mb-4">Electrical Hardware Architecture</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The hardware architecture integrates signals from IMU and Joystick, routing this information to a Raspberry Pi. 
               This setup enables the activation and control of corresponding motor systems, 
               achieving various intended actions such as head rotation, leg movement, and body bending. 
@@ -128,7 +128,7 @@ const Pangolin: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-2xl font-semibold mb-4">Software Architecture</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The software architecture utilizes ROS2 to modularize and separate various functional components, 
               allowing them to operate independently. Data transmission is achieved through DDS, 
               resulting in a highly scalable and easily maintainable architecture. 
@@ -145,26 +145,26 @@ const Pangolin: FC = memo(() => {
               />
               </div>
 
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               For this four-degree-of-freedom pangolin robot, 
               we developed movement control methods focusing on forward/backward motion and left/right rotation. 
               Due to the limited leg degrees of freedom, 
               gait design methods for large quadruped robots were not applicable.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               We conducted systematic research to propose gait design solutions suitable for the pangolin robot, 
               ensuring stable and smooth movement during forward, backward, and rotational motions. 
               Inverse kinematics calculations determine the required angles for each motor, 
               ensuring precise control for the designed gait patterns.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               For the rolling and curling actions, we simulated a real pangolin's self-protection behavior. 
               Given the single degree of freedom in each leg, 
               we developed a control system to regulate motor movements for the rolling action. 
               This system adjusts the robot's center of gravity, 
               enabling it to roll in a specific direction when the legs begin to swing and the body becomes unstable.
               </p>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               We also designed a self-righting function, 
               allowing the robot to automatically return to its normal posture after rolling. 
               This control system ensures the pangolin robot can quickly protect itself in dangerous situations, 

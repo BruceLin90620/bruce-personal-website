@@ -51,7 +51,7 @@ const Portfolio: FC = memo(() => {
                     <strong>{title}</strong>
                     {/* {title} */}
                   </div>
-                  <div className="my-4 h-40 text-base text-white">
+                  <div className="my-4 h-40 text-sm sm:text-sm md:text-base text-white">
                     {description}
                   </div>
                   <div className="my-4 flex flex-row text-sm text-white">

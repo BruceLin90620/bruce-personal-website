@@ -40,7 +40,7 @@ const Hexapod: FC = memo(() => {
           <div className="rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Motivation</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-xs md:text-base mb-3">
                 This project was conducted as part of the Undergraduate Research Opportunity Program (UROP) at City Science Lab @ Taipei Tech, in collaboration with MIT Media Lab. While I had prior robotics experience, this marked my first venture into legged robotics and ROS2 integration. The project provided an excellent opportunity to develop a deeper understanding of Simultaneous Localization and Mapping (SLAM) and autonomous navigation systems.
               </p>
             </div>
@@ -51,7 +51,7 @@ const Hexapod: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">ROS2 Implementation & Control Interface</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The initial phase involved developing Python-based control systems for the hexapod's movement, including linear and angular motion control along with stance management. I subsequently implemented a ROS2 node architecture to handle cmd_vel and joy topic subscriptions, enabling robot control through ROS2's Data Distribution Service (DDS).
               </p>
               <div className="flex justify-center">
@@ -70,8 +70,8 @@ const Hexapod: FC = memo(() => {
         <div className="space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">SLAM Integration</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3 ">SLAM Integration</h2>
+              <p className="text-xs sm:text-sm md:text-base mb-3 ">
               The SLAM implementation presented unique challenges, as many conventional algorithms rely on sensor fusion between IMU and camera data for optimal odometry estimation. Through extensive testing of various solutions including Lio-SAM, Gmapping, and Cartographer, I selected Cartographer as the most suitable option due to its robust performance without odometry requirements. The system was successfully tested by mapping our laboratory environment using joystick-controlled navigation.
               </p>
               <div className="grid grid-cols-2 gap-2">
@@ -102,7 +102,7 @@ const Hexapod: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Navigation System</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               The navigation implementation required establishing a comprehensive tf tree for ROS2's Navigation2 framework. I utilized AMCL (Adaptive Monte Carlo Localization) for map-to-odometry transformations and implemented laser_scan_matcher for LiDAR-based odometry calculation. The spatial relationship between the base_link and laser frames was defined using static_transform_publisher. This configuration enabled successful deployment of the Nav2 package, allowing for autonomous navigation to designated waypoints within the mapped environment.
               </p>
               <div className="flex justify-center mb-4">
@@ -131,7 +131,7 @@ const Hexapod: FC = memo(() => {
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">AprilTag Integration</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
               To enhance the robot's capabilities, I implemented AprilTag-based localization and tracking. AprilTag, developed at the University of Michigan, functions as a simplified 2D barcode system that provides both identification and pose estimation. The system was configured to maintain a specified relative position to detected AprilTags, enabling dynamic target following behavior.
               </p>
               <div className="grid grid-cols-2 gap-2">
@@ -162,7 +162,7 @@ const Hexapod: FC = memo(() => {
           <div className="rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
               <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">System Integration</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
+              <p className="text-xs sm:text-sm md:text-base mb-3">
                 The final implementation incorporated all developed functionalities through a priority-based control system using the twist_mux node to manage multiple cmd_vel sources:
               </p>
               <ul className="space-y-1 ml-4 text-xs sm:text-sm md:text-base">
@@ -194,7 +194,7 @@ const Hexapod: FC = memo(() => {
                 <li list-style-type="lower-roman">Blue: Active navigation state</li>
                 <li list-style-type="lower-roman ">Green (return): Navigation completion</li>
               </ul>
-              <p className="text-sm sm:text-sm md:text-base mb-3 space-y-4">
+              <p className="text-xs sm:text-sm md:text-base mb-3 space-y-4">
               This allows seamless transitions between manual control, navigation tasks, and AprilTag following behaviors while maintaining system stability and user control.
               </p>
               <div className="grid grid-cols-3 gap-2">
