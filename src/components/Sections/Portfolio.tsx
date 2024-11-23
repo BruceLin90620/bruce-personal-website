@@ -24,7 +24,7 @@ const Portfolio: FC = memo(() => {
       <div className="flex flex-col gap-y-8">
         <h2 className="text-xl font-bold text-white">Portfolio</h2>
         {/* <div className="grid-col-2 md:grid-col-3 lg:grid-col-4 grid w-full"> */}
-        <div className="grid w-full grid-cols-1  gap-20  md:grid-cols-2">
+        <div className="grid w-full grid-cols-2 gap-4 sm:gap-8 lg:gap-20">
           {portfolioItems.map((item, index) => {
             const {title, image, description, tech, link} = item;
             return (
@@ -34,7 +34,7 @@ const Portfolio: FC = memo(() => {
               >
                 <div
                   className={classNames(
-                    "relative h-72 w-auto overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl"
+                    "relative aspect-[16/9] w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl"
                   )}
                 >
                   <Image
@@ -46,18 +46,18 @@ const Portfolio: FC = memo(() => {
                   />
                   <ItemOverlay item={item} />
                 </div>
-                <div className="p-4">
-                  <div className="my-4 text-2xl font-medium text-white">
+                <div className="p-2 sm:p-4">
+                  <div className="my-1 sm:my-2 text-sm sm:text-base md:text-lg font-medium text-white">
                     <strong>{title}</strong>
                     {/* {title} */}
                   </div>
-                  <div className="my-4 h-40 text-sm sm:text-sm md:text-base text-white">
+                  <div className="my-1 sm:my-2 h-20 sm:h-32 text-xs sm:text-sm overflow-y-auto text-white">
                     {description}
                   </div>
-                  <div className="my-4 flex flex-row text-sm text-white">
+                  <div className="my-2 sm:my-4 flex flex-row text-xs sm:text-sm text-white">
                     Tech: {tech ? tech : ""}
                   </div>
-                  <div className="my-4 justify-start text-sm text-white">
+                  <div className="my-1 sm:my-2 justify-start text-xs text-white">
                     <span className="mr-2">{link && `Link:`}</span>
                     {link &&
                       link.map((item, index) => (
