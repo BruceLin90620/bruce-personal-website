@@ -220,7 +220,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: "June 2023",
+    date: "Sep. 2019 - Jun. 2023",
     location: "National Taipei University of Technology",
     title: "Bachelor of Science in Mechanical Engineering",
     content: (
@@ -239,7 +239,7 @@ export const education: TimelineItem[] = [
 ];
 export const awards: TimelineItem[] = [
   {
-    date: "2022 Aug",
+    date: "2022 Aug.",
     location:
       "Taipei, Taiwan",
     title: "International PBL Competition - Best Team",
@@ -249,7 +249,7 @@ export const awards: TimelineItem[] = [
     ),
   },
   {
-    date: "2018 Aug",
+    date: "2018 Aug.",
     location: "Montréal, CA",
     title: "RoboCupJunior CoSpace Rescue Challenge - Semifinal",
     content: (
@@ -258,7 +258,7 @@ export const awards: TimelineItem[] = [
     ),
   },
   {
-    date: "2017 Jul",
+    date: "2017 Jul.",
     location: "Washington, D.C.",
     title: "FIRST Global Challenge robotics competition - (17/163)",
     content: (
@@ -269,7 +269,7 @@ export const awards: TimelineItem[] = [
 ];
 export const experience: TimelineItem[] = [
   {
-    date: "July 2023 - Present",
+    date: "Jul. 2023 - Present",
     location: "MIT City Science Lab@Taipei Tech",
     title: "Researcher - Robotics Team",
     content: (
@@ -278,7 +278,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "Feb 2023 - Jun 2023",
+    date: "Feb. 2023 - Jun. 2023",
     location: "MIT City Science Lab@Taipei Tech",
     title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
@@ -287,7 +287,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "Nov 2022 - Jan 2023",
+    date: "Nov. 2022 - Jan. 2023",
     location: "Aeroprobing Inc.",
     title: "Assistant Engineer Intern",
     content: (
@@ -296,7 +296,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "Jul 2021 - Aug 2022",
+    date: "Jul. 2021 - Aug. 2022",
     location: "HIWIN Technologies Corporation",
     title: "Summer Intern",
     content: (
