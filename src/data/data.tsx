@@ -145,7 +145,7 @@ export const portfolioItems: PortfolioItem[] = [
     tech: "ROS2、SLAM、Navigation、AprilTag",
   },
   {
-    title: "Super Controller",
+    title: "Multi-Robot Control - Super Controller",
     description: `Super Controller introduces "What You See is What You Control" for managing multi-robots. 
     Unlike traditional joystick pairing, users scan tags on robots using cameras and select them to control corresponding robots. 
     This approach aims to improve usability for workers managing multi-robots simultaneously.`,
@@ -200,7 +200,7 @@ export const portfolioItems: PortfolioItem[] = [
     // ],
   },
   {
-    title: "PBL Competetion - Self Moving Car",
+    title: "PBL Competetion - Self Driving Car",
     description: `Representing our school in the PBL competition, we unite with Japanese and Taiwanese college students. 
     Combining Arduino, C programming, and mechanical design, we create a self-moving car.`,
     url: "PBL",
