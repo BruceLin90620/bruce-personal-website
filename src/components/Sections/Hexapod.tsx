@@ -22,7 +22,7 @@ const Hexapod: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Hexapod Robot Project</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">CSL UROP Project - Hexapod Robot</h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           A comprehensive ROS2-based hexapod robot implementation featuring LiDAR-based mapping, AprilTag tracking capabilities, and manual control interface. The system integrates autonomous navigation with visual marker following and remote operation functionality, including features such as self-charging capabilities.
           </p>
