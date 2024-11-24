@@ -4,7 +4,6 @@ import React, {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
-
 import move from '../../images/portfolio/triceratops/move.png';
 import Section from '../Layout/Section';
 

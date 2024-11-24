@@ -7,7 +7,6 @@ import hardware_framework from '../../images/portfolio/pangolin/hardware_framewo
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
 import pangolinbot from '../../images/portfolio/pangolin/pangolinbot.jpg';
 import software_framework from '../../images/portfolio/pangolin/software_framework.jpg';
-
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
