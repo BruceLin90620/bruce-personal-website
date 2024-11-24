@@ -10,6 +10,7 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import InstagramIcon from '../components/Icon/InstagramIcon';
 import heroImage from '../images/background.jpg';
 import porfoliodrone from '../images/portfolio/drone/portfolio_drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi/portfolio_evpi.jpg';
@@ -346,6 +347,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/BruceLin90620'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bruce-jung-peng-lin'},
-  // {label: 'Instagram', Icon: InstagramIcon, href: 'mailto:brucelin90620@gmail.com'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/lalalala0620/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
