@@ -26,8 +26,8 @@ const Resume: FC = memo(() => {
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          <p className="pb-8 text-sm sm:text-xl" ><strong >Software:</strong> C, C++, Python, Matlab, ROS2, Linux, Zenoh</p>
-          <p className="pb-8 text-sm sm:text-xl"><strong >Hardware:</strong> Kicad, PCB Layout</p>
+          <p className="pb-8 text-sm sm:text-xl" ><strong >Software:</strong> C, C++, Python, MATLAB, ROS2, Linux, Zenoh</p>
+          <p className="pb-8 text-sm sm:text-xl"><strong >Hardware:</strong> KiCad, PCB Layout</p>
           <p className="pb-8 text-sm sm:text-xl"><strong >Mechnical Design:</strong> Solidworks, Fusion 360</p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
