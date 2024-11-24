@@ -2,19 +2,6 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-// import apriltag_following from '../../images/portfolio/hexapod/apriltag_following.png';
-// import apriltag_following2 from '../../images/portfolio/hexapod/apriltag_following2.png';
-// import final_1 from '../../images/portfolio/hexapod/final_1.png';
-// import final_2 from '../../images/portfolio/hexapod/final_2.png';
-// import final_3 from '../../images/portfolio/hexapod/final_3.png';
-// import final_flow from '../../images/portfolio/hexapod/final_flow.png';
-// import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
-// import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
-// import joyimage from '../../images/portfolio/hexapod/move.png';
-// import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
-// import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
-// import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-// import spot from '../../images/portfolio/spot.jpg';
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
 import spot_stair from '../../images/portfolio/spot/spot_stair.jpg';
@@ -30,11 +17,10 @@ const About: FC = memo(() => {
         <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           This project focuses on implementing Boston Dynamics' Spot robot for automated inspection tasks in industrial environments. Under strict cybersecurity regulations, we have developed an advanced automated site inspection and remote monitoring system. This system aims to enhance automation levels and monitoring efficiency in industrial environments, bringing significant operational benefits and competitive advantages to enterprises.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
           <Image
                 alt="Drone"
                 className="rounded-lg w-full max-w-2xl h-auto"
-                // height={200}
                 src={spot_stair}
                 width={600}
               />
@@ -52,14 +38,12 @@ const About: FC = memo(() => {
               <Image
                 alt="Drone"
                 className="rounded-lg w-full md:w-1/2 h-auto"
-                // height={350}
                 src={spot_lidar_localization}
                 width={450}
               />
               <Image
                 alt="Drone"
                 className="rounded-lg w-full md:w-1/2 h-auto"
-                // height={350}
                 src={spot_lidar_localization2}
                 width={450}
               />

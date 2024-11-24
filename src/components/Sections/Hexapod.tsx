@@ -14,7 +14,7 @@ import joyimage from '../../images/portfolio/hexapod/move.png';
 import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
 import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-import Hexapod_1 from '../../images/portfolio/Hexapod_1.jpg';
+import Hexapod_1 from '../../images/portfolio/hexapod/portfolio_hexapod.jpg';
 import Section from '../Layout/Section';
 
 const Hexapod: FC = memo(() => {
@@ -58,9 +58,8 @@ const Hexapod: FC = memo(() => {
               <Image
                 alt="Drone"
                 className="rounded-lg"
-                height={200}
+                height={250}
                 src={joyimage}
-                width={400}
               />
               </div>
             </div>

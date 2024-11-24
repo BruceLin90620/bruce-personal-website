@@ -4,10 +4,8 @@ import React, {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import computer from '../../images/portfolio/evpi/computer.png';
 import evpi from '../../images/portfolio/evpi/evpi.jpg';
-// import demo_hitcon from '../../images/portfolio/evpi/demo_hitcon.png';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
-// import evpi01 from '../../images/portfolio/evpi_1.jpg';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
@@ -96,33 +94,6 @@ const About: FC = memo(() => {
             ></iframe>
           </div>
         </div>
-
-
-        {/* <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Event Photos</h2>
-              <p className="text-sm sm:text-sm md:text-base mb-3">
-              </p>
-              <div className="flex justify-center space-x-4">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={demo_hitcon}
-                width={200}
-              />
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={demo_csl}
-                width={400}
-              />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-
       </div>
     </Section>
   );

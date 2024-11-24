@@ -5,8 +5,8 @@ import {TimelineItem} from '../../../data/dataDef';
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {title, date, location, content} = item;
   return (
-    <div className="flex flex-col pb-6 sm:pb-8 text-left last:pb-0">
-      <div className="flex flex-col pb-2 sm:pb-4">
+    <div className="flex flex-col pb-2 sm:pb-2 text-left last:pb-0">
+      <div className="flex flex-col pb-1 sm:pb-2">
         <h1 className="text-sm sm:text-xl font-bold">{title}</h1>
         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-x-2">
           <span className="text-xs sm:text-sm font-medium italic">{location}</span>

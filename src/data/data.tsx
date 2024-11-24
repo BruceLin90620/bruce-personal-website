@@ -9,34 +9,24 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
-// import heroImage from '../images/header-background.webp';
-// import heroImage from '../images/header-background.webp';
 import heroImage from '../images/background.jpg';
-// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfoliodrone from '../images/portfolio/drone.jpg';
-import porfolioevpi from '../images/portfolio/evpi_1.jpg';
-import porfolioHexapod_1 from '../images/portfolio/Hexapod_1.jpg';
-import porfoliopangolin from '../images/portfolio/pangolin01.jpg';
-import porfolioPBL_3 from '../images/portfolio/PBL_3.png';
-import porfoliospot from '../images/portfolio/spot.jpg';
-import porfoliosupercontroller from '../images/portfolio/SuperController.png';
-import porfoliotriceratops from '../images/portfolio/triceratops.jpg';
-import profilepic from '../images/profilepic.jpg';
-// import testimonialImage from '../images/testimonial.webp';
+import porfoliodrone from '../images/portfolio/drone/portfolio_drone.jpg';
+import porfolioevpi from '../images/portfolio/evpi/portfolio_evpi.jpg';
+import porfolioHexapod_1 from '../images/portfolio/hexapod/portfolio_hexapod.jpg';
+import porfoliopangolin from '../images/portfolio/pangolin/portfolio_pangolin.jpg';
+import porfolioPBL_3 from '../images/portfolio/pbl/portfolio_PBL.png';
+import porfoliospot from '../images/portfolio/spot/portfolio_spot.jpg';
+import porfoliosupercontroller from '../images/portfolio/supercontroller/portfolio_SuperController.png';
+import porfoliotriceratops from '../images/portfolio/triceratops/portfolio_triceratops.jpg';
+import profilepic from '../images/profile_picture.jpg';
 import {
   About,
-  ContactSection,
-  ContactType,
   Hero,
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
   Social,
-  // TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -60,7 +50,6 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   None: "none"
-  // Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -85,11 +74,6 @@ export const heroData: Hero = {
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
-    // {
-    //   href: `#${SectionId.Contact}`,
-    //   text: 'Contact',
-    //   primary: false,
-    // },
   ],
 };
 
@@ -131,7 +115,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Autonomous Vehicle - EVπ",
     description: `EVπ is an open-source, modular platform for autonomous vehicle research. Its key feature is customizable hardware and software, adapting to specific research needs. This versatility suits various applications from testing to cybersecurity research in autonomous vehicles.
     `,
-    url: "EVpi",
+    url: "evpi",
     image: porfolioevpi,
     tech: "C++, ROS2, HHEV.OS, PCB Layout, Zenoh",
     // link: [
@@ -254,26 +238,6 @@ export const education: TimelineItem[] = [
   },
 ];
 export const awards: TimelineItem[] = [
-  // {
-  //   date: "2022 Nov",
-  //   location:
-  //     "Taichung, Taiwan",
-  //   title: "TSPE Research Project and Paper Competition",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   date: "2022 Oct",
-  //   location:
-  //     "Tainan, Taiwan ",
-  //   title: "2022 Taiwan TDK Robocon",
-  //   content: (
-  //     <div className="flex flex-col gap-4">
-  //     </div>
-  //   ),
-  // },
   {
     date: "2022 Aug",
     location:
@@ -307,35 +271,9 @@ export const experience: TimelineItem[] = [
   {
     date: "July 2023 - Present",
     location: "MIT City Science Lab@Taipei Tech",
-    title: "Researcher",
+    title: "Researcher - Robotics Team",
     content: (
       <div className="px-4">
-        {/* <li>  <strong>Boston Dynamics Spot</strong> - TSMC Industry-Academia Research Project: 
-          <ul className="list-disc ml-4 space-y-2">      
-            <li className=" ml-8 mt-2 space-y-2">
-            Aim: To implement Boston Dynamics’ Spot robot for automated inspection tasks in industrial environments
-            </li>
-          </ul>
-        </li>
-
-        <li> <strong>Pangolin-Inspired Bionic Robot </strong> - PMP Tech. Industry-Academia Research Project:
-          <ul className="list-disc ml-4 space-y-2">      
-            <li className=" ml-8 mt-2 space-y-2">
-            Aim: Focused on the circuit and control system development using Nvidia Orin Nano as the control computer to replicate the pangolin's unique curling ability
-            </li>
-          </ul>
-        </li>
-
-        <li><strong>Evπ (Autonomous Vehicle) </strong> - Foxconn Technology Industry-Academia Research Project:
-          <ul className="list-disc ml-4 space-y-2">      
-            <li className=" ml-8 mt-2 space-y-2">
-            Aim: To deploy HHEV.OS and test effective communication and functional compatibility with ROS2 system
-            </li>
-            <li className=" ml-8 mt-2 space-y-2">
-            Produced various circuit boards needed for the task, including initial schematic design (such as voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) and PCB layout planning
-            </li>
-          </ul>
-        </li> */}
       </div>
     ),
   },
@@ -345,50 +283,24 @@ export const experience: TimelineItem[] = [
     title: "Undergraduate Research Opportunities Program (UROP)",
     content: (
       <div className="px-4">
-        {/* <li><strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong>
-          <ul className="list-disc ml-4 space-y-2">      
-            <li className=" ml-8 mt-2 space-y-2">
-            Aim: To develop a system using 2D-LiDAR for SLAM and navigation by integrating camera and AprilTag for precise final target localization and correction
-            </li>
-          </ul>
-        </li> */}
       </div>
     ),
   },
   {
     date: "Nov 2022 - Jan 2023",
     location: "Aeroprobing Inc.",
-    title: "Assistant Engineer (intern)",
+    title: "Assistant Engineer Intern",
     content: (
       <div className="">
-        {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
-        {/* <ul className="">      
-          <li className=" ml-8 mt-2 ">
-          Integrated ROS and Yolov5 to control drones in Airsim for object detection and tracking to simulate drone inspection tasks in factory environments
-          </li>
-          <li className=" ml-8 mt-2">
-          Utilized the Xilinx KV260 FPGA control board as the drone's control computer, and leveraged the Vitis AI system on FPGA to accelerate image processing and AI image recognition
-          </li>
-        </ul> */}
       </div>
     ),
   },
   {
     date: "Jul 2021 - Aug 2022",
-    location: "HIWIN TECHNOLOGIES CORPORATION",
+    location: "HIWIN Technologies Corporation",
     title: "Summer Intern",
     content: (
       <div className="">
-        {/* <strong>Development of LiDAR-Based SLAM and Navigation System for Hexapod Robots</strong> */}
-        {/* <ul className="">      
-          <li className=" ml-8 mt-2 ">
-          Completed a project titled "Improvement of Automated Robotic Arm Utilization Rate", aimed at optimizing the operational processes of production line robotic arms and increasing engineers' willingness and efficiency to use robotic arms for material handling
-          </li>
-          <li className=" ml-8 mt-2">
-          Operated CNC machines, interpreted design blueprints, and learned CNC languages
-
-          </li>
-        </ul> */}
       </div>
     ),
   },
@@ -401,10 +313,6 @@ export const skill: TimelineItem[] = [
     title: "Language",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
-          {/* English: TOEIC: 925, TOEFL: 91, International volunteer, English
-          tutor, School international affair department volunteering */}
-        </p>
       </div>
     ),
   },
@@ -421,7 +329,6 @@ export const skill: TimelineItem[] = [
   {
     date: "",
     location: ``,
-    // , Babylon.js, Three.js, WebGL, WebGPU
     title: "Software Development",
     content: (
       <div className="flex flex-col gap-2">
@@ -431,37 +338,6 @@ export const skill: TimelineItem[] = [
   },
 
 ];
-
-/**
- * Contact section
- */
-
-export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
-  items: [
-    {
-      type: ContactType.Email,
-      text: 'brucelin90620@gmail.com',
-      href: 'mailto:brucelin90620@gmail.com',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Taipei, Taiwan',
-      href: 'https://www.google.ca/maps/place/%E5%8F%B0%E5%8C%97%E5%B8%82/@25.0854061,121.5615012,11z',
-    },
-    // {
-    //   type: ContactType.Instagram,
-    //   text: '@tbakerx',
-    //   href: 'https://www.instagram.com/tbakerx/',
-    // },
-    {
-      type: ContactType.Github,
-      text: 'BruceLin',
-      href: 'https://github.com/BruceLin90620',
-    },
-  ],
-};
 
 /**
  * Social items
