@@ -2,8 +2,8 @@ import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
-import Footer from '../components/Sections/Footer';
 import EVpi from '../components/Sections/EVpi';
+import Footer from '../components/Sections/Footer';
 import {homePageMeta} from '../data/data';
 
 

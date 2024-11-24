@@ -2,10 +2,9 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-
 import PBL_2 from '../../images/portfolio/pbl/PBL_2.jpg';
-import pbl_flowchart from '../../images/portfolio/pbl/未命名绘图.drawio (1).png';
 import PBL_3 from '../../images/portfolio/pbl/portfolio_PBL.png';
+import pbl_flowchart from '../../images/portfolio/pbl/未命名绘图.drawio (1).png';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {

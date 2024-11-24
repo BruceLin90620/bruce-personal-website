@@ -12,9 +12,9 @@ import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
 // import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
 import joyimage from '../../images/portfolio/hexapod/move.png';
 import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
+import Hexapod_1 from '../../images/portfolio/hexapod/portfolio_hexapod.jpg';
 import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
-import Hexapod_1 from '../../images/portfolio/hexapod/portfolio_hexapod.jpg';
 import Section from '../Layout/Section';
 
 const Hexapod: FC = memo(() => {

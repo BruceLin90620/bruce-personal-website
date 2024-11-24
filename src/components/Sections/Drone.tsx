@@ -2,8 +2,8 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-import drone from '../../images/portfolio/drone/portfolio_drone.jpg';
 import airsim from '../../images/portfolio/drone/airsim.png';
+import drone from '../../images/portfolio/drone/portfolio_drone.jpg';
 import real from '../../images/portfolio/drone/real.jpg';
 import Section from '../Layout/Section';
 
