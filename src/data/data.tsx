@@ -9,8 +9,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/background.jpg';
 import porfoliodrone from '../images/portfolio/drone/portfolio_drone.jpg';
 import porfolioevpi from '../images/portfolio/evpi/portfolio_evpi.jpg';
