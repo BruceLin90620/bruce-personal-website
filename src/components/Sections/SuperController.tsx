@@ -11,7 +11,7 @@ const About: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Multi-Robot Control - Super Controller</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Multi-Robot Control : Super Controller</h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           The project aims to develop a control interface for ROS2-based devices, 
           enhancing interaction efficiency in multi-robot collaboration scenarios. 

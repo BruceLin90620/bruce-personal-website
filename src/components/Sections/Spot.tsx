@@ -13,7 +13,7 @@ const About: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Boston Dynamics Spot</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Large-Scale Inspection System : Spot</h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           This project focuses on implementing Boston Dynamics' Spot robot for automated inspection tasks in industrial environments. Under strict cybersecurity regulations, we have developed an advanced automated site inspection and remote monitoring system. This system aims to enhance automation levels and monitoring efficiency in industrial environments, bringing significant operational benefits and competitive advantages to enterprises.
           </p>
@@ -74,7 +74,7 @@ const About: FC = memo(() => {
         <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Video</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
               <p className="text-xs sm:text-sm md:text-base mb-3">
               </p>
               <div className="relative w-full" style={{paddingBottom: '50%'}}>
@@ -82,7 +82,7 @@ const About: FC = memo(() => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
-                  src="https://www.youtube.com/embed/ZL_bb400D3o?si=lHmiUasgPyHoBmuP"
+                  src="https://www.youtube.com/embed/LI97OdDDBUY?si=qxKzRSyGzX2XXNTA"
                 ></iframe>
               </div>  
             </div>

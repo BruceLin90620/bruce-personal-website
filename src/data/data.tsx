@@ -106,14 +106,14 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Boston Dynamics Spot",
+    title: "Large-Scale Inspection System : Spot",
     description: `An industrial inspection system was developed using Boston Dynamics' Spot. Implementing SLAM and Navigation via Spot SDK on ROS2, it features remote monitoring through a visualization interface. A Spot simulation in Isaac Sim validates algorithms and creates a Digital Twin.`,
     url: "spot",
     image: porfoliospot,
     tech: "Python, ROS2, GraphNav",
   },
   {
-    title: "Autonomous Vehicle - EVπ",
+    title: "Autonomous Vehicle : EVπ",
     description: `EVπ is an open-source, modular platform for autonomous vehicle research. Its key feature is customizable hardware and software, adapting to specific research needs. This versatility suits various applications from testing to cybersecurity research in autonomous vehicles.
     `,
     url: "evpi",
@@ -131,7 +131,7 @@ export const portfolioItems: PortfolioItem[] = [
     // ],
   },
   {
-    title: "Bionic Robot - Pangolin",
+    title: "Bio-Inspired Robot : Pangolin",
     description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
     url: "Pangolin",
     image: porfoliopangolin,
@@ -139,14 +139,14 @@ export const portfolioItems: PortfolioItem[] = [
   },
 
   {
-    title: "Bionic Robot - Triceratops (VSLAM)",
+    title: "Bio-Inspired Robot : Triceratops (VSLAM)",
     description: `Developed a biomimetic triceratops robot using ROS2 and computer vision, integrating Realsense D435 camera with Nvidia Isaac ROS VSLAM and AprilTag SLAM for indoor localization, while implementing Nav2 for autonomous navigation capabilities.`,
     url: "Triceratops",
     image: porfoliotriceratops,
     tech: "ROS2、SLAM、Navigation、AprilTag",
   },
   {
-    title: "Multi-Robot Control - Super Controller",
+    title: "Multi-Robot Control : Super Controller",
     description: `Super Controller introduces "What You See is What You Control" for managing multi-robots. 
     Unlike traditional joystick pairing, users scan tags on robots using cameras and select them to control corresponding robots. 
     This approach aims to improve usability for workers managing multi-robots simultaneously.`,
@@ -165,7 +165,7 @@ export const portfolioItems: PortfolioItem[] = [
     // ],
   },
   {
-    title: "CSL UROP Project - Hexapod Robot",
+    title: "CSL UROP Project : Hexapod Robot",
     description:
       `Developing a 2D-LiDAR-based mapping and navigation system for a hexapod robot. 
       Utilized Cartographer for SLAM and Nav2 for autonomous navigation. 
@@ -181,7 +181,7 @@ export const portfolioItems: PortfolioItem[] = [
     // ],
   },
   {
-    title: "Undergraduate Project - Drone",
+    title: "Undergraduate Project : Drone",
     description: `The project utilized Solidworks for design, 
     ROS for software integration, and computer vision for navigation. 
     Successfully implemented hovering, line-following, traffic light recognition, 
@@ -201,7 +201,7 @@ export const portfolioItems: PortfolioItem[] = [
     // ],
   },
   {
-    title: "PBL Competetion - Self Driving Car",
+    title: "PBL Competetion : Self-Driving Car",
     description: `Representing our school in the PBL competition, we unite with Japanese and Taiwanese college students. 
     Combining Arduino, C programming, and mechanical design, we create a self-moving car.`,
     url: "PBL",
