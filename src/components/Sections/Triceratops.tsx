@@ -4,7 +4,7 @@ import React, {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
-import move from '../../images/portfolio/triceratops/move.png';
+import move from '../../images/portfolio/triceratops/render_pic_no_background.png';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
@@ -21,7 +21,7 @@ const Pangolin: FC = memo(() => {
                 alt="Drone"
                 className="rounded-lg"
                 src={move}
-                width={600}
+                width={1000}
               />
           </div>
         </div>
@@ -75,9 +75,20 @@ const Pangolin: FC = memo(() => {
           </div>
         </div>
 
+        <div className="mt-12">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Triceratops Moving Video</h2>
+          <div className="relative w-full" style={{paddingBottom: '50%'}}>
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/M36GWAr3caM?si=r3bjtizAE_vnXU75&mute=1"
+            ></iframe>
+          </div>
+        </div>
 
         <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Visual Navigation Demo Video</h2>
           <div className="relative w-full" style={{paddingBottom: '50%'}}>
             <iframe
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
