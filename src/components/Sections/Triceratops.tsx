@@ -4,7 +4,7 @@ import React, {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
-import move from '../../images/portfolio/triceratops/render_pic_no_background.png';
+import move from '../../images/portfolio/triceratops/triceratops_picture.png';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
@@ -21,7 +21,7 @@ const Pangolin: FC = memo(() => {
                 alt="Drone"
                 className="rounded-lg"
                 src={move}
-                width={1000}
+                width={800}
               />
           </div>
         </div>
