@@ -1,9 +1,9 @@
+import 'tailwindcss/tailwind.css';
+import '../globalStyles.scss';
+
 import type {AppProps} from 'next/app';
 import Script from 'next/script';
 import {memo, useMemo} from 'react';
-import 'tailwindcss/tailwind.css';
-
-import '../globalStyles.scss';
 
 const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   const scriptContent = useMemo(() => ({
