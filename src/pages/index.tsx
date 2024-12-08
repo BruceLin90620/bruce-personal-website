@@ -19,6 +19,7 @@ const Home: FC = memo(() => {
   return (
     <Page description={description} title={title}>
       <Header />
+      
       <Hero />
       <About />
       <Resume />
