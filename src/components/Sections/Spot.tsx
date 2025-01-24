@@ -85,6 +85,16 @@ const About: FC = memo(() => {
                   src="https://www.youtube.com/embed/LI97OdDDBUY?si=qxKzRSyGzX2XXNTA&mute=1"
                 ></iframe>
               </div>  
+              <p className="text-xs sm:text-sm md:text-base mb-3">
+              </p>
+              <div className="relative w-full" style={{paddingBottom: '50%'}}>
+                <iframe
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/IM2RIEQZuBg?si=Bo6UEO0HiOZgwEAB"
+                ></iframe>
+              </div>  
             </div>
           </div>
         </div>

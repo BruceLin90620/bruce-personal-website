@@ -110,7 +110,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `An industrial inspection system was developed using Boston Dynamics' Spot. Implementing SLAM and Navigation via Spot SDK on ROS2, it features remote monitoring through a visualization interface. A Spot simulation in Isaac Sim validates algorithms and creates a Digital Twin.`,
     url: "spot",
     image: porfoliospot,
-    tech: "Python, ROS2, GraphNav",
+    tech: "C++, Python, ROS2, GraphNav",
   },
   {
     title: "Autonomous Vehicle : EVπ",
