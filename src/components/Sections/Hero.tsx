@@ -22,7 +22,7 @@ const Hero: FC = memo(() => {
         />
         <div className="z-10 max-w-screen-lg px-3 sm:px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-3 sm:gap-y-6 rounded-xl bg-gray-800/40 p-4 sm:p-6 text-center shadow-lg backdrop-blur-sm">
-            <h1 className="py-2 sm:py-4 text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-neutral-300">
+            <h1 className="py-2 sm:py-4 text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-neutral-200">
               <TypeWriter />
             </h1>
             {description}

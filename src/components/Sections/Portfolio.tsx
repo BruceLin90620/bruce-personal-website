@@ -22,7 +22,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-900" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="text-xl font-bold text-white">Portfolio</h2>
+        <h2 className="text-xl font-bold text-neutral-200">Portfolio</h2>
         {/* <div className="grid-col-2 md:grid-col-3 lg:grid-col-4 grid w-full"> */}
         <div className="grid w-full grid-cols-2 gap-4 sm:gap-8 lg:gap-20">
           {portfolioItems.map((item, index) => {
@@ -47,17 +47,17 @@ const Portfolio: FC = memo(() => {
                   <ItemOverlay item={item} />
                 </div>
                 <div className="p-2 sm:p-4">
-                  <div className="my-1 sm:my-2 text-sm sm:text-base md:text-lg font-medium text-neutral-300">
+                  <div className="my-1 sm:my-2 text-sm sm:text-base md:text-lg font-medium text-neutral-200">
                     <strong>{title}</strong>
                     {/* {title} */}
                   </div>
-                  <div className="my-1 sm:my-2 h-20 sm:h-32 text-xs sm:text-sm overflow-y-auto text-neutral-300">
+                  <div className="my-1 sm:my-2 h-20 sm:h-32 text-xs sm:text-sm overflow-y-auto text-neutral-200">
                     {description}
                   </div>
-                  <div className="my-2 sm:my-4 flex flex-row text-xs sm:text-sm text-neutral-300">
+                  <div className="my-2 sm:my-4 flex flex-row text-xs sm:text-sm text-neutral-200">
                     Tech: {tech ? tech : ""}
                   </div>
-                  <div className="my-1 sm:my-2 justify-start text-xs text-neutral-300">
+                  <div className="my-1 sm:my-2 justify-start text-xs text-neutral-200">
                     <span className="mr-2">{link && `Link:`}</span>
                     {link &&
                       link.map((item, index) => (
@@ -120,8 +120,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url}}) => {
       target="_blank">
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
-          {/* <h2 className="text-center font-bold text-white opacity-100"> More Details</h2> */}
-          {/* <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p> */}
+          {/* <h2 className="text-center font-bold text-neutral-200 opacity-100"> More Details</h2> */}
+          {/* <p className="text-xs text-neutral-200 opacity-100 sm:text-sm">{description}</p> */}
         </div>
         <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-black sm:bottom-2 sm:right-2" />
       </div>
