@@ -20,7 +20,7 @@ import Section from "../Layout/Section";
 
 const Portfolio: FC = memo(() => {
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-900" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <h2 className="text-xl font-bold text-white">Portfolio</h2>
         {/* <div className="grid-col-2 md:grid-col-3 lg:grid-col-4 grid w-full"> */}
@@ -47,17 +47,17 @@ const Portfolio: FC = memo(() => {
                   <ItemOverlay item={item} />
                 </div>
                 <div className="p-2 sm:p-4">
-                  <div className="my-1 sm:my-2 text-sm sm:text-base md:text-lg font-medium text-white">
+                  <div className="my-1 sm:my-2 text-sm sm:text-base md:text-lg font-medium text-neutral-300">
                     <strong>{title}</strong>
                     {/* {title} */}
                   </div>
-                  <div className="my-1 sm:my-2 h-20 sm:h-32 text-xs sm:text-sm overflow-y-auto text-white">
+                  <div className="my-1 sm:my-2 h-20 sm:h-32 text-xs sm:text-sm overflow-y-auto text-neutral-300">
                     {description}
                   </div>
-                  <div className="my-2 sm:my-4 flex flex-row text-xs sm:text-sm text-white">
+                  <div className="my-2 sm:my-4 flex flex-row text-xs sm:text-sm text-neutral-300">
                     Tech: {tech ? tech : ""}
                   </div>
-                  <div className="my-1 sm:my-2 justify-start text-xs text-white">
+                  <div className="my-1 sm:my-2 justify-start text-xs text-neutral-300">
                     <span className="mr-2">{link && `Link:`}</span>
                     {link &&
                       link.map((item, index) => (

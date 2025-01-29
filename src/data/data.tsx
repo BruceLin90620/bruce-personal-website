@@ -83,7 +83,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `He graduated from the Department of Mechanical Engineering at National Taipei University of Technology. Currently, he is a researcher at City Science Lab, where his primary focus is on Robotics. His work involves developing innovative robots and integrating various cutting-edge technologies for applications in factories and urban environments.`,
+  description: `I graduated from the Department of Mechanical Engineering at National Taipei University of Technology. Currently, I am a researcher at City Science Lab, where my primary focus is on Robotics. My work involves developing innovative robots and integrating various cutting-edge technologies for applications in factories and urban environments.`,
   aboutItems: [
     {label: 'Location', text: 'Taipei', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},

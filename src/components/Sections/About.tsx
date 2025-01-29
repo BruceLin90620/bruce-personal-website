@@ -31,18 +31,18 @@ const About: FC = memo(() => {
           })}
         >
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-bold text-white">About me</h2>
-            <p className="prose prose-sm text-white sm:prose-base">
+            <h2 className="text-2xl font-bold text-neutral-300">About me</h2>
+            <p className="prose prose-sm text-neutral-300 sm:prose-base">
               {description}
             </p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {aboutItems.map(({label, text}, idx) => (
               <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
-                <span className="text-sm font-bold text-white">
+                <span className="text-sm font-bold text-neutral-300">
                   {label}:
                 </span>
-                <span className=" text-sm text-white">{text}</span>
+                <span className=" text-sm text-neutral-300">{text}</span>
               </li>
             ))}
           </ul>

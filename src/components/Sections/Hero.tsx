@@ -22,7 +22,7 @@ const Hero: FC = memo(() => {
         />
         <div className="z-10 max-w-screen-lg px-3 sm:px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-3 sm:gap-y-6 rounded-xl bg-gray-800/40 p-4 sm:p-6 text-center shadow-lg backdrop-blur-sm">
-            <h1 className="py-2 sm:py-4 text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-white">
+            <h1 className="py-2 sm:py-4 text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-neutral-300">
               <TypeWriter />
             </h1>
             {description}
@@ -33,7 +33,7 @@ const Hero: FC = memo(() => {
               {actions.map(({href, text, primary, Icon}) => (
                 <a
                   className={classNames(
-                    "flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white outline-none ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
+                    "flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-neutral-300 outline-none ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base",
                     primary
                       ? // ? "border-orange-500 ring-orange-500"
                         ""
@@ -44,7 +44,7 @@ const Hero: FC = memo(() => {
                 >
                   {text}
                   {Icon && (
-                    <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />
+                    <Icon className="h-5 w-5 text-neutral-300 sm:h-6 sm:w-6" />
                   )}
                 </a>
               ))}
