@@ -22,9 +22,9 @@ const Header: FC = memo(() => {
   // Modified navigation configuration to include link types
   const navItems = useMemo(
     () => [
-      { section: SectionId.About, type: 'scroll' },
-      { section: SectionId.Portfolio, type: 'scroll' },
-      { section: SectionId.Resume, type: 'page', href: '/Resume.pdf' }
+      {section: SectionId.About, type: 'scroll'},
+      {section: SectionId.Portfolio, type: 'scroll'},
+      {section: SectionId.Resume, type: 'page', href: '/Resume.pdf'}
     ] as NavItemConfig[],
     [],
   );
@@ -60,11 +60,11 @@ const DesktopNav: FC<{navItems: NavItemConfig[]; currentSection: SectionId | nul
             <NavItem
               activeClass={activeClass}
               current={item.section === currentSection}
+              href={item.href}
               inactiveClass={inactiveClass}
               key={item.section}
               section={item.section}
               type={item.type}
-              href={item.href}
             />
           ))}
         </nav>
@@ -121,12 +121,12 @@ const MobileNav: FC<{navItems: NavItemConfig[]; currentSection: SectionId | null
                     <NavItem
                       activeClass={activeClass}
                       current={item.section === currentSection}
+                      href={item.href}
                       inactiveClass={inactiveClass}
                       key={item.section}
                       onClick={toggleOpen}
                       section={item.section}
                       type={item.type}
-                      href={item.href}
                     />
                   ))}
                 </nav>

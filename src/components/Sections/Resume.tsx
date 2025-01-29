@@ -1,4 +1,5 @@
 import React, {FC, memo} from 'react';
+
 import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
@@ -12,8 +13,8 @@ const About: FC = memo(() => {
           <div className="text-center space-y-2 text-gray-300">
             <p className="text-sm sm:text-base">11F., No. 15, Zhenxing W. St., Wufeng Dist., Taichung City 413009, Taiwan</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
-              <a href="mailto:brucelin90620@gmail.com" className="text-orange-500 hover:text-orange-400">brucelin90620@gmail.com</a>
-              <a href="https://www.brucelinweb.com" className="text-orange-500 hover:text-orange-400">Personal Website</a>
+              <a className="text-orange-500 hover:text-orange-400" href="mailto:brucelin90620@gmail.com">brucelin90620@gmail.com</a>
+              <a className="text-orange-500 hover:text-orange-400" href="https://www.brucelinweb.com">Personal Website</a>
               <span>+886 979828620</span>
             </div>
           </div>
