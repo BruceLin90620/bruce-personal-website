@@ -29,10 +29,10 @@ const Hexapod: FC = memo(() => {
           <div className="flex justify-center">
             <div className="relative w-[600px] aspect-video">
               <iframe
-                src="https://www.youtube.com/embed/5kGbZkwkKU0?si=W-_teUgqTQTAJ9DH"
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/5kGbZkwkKU0?si=W-_teUgqTQTAJ9DH"
               />
             </div>
           </div>
