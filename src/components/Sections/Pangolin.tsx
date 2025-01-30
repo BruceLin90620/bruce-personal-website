@@ -14,7 +14,7 @@ const Pangolin: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Bio-Inspired Robot : Pangolin</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Bio-Inspired Robot : Pangolin (Team Project)</h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           This project integrates biomimetics, software architecture, 
           and control systems to teach students how to use the ROS2 robot operating system for modular system design. 
@@ -37,6 +37,18 @@ const Pangolin: FC = memo(() => {
               />
           </div>
         </div>
+
+        {/* <div className="mt-6 sm:mt-8 ">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Project Video</h1>
+          <div className="relative w-full " style={{paddingBottom: '50%'}}>
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/uAAVJ7T8Zr4?si=ZcO8n1eeSAqJAawe&mute=1"
+            />
+          </div>
+        </div> */}
 
         <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
@@ -156,6 +168,23 @@ const Pangolin: FC = memo(() => {
               allowing the robot to automatically return to its normal posture after rolling. 
               This control system ensures the pangolin robot can quickly protect itself in dangerous situations, 
               enhancing its adaptability in various environments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-8 sm:space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+            <div className="p-4 sm:p-6">
+              <h2 className="text-2xl font-semibold mb-4">My Work</h2>
+              <p className="text-xs sm:text-sm md:text-base">
+                • Architected ROS2-based software system with modular nodes for motor control, sensor integration, and motion planning.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base">
+                • Developed complete electrical system and communication protocols between Raspberry Pi and peripheral components.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base">
+                • Implemented robot motion algorithms for walking gaits, rolling behavior, and self-righting capabilities.
               </p>
             </div>
           </div>

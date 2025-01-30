@@ -110,7 +110,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `An industrial inspection system was developed using Boston Dynamics' Spot. Implementing SLAM and Navigation via Spot SDK on ROS2, it features remote monitoring through a visualization interface. A Spot simulation in Isaac Sim validates algorithms and creates a Digital Twin.`,
     url: "spot",
     image: porfoliospot,
-    tech: "C++, Python, ROS2, GraphNav",
+    tech: "C++、Python、ROS2、Multi-Map Navigation",
   },
   {
     title: "Autonomous Vehicle : EVπ",
@@ -118,7 +118,7 @@ export const portfolioItems: PortfolioItem[] = [
     `,
     url: "evpi",
     image: porfolioevpi,
-    tech: "C++, ROS2, HHEV.OS, PCB Layout, Zenoh",
+    tech: "C++、ROS2、HHEV.OS、Zenoh、KiCad",
     // link: [
       // {
       //   text: "Slides",
@@ -135,7 +135,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Develop a modular quadruped pangolin robot using biomimetics and ROS2, capable of walking and rolling. Features include standardized chassis, underactuated legs, detachable shell, and cable-driven tail. The project focuses on gait design, roll-over control, and modular software, offering students a robot development platform.`,
     url: "Pangolin",
     image: porfoliopangolin,
-    tech: "Control System、ROS2",
+    tech: "Python、ROS2",
   },
 
   {
@@ -143,7 +143,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Developed a biomimetic triceratops robot using ROS2 and computer vision, integrating Realsense D435 camera with Nvidia Isaac ROS VSLAM and AprilTag SLAM for indoor localization, while implementing Nav2 for autonomous navigation capabilities.`,
     url: "Triceratops",
     image: porfoliotriceratops,
-    tech: "ROS2、SLAM、Navigation、AprilTag",
+    tech: "Python、ROS2、SLAM、Navigation、AprilTag",
   },
   {
     title: "Multi-Robot Control : Super Controller",
@@ -152,7 +152,7 @@ export const portfolioItems: PortfolioItem[] = [
     This approach aims to improve usability for workers managing multi-robots simultaneously.`,
     url: "super_controller",
     image: porfoliosupercontroller,
-    tech: "Zenoh, ROS2, AprilTags",
+    tech: "C++、Python、Zenoh, ROS2, AprilTags",
     // link: [
       // {
       //   text: "Youtube Video",
@@ -172,7 +172,7 @@ export const portfolioItems: PortfolioItem[] = [
       Integrated camera-based AprilTag detection for precise final positioning and correction after LiDAR navigation to target locations.`,
     url: "hexapod",
     image: porfolioHexapod_1,
-    tech: "Control System、ROS2、SLAM、Navigation、AprilTag",
+    tech: "Python、ROS2、SLAM、Navigation、AprilTag",
     // link: [
       // {
       //   text: "HITCON PEACE 2022 News",
@@ -188,7 +188,7 @@ export const portfolioItems: PortfolioItem[] = [
     payload delivery, and landing functionalities.`,
     url: "Drone",
     image: porfoliodrone,
-    tech: "Solidworks、ROS、MAVROS、PX4、Python、Image processing、Airsim",
+    tech: "Python、ROS、PX4、OpenCV、Solidworks",
     // link: [
       // {
       //   text: "Youtube Video",
@@ -206,7 +206,7 @@ export const portfolioItems: PortfolioItem[] = [
     Combining Arduino, C programming, and mechanical design, we create a self-moving car.`,
     url: "PBL",
     image: porfolioPBL_3,
-    tech: "Arduino, C, Mechanical Design",
+    tech: "Arduino、C",
     // link: [
       // {
       //   text: "Blueprint Demo",

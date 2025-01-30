@@ -12,7 +12,7 @@ import joymoveimage from '../../images/portfolio/hexapod/jostick_move.png';
 // import lidarimage from '../../images/portfolio/hexapod/lidar_base.jpg';
 import joyimage from '../../images/portfolio/hexapod/move.png';
 import nav2_rvizimage from '../../images/portfolio/hexapod/nav2_rviz.png';
-import Hexapod_1 from '../../images/portfolio/hexapod/portfolio_hexapod.jpg';
+// import Hexapod_1 from '../../images/portfolio/hexapod/portfolio_hexapod.jpg';
 import rviz2_mapimage from '../../images/portfolio/hexapod/rviz2_map.png';
 import tf_treeimage from '../../images/portfolio/hexapod/tf_tree.png';
 import Section from '../Layout/Section';
@@ -22,17 +22,19 @@ const Hexapod: FC = memo(() => {
     <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">CSL UROP Project : Hexapod Robot</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">CSL UROP Project : Hexapod Robot (Personal Project)</h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
           A comprehensive ROS2-based hexapod robot implementation featuring LiDAR-based mapping, AprilTag tracking capabilities, and manual control interface. The system integrates autonomous navigation with visual marker following and remote operation functionality, including features such as self-charging capabilities.
           </p>
           <div className="flex justify-center">
-          <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={Hexapod_1}
-                width={600}
+            <div className="relative w-[600px] aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/5kGbZkwkKU0?si=W-_teUgqTQTAJ9DH"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
+            </div>
           </div>
         </div>
 
@@ -229,17 +231,7 @@ const Hexapod: FC = memo(() => {
           </div>
         </div>
 
-        <div className="mt-6 sm:mt-8">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3 text-center">Final Project Video</h2>
-          <div className="relative w-full" style={{paddingBottom: '50%'}}>
-            <iframe
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/5kGbZkwkKU0?si=W-_teUgqTQTAJ9DH"
-            />
-          </div>
-        </div>
+
       </div>
     </Section>
   );
