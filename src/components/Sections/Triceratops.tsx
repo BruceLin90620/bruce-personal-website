@@ -96,7 +96,7 @@ const Pangolin: FC = memo(() => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/IC6jLG2WF_c?si=2A8UCLnNUXzSvug5&mute=1"
+              src="https://www.youtube.com/embed/WnR5PvPd7Oc?si=MvpjRF5quYgs8IXN"
             ></iframe>
           </div>
         </div>
