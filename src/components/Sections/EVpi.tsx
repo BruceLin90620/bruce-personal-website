@@ -83,7 +83,7 @@ const About: FC = memo(() => {
           </div>
         </div>
 
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
           <div className="relative w-full" style={{paddingBottom: '50%'}}>
             <iframe
@@ -93,7 +93,7 @@ const About: FC = memo(() => {
               src="https://www.youtube.com/embed/eDP0tDafy4A?si=_4tVsErWvTg7jCFf"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </Section>
   );
