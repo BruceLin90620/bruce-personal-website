@@ -22,7 +22,7 @@ const Pangolin: FC = memo(() => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/rj77wkaf2Uo?si=9e3x968ldFgalsqo"
+                src="https://www.youtube.com/embed/dL-FF7bwwxU?si=c8tTuZ_QIrHJG_Ez"
               />
             </div>
           </div>
@@ -96,7 +96,7 @@ const Pangolin: FC = memo(() => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/WnR5PvPd7Oc?si=MvpjRF5quYgs8IXN"
+              src="https://www.youtube.com/embed/IC6jLG2WF_c?si=9k66eLOwUuANwsE8"
             ></iframe>
           </div>
         </div>
