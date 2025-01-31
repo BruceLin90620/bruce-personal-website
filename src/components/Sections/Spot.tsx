@@ -5,11 +5,11 @@ import {SectionId} from '../../data/data';
 import apriltag_localize from '../../images/portfolio/spot/apriltag_localize.png';
 import CSL_digital_twin_real from '../../images/portfolio/spot/CSL_digital_twin_real.png';
 import CSL_digital_twin_sim from '../../images/portfolio/spot/CSL_digital_twin_sim2.png';
+import map1 from '../../images/portfolio/spot/map1.png';
+import map2 from '../../images/portfolio/spot/map2.png';
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
 import spot_stair from '../../images/portfolio/spot/spot_stair.jpg';
-import map1 from '../../images/portfolio/spot/map1.png';
-import map2 from '../../images/portfolio/spot/map2.png';
 import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';
 import Section from '../Layout/Section';
 
