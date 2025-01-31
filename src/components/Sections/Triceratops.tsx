@@ -4,7 +4,7 @@ import React, {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import apriltag_localization_test from '../../images/portfolio/triceratops/apriltag_localization_test.gif';
 import isaac_ros_vslam from '../../images/portfolio/triceratops/isaac_ros_vslam.gif';
-import move from '../../images/portfolio/triceratops/triceratops_picture.png';
+// import move from '../../images/portfolio/triceratops/triceratops_picture.png';
 import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
@@ -17,12 +17,14 @@ const Pangolin: FC = memo(() => {
           To enable autonomous and safe indoor mobility for the robot, we enhanced its environmental awareness by implementing a Realsense D435 depth camera. Through the integration of Nvidia Isaac ROS VSLAM and AprilTag SLAM technologies, the robot gained the ability to create real-time environmental maps and accurately determine its position. Finally, by incorporating the Nav2 navigation system, we achieved the robot's capability to independently plan routes, avoid obstacles, and successfully reach target destinations.
           </p>
           <div className="flex justify-center">
-          <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={move}
-                width={800}
+            <div className="relative w-[600px] aspect-video">
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/rj77wkaf2Uo?si=9e3x968ldFgalsqo"
               />
+            </div>
           </div>
         </div>
 
