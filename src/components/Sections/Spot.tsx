@@ -8,6 +8,8 @@ import CSL_digital_twin_sim from '../../images/portfolio/spot/CSL_digital_twin_s
 import spot_lidar_localization from '../../images/portfolio/spot/spot_lidar_localization.png';
 import spot_lidar_localization2 from '../../images/portfolio/spot/spot_lidar_localization2.png';
 import spot_stair from '../../images/portfolio/spot/spot_stair.jpg';
+import map1 from '../../images/portfolio/spot/map1.png';
+import map2 from '../../images/portfolio/spot/map2.png';
 import switch_map_framework from '../../images/portfolio/spot/switch_map_framework.png';
 import Section from '../Layout/Section';
 
@@ -71,6 +73,39 @@ const About: FC = memo(() => {
                 width={400}
               />
               </div>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+              <Image
+                alt="Drone"
+                className="rounded-lg w-full md:w-1/2 h-auto"
+                src={map1}
+                width={450}
+              />
+              <Image
+                alt="Drone"
+                className="rounded-lg w-full md:w-1/2 h-auto"
+                src={map2}
+                width={450}
+              />
+              </div>
+              {/* <div className="flex justify-center">
+                <Image
+                alt="Drone"
+                className="rounded-lg w-full max-w-4xl h-auto"
+                src={switch_map_framework}
+                width={900}
+                />
+              </div> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-8 sm:space-y-12">
+          <div className=" rounded-lg overflow-hidden">
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">System Framework</h2>
+              {/* <p className="text-xs sm:text-sm md:text-base mb-3">
+              Spot uses its onboard LiDAR sensor to scan the surrounding environment in real-time, generating precise three-dimensional point cloud data. The system compares these real-time collected 3D point cloud information with pre-established environmental maps. Through the 3D NDT (Normal Distributions Transform) algorithm, Spot can accurately calculate its position and orientation in space.
+              </p> */}
               <div className="flex justify-center">
                 <Image
                 alt="Drone"
@@ -179,7 +214,7 @@ const About: FC = memo(() => {
         <div className="space-y-8 sm:space-y-12">
           <div className=" rounded-lg overflow-hidden">
             <div className="p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Omniverse Digitial Twin Video</h2>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Omniverse Digital Twin Video</h2>
               <p className="text-xs sm:text-sm md:text-base mb-3">
               </p>
               <div className="relative w-full" style={{paddingBottom: '50%'}}>

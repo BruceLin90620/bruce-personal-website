@@ -5,7 +5,6 @@ import {SectionId} from '../../data/data';
 import curl_state from '../../images/portfolio/pangolin/curl_state.jpg';
 import hardware_framework from '../../images/portfolio/pangolin/hardware_framework.jpg';
 import mechanical from '../../images/portfolio/pangolin/mechanical.png';
-import pangolinbot from '../../images/portfolio/pangolin/pangolinbot.jpg';
 import software_framework from '../../images/portfolio/pangolin/software_framework.jpg';
 import Section from '../Layout/Section';
 
@@ -29,12 +28,14 @@ const Pangolin: FC = memo(() => {
           This approach deepens their understanding of robotics technology and its real-world applications.
           </p>
           <div className="flex justify-center">
-          <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={pangolinbot}
-                width={800}
+            <div className="relative w-[600px] aspect-video">
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/qN7IXwsKODI?si=t2n0xto09ZLPDRxR"
               />
+            </div>
           </div>
         </div>
 
@@ -187,18 +188,6 @@ const Pangolin: FC = memo(() => {
                 • Implemented robot motion algorithms for walking gaits, rolling behavior, and self-righting capabilities.
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Final Project Video</h2>
-          <div className="relative w-full" style={{paddingBottom: '50%'}}>
-            <iframe
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/uAAVJ7T8Zr4?si=ZcO8n1eeSAqJAawe&mute=1"
-            ></iframe>
           </div>
         </div>
 

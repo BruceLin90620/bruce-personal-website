@@ -17,14 +17,15 @@ const About: FC = memo(() => {
           Osaka Institute of Technology, New Taipei Municipal Zhonghe Senior High School, and National Taipei University of Technology.
           </p>
           <div className="flex justify-center">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                height={400}
-                src={PBL_2}
-                width={600}
+            <div className="relative w-[600px] aspect-video">
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/FNIiC8IVrEo?si=8LEZFYAaZcEKnRsM"
               />
-              </div>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-8 sm:space-y-12">
@@ -89,7 +90,7 @@ const About: FC = memo(() => {
           </div>
         </div>
 
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-semibold mb-4 text-center">Competetion Video</h2>
           <div className="relative w-full" style={{paddingBottom: '50%'}}>
             <iframe
@@ -99,7 +100,7 @@ const About: FC = memo(() => {
               src="https://www.youtube.com/embed/_U_EzYThuuA?si=gq37ojSlHt5XSP0J&mute=1"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </Section>
   );
