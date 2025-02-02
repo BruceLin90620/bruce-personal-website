@@ -3,8 +3,8 @@ import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import airsim from '../../images/portfolio/drone/airsim.png';
-import drone from '../../images/portfolio/drone/portfolio_drone.jpg';
 import drone_3d from '../../images/portfolio/drone/drone_3d.png';
+import drone from '../../images/portfolio/drone/portfolio_drone.jpg';
 import real from '../../images/portfolio/drone/real.jpg';
 import Section from '../Layout/Section';
 
@@ -71,18 +71,18 @@ const DroneProject: FC = memo(() => {
                     <Image
                       alt="LiDAR Localization 1"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={drone_3d}
                       width={450}
-                      height={300}
                     />
                   </div>
                   <div className="aspect-video">
                     <Image
                       alt="LiDAR Localization 2"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={airsim}
                       width={450}
-                      height={300}
                     />
                   </div>
                 </div>

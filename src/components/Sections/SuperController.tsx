@@ -22,9 +22,9 @@ const About: FC = memo(() => {
             <Image
               alt="Super Controller Interface"
               className="rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              height={400}
               src={supercontroll_2}
               width={600}
-              height={400}
             />
           </div>
         </div>
@@ -62,9 +62,9 @@ const About: FC = memo(() => {
                 <Image
                   alt="System Architecture"
                   className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                  height={500}
                   src={supercontroll_framework}
                   width={800}
-                  height={500}
                 />
               </div>
               <div className="space-y-4">

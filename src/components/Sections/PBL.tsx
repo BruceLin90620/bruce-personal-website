@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-
 import PBL_3 from '../../images/portfolio/pbl/portfolio_PBL.png';
 // import pbl_flowchart from '../../images/portfolio/pbl/未命名绘图.drawio (1).png';
 import Section from '../Layout/Section';
@@ -82,9 +81,9 @@ const PBLCompetition: FC = memo(() => {
                   <Image
                     alt="Robot Design"
                     className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    height={400}
                     src={PBL_3}
                     width={600}
-                    height={400}
                   />
                   </div>
                 </div>

@@ -71,18 +71,18 @@ const SpotProject: FC = memo(() => {
                     <Image
                       alt="LiDAR Localization 1"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={spot_lidar_localization}
                       width={450}
-                      height={300}
                     />
                   </div>
                   <div className="aspect-video">
                     <Image
                       alt="LiDAR Localization 2"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={spot_lidar_localization2}
                       width={450}
-                      height={300}
                     />
                   </div>
                 </div>
@@ -203,18 +203,18 @@ const SpotProject: FC = memo(() => {
                     <Image
                       alt="LiDAR Localization 1"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={CSL_digital_twin_real}
                       width={450}
-                      height={300}
                     />
                   </div>
                   <div className="aspect-video">
                     <Image
                       alt="LiDAR Localization 2"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={CSL_digital_twin_sim}
                       width={450}
-                      height={300}
                     />
                   </div>
                 </div>

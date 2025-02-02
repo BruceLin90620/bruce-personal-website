@@ -68,8 +68,8 @@ const Hexapod: FC = memo(() => {
                   <Image
                     alt="Control Interface"
                     className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    src={joyimage}
                     height={250}
+                    src={joyimage}
                   />
                 </div>
               </div>
@@ -164,18 +164,18 @@ const Hexapod: FC = memo(() => {
                     <Image
                       alt="AprilTag Following 1"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={apriltag_following}
                       width={400}
-                      height={300}
                     />
                   </div>
                   <div className="aspect-video">
                     <Image
                       alt="AprilTag Following 2"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
                       src={apriltag_following2}
                       width={400}
-                      height={300}
                     />
                   </div>
                 </div>
@@ -204,9 +204,9 @@ const Hexapod: FC = memo(() => {
                   <Image
                     alt="System Flow"
                     className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 mx-auto"
+                    height={200}
                     src={final_flow}
                     width={600}
-                    height={200}
                   />
                 </div>
                 <p className="text-sm sm:text-base md:text-lg text-gray-300">
@@ -222,27 +222,27 @@ const Hexapod: FC = memo(() => {
                     <Image
                       alt="Final Implementation 1"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={200}
                       src={final_1}
                       width={200}
-                      height={200}
                     />
                   </div>
                   <div className="aspect-square">
                     <Image
                       alt="Final Implementation 2"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={200}
                       src={final_2}
                       width={200}
-                      height={200}
                     />
                   </div>
                   <div className="aspect-square">
                     <Image
                       alt="Final Implementation 3"
                       className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={200}
                       src={final_3}
                       width={200}
-                      height={200}
                     />
                   </div>
                 </div>
