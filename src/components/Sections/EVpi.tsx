@@ -70,30 +70,37 @@ const EVPi: FC = memo(() => {
           </div>
         </div>
 
-        <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3">Hardware circuit board production</h2>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-               Participated in redesigning the circuit system architecture of EVpi, a layered power supply system with a 36V battery as the main power source, to meet the different voltage requirements of various modules. Responsible for producing the required circuit boards in the project, from initial schematic design (including voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) to PCB layout planning, and finally completing the physical circuit board production.
-              </p>
-              <div className="grid grid-cols-2 gap-2">
-              <div className="relative aspect-[5/3]">
-              <Image
-                alt="Drone"
-                className="rounded-lg object-cover w-full h-full"
-                src={computer}
-                width={200}
-              />
-              </div>
-              <div className="relative aspect-[5/3]">
-              <Image
-                alt="Drone"
-                className="rounded-lg object-cover w-full h-full"
-                src={pcb}
-                width={400}
-              />
-              </div>
+        {/* Hardware Circuit Board Section */}
+        <div className="space-y-12 sm:space-y-16 mt-12">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                Hardware circuit board production
+              </h2>
+              <div className="space-y-4">
+                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+                Participated in redesigning the circuit system architecture of EVpi, a layered power supply system with a 36V battery as the main power source, to meet the different voltage requirements of various modules. Responsible for producing the required circuit boards in the project, from initial schematic design (including voltage divider circuits, buck modules, fuse design, and CAN bus communication modules) to PCB layout planning, and finally completing the physical circuit board production.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  <div className="aspect-video">
+                    <Image
+                      alt="LiDAR Localization 1"
+                      className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
+                      src={computer}
+                      width={450}
+                    />
+                  </div>
+                  <div className="aspect-video">
+                    <Image
+                      alt="LiDAR Localization 2"
+                      className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+                      height={300}
+                      src={pcb}
+                      width={450}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
