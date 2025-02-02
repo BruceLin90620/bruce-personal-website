@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
-import computer from '../../images/portfolio/evpi/computer.png';
+import computer from '../../images/portfolio/evpi/computer.jpg';
 import evpi from '../../images/portfolio/evpi/evpi.jpg';
 import motorcontrol_hhevos from '../../images/portfolio/evpi/motorcontrol_hhevos.jpg';
 import pcb from '../../images/portfolio/evpi/pcb.jpg';
@@ -67,7 +67,7 @@ const About: FC = memo(() => {
                 alt="Drone"
                 className="rounded-lg object-cover w-full h-full"
                 src={computer}
-                width={200}
+                width={800}
               />
               </div>
               <div className="relative aspect-[5/3]">
