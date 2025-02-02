@@ -10,191 +10,137 @@ import Section from '../Layout/Section';
 
 const Pangolin: FC = memo(() => {
   return (
-    <Section className="bg-neutral-800 text-white" sectionId={SectionId.None}>
+    <Section className="bg-neutral-900 text-white" sectionId={SectionId.None}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-8 sm:py-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Bio-Inspired Robot : Pangolin (Team Project)</h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
-          This project integrates biomimetics, software architecture, 
-          and control systems to teach students how to use the ROS2 robot operating system for modular system design. 
-          It aims to advance hands-on learning and educational tools, 
-          providing students with insights into quadruped robot applications while developing their expertise in robot design, 
-          software, and control for broader applications.
-          </p>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-4 sm:mb-6">
-          The educational aspect guides students in understanding quadruped robots through practical operation of physical robots. 
-          Students learn about software architecture and control systems, 
-          combining theoretical knowledge with mechanical hardware design. 
-          This approach deepens their understanding of robotics technology and its real-world applications.
+        {/* Hero Section */}
+        <div className="py-12 sm:py-16 lg:py-20">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            Bio-Inspired Robot: Pangolin
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 sm:mb-8 text-center max-w-2xl mx-auto">
+            This project integrates biomimetics, software architecture, and control systems to teach students how to use the ROS2 robot operating system for modular system design. It aims to advance hands-on learning and educational tools, providing students with insights into quadruped robot applications.
           </p>
           <div className="flex justify-center">
-            <div className="relative w-[600px] aspect-video">
+            <div className="relative w-full max-w-2xl aspect-video">
               <iframe
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 src="https://www.youtube.com/embed/qN7IXwsKODI?si=t2n0xto09ZLPDRxR"
               />
             </div>
           </div>
         </div>
 
-        {/* <div className="mt-6 sm:mt-8 ">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Project Video</h1>
-          <div className="relative w-full " style={{paddingBottom: '50%'}}>
-            <iframe
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/uAAVJ7T8Zr4?si=ZcO8n1eeSAqJAawe&mute=1"
-            />
-          </div>
-        </div> */}
-
-        <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl font-semibold mb-4">Mechanical Design</h2>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              We designed a two-stage quadruped robot base with a standardized chassis housing batteries and electronic control systems. 
-              The base uses seven servo motors for leg movement (four), head rotation (two), and body actuation (one). 
-              Its modular design allows users to easily change drive mechanisms without altering the chassis structure, 
-              enabling quick adaptation to different robot types or mechanical animal movement patterns.
-              </p>
-
-              <div className="flex justify-center">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={mechanical}
-                width={400}
-              />
-              </div>
-
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              A forward underactuated leg mechanism was created using linkage combinations. 
-              This design keeps legs vertical when standing, maximizing protection during movement. 
-              It provides a cushioning effect when the pangolin robot rights itself after rolling over and uses a swinging motion for walking. We used 3D printing to develop an optimal foot structure for this walking style, 
-              ensuring stable and efficient movement.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              The active shell structure is designed as a separate component, 
-              allowing for easy replacement or upgrade without affecting the body mechanism's functionality. 
-              This design enhances the robot's flexibility and customizability for various application scenarios.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              The tail device uses a wire-driven deformation mechanism, 
-              enabling diverse tail movements like bending and swinging through precise control of wire tension. 
-              This design enhances the robot's expressiveness and functionality, 
-              improving its interaction capabilities and entertainment value.
-              </p>
-              <div className="flex justify-center">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={curl_state}
-                width={400}
-              />
+        {/* Mechanical Design Section */}
+        <div className="space-y-12 sm:space-y-16">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                Mechanical Design
+              </h2>
+              <div className="space-y-4">
+                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+                  We designed a two-stage quadruped robot base with a standardized chassis housing batteries and electronic control systems. The base uses seven servo motors for leg movement (four), head rotation (two), and body actuation (one). Its modular design allows users to easily change drive mechanisms without altering the chassis structure.
+                </p>
+                <div className="flex justify-center my-6">
+                  <Image
+                    alt="Mechanical Design"
+                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    src={mechanical}
+                    width={400}
+                  />
+                </div>
+                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+                  A forward underactuated leg mechanism was created using linkage combinations. This design keeps legs vertical when standing, maximizing protection during movement. It provides a cushioning effect when the pangolin robot rights itself after rolling over and uses a swinging motion for walking.
+                </p>
+                <div className="flex justify-center my-6">
+                  <Image
+                    alt="Curl State"
+                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    src={curl_state}
+                    width={400}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl font-semibold mb-4">Electrical Hardware Architecture</h2>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              The hardware architecture integrates signals from IMU and Joystick, routing this information to a Raspberry Pi. 
-              This setup enables the activation and control of corresponding motor systems, 
-              achieving various intended actions such as head rotation, leg movement, and body bending. 
-              This architecture provides rich operational possibilities, 
-              allowing the robot to flexibly respond to different scenarios and user commands.
+        {/* Hardware Architecture Section */}
+        <div className="space-y-12 sm:space-y-16 mt-12">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                Electrical Hardware Architecture
+              </h2>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6">
+                The hardware architecture integrates signals from IMU and Joystick, routing this information to a Raspberry Pi. This setup enables the activation and control of corresponding motor systems, achieving various intended actions such as head rotation, leg movement, and body bending.
               </p>
               <div className="flex justify-center">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={hardware_framework}
-                width={600}
-              />
+                <Image
+                  alt="Hardware Framework"
+                  className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                  src={hardware_framework}
+                  width={600}
+                />
               </div>
             </div>
           </div>
         </div>
 
-
-        <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl font-semibold mb-4">Software Architecture</h2>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              The software architecture utilizes ROS2 to modularize and separate various functional components, 
-              allowing them to operate independently. Data transmission is achieved through DDS, 
-              resulting in a highly scalable and easily maintainable architecture. 
-              Future plans include adding camera and autonomous movement capabilities by simply developing new nodes without disrupting existing functionalities. 
-              This modular design facilitates system expansion and upgrades while ensuring flexibility and stability.
-              </p>
-
-              <div className="flex justify-center">
-              <Image
-                alt="Drone"
-                className="rounded-lg"
-                src={software_framework}
-                width={600}
-              />
+        {/* Software Architecture Section */}
+        <div className="space-y-12 sm:space-y-16 mt-12">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                Software Architecture
+              </h2>
+              <div className="space-y-4">
+                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+                  The software architecture utilizes ROS2 to modularize and separate various functional components, allowing them to operate independently. Data transmission is achieved through DDS, resulting in a highly scalable and easily maintainable architecture.
+                </p>
+                <div className="flex justify-center my-6">
+                  <Image
+                    alt="Software Framework"
+                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    src={software_framework}
+                    width={600}
+                  />
+                </div>
+                <p className="text-sm sm:text-base md:text-lg text-gray-300">
+                  We conducted systematic research to propose gait design solutions suitable for the pangolin robot, ensuring stable and smooth movement during forward, backward, and rotational motions. Inverse kinematics calculations determine the required angles for each motor, ensuring precise control for the designed gait patterns.
+                </p>
               </div>
-
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              For this four-degree-of-freedom pangolin robot, 
-              we developed movement control methods focusing on forward/backward motion and left/right rotation. 
-              Due to the limited leg degrees of freedom, 
-              gait design methods for large quadruped robots were not applicable.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              We conducted systematic research to propose gait design solutions suitable for the pangolin robot, 
-              ensuring stable and smooth movement during forward, backward, and rotational motions. 
-              Inverse kinematics calculations determine the required angles for each motor, 
-              ensuring precise control for the designed gait patterns.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              For the rolling and curling actions, we simulated a real pangolin's self-protection behavior. 
-              Given the single degree of freedom in each leg, 
-              we developed a control system to regulate motor movements for the rolling action. 
-              This system adjusts the robot's center of gravity, 
-              enabling it to roll in a specific direction when the legs begin to swing and the body becomes unstable.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base mb-3">
-              We also designed a self-righting function, 
-              allowing the robot to automatically return to its normal posture after rolling. 
-              This control system ensures the pangolin robot can quickly protect itself in dangerous situations, 
-              enhancing its adaptability in various environments.
-              </p>
             </div>
           </div>
         </div>
 
-        <div className="space-y-8 sm:space-y-12">
-          <div className=" rounded-lg overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <h2 className="text-2xl font-semibold mb-4">My Work</h2>
-              <p className="text-xs sm:text-sm md:text-base">
-                • Architected ROS2-based software system with modular nodes for motor control, sensor integration, and motion planning.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base">
-                • Developed complete electrical system and communication protocols between Raspberry Pi and peripheral components.
-              </p>
-              <p className="text-xs sm:text-sm md:text-base">
-                • Implemented robot motion algorithms for walking gaits, rolling behavior, and self-righting capabilities.
-              </p>
+        {/* My Work Section */}
+        <div className="space-y-12 sm:space-y-16 mt-12">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                My Work
+              </h2>
+              <ul className="space-y-4">
+                <li className="text-sm sm:text-base md:text-lg text-gray-300">
+                  <span className="font-semibold text-purple-400">Software Architecture:</span> Architected ROS2-based software system with modular nodes for motor control, sensor integration, and motion planning.
+                </li>
+                <li className="text-sm sm:text-base md:text-lg text-gray-300">
+                  <span className="font-semibold text-purple-400">Electrical System:</span> Developed complete electrical system and communication protocols between Raspberry Pi and peripheral components.
+                </li>
+                <li className="text-sm sm:text-base md:text-lg text-gray-300">
+                  <span className="font-semibold text-purple-400">Motion Control:</span> Implemented robot motion algorithms for walking gaits, rolling behavior, and self-righting capabilities.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-
       </div>
     </Section>
   );
 });
 
-Pangolin.displayName = 'About';
+Pangolin.displayName = 'Pangolin';
 export default Pangolin;
