@@ -23,7 +23,10 @@ const SpotProject: FC = memo(() => {
             Large-Scale Inspection System: Spot
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 sm:mb-8 text-center max-w-2xl mx-auto">
-            Advanced deployment of Boston Dynamics' Spot robot for automated industrial inspection tasks, featuring enhanced security measures and comprehensive monitoring capabilities for improved operational efficiency.
+          This work presents an advanced inspection system utilizing <span className="text-purple-400 font-semibold">Boston Dynamics' Spot</span> for autonomous industrial monitoring 
+          in collaboration with <span className="text-purple-400 font-semibold">TSMC</span>. The system integrates <span className="text-purple-400 font-semibold">Routing System</span>, <span className="text-purple-400 font-semibold">Multi-Map navigation</span>, 
+          and  <span className="text-purple-400 font-semibold">digital twin simulation through NVIDIA Isaac Sim</span> to enhance operational efficiency in large-scale environments. 
+          By combining these technologies, we establish a scalable, memory-efficient, and highly reliable framework for autonomous industrial inspection.
           </p>
           <div className="flex justify-center">
             <Image
@@ -35,8 +38,85 @@ const SpotProject: FC = memo(() => {
           </div>
         </div>
 
+        {/* System Framework Section */}
+        <div className="space-y-12 sm:space-y-16 ">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                System Framework
+              </h2>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300">
+              The inspection process begins with user-defined task assignments, which are processed by an intelligent routing system that determines optimal navigation paths. The routing system employs:
+              </p>
+              <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-300 mt-2">
+                  <li><span className="text-purple-400 font-semibold">Traveling Salesman Problem (TSP)</span> for single-robot optimization</li>
+                  <li><span className="text-purple-400 font-semibold">Multi-Agent Path Finding (MAPF)</span> for coordinated multi-robot navigation</li>
+                </ul>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mt-2">
+              Once optimal routes are established, the navigation commands are relayed to the <span className="text-purple-400 font-semibold">multi-map navigation system</span>, which facilitates seamless movement across different factory sections.
+              </p>
+              <div className="flex justify-center mt-6">
+                <Image
+                  alt="System Framework"
+                  className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                  src={switch_map_framework}
+                  width={900}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Map Switching System Section */}
+        <div className="space-y-12 sm:space-y-16 mt-12">
+          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
+                Map Switching System
+              </h2>
+              <div className="space-y-4">
+              <p className="text-sm sm:text-base md:text-lg text-gray-300">
+              Large factory environments pose challenges in handling comprehensive maps. To address this, we developed a map-switching system utilizing AprilTag markers as positional reference points. This system:
+              </p>
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                  <Image
+                    alt="Map Area 1"
+                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    src={map1}
+                    width={450}
+                  />
+                  <Image
+                    alt="Map Area 2"
+                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    src={map2}
+                    width={450}
+                  />
+              </div>
+              <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-300 mt-2">
+                <li><span className="text-purple-400 font-semibold">Optimizes memory usage</span> by eliminating the need to load an entire large-scale map</li>
+                <li><span className="text-purple-400 font-semibold">Enhances scalability</span>, enabling efficient expansion of mapped areas</li>
+                <li><span className="text-purple-400 font-semibold">Ensures precise localization</span>, with AprilTags setting Spot’s initial pose after each transition</li>
+              </ul>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 mt-2">
+              By partitioning large spaces into manageable sub-maps and leveraging AprilTag-assisted positioning, we enable reliable and efficient navigation throughout extensive factory environments.
+              </p>
+                <div className="flex justify-center my-6">
+                  <div className="w-1/2 sm:w-1/3 md:w-1/2">
+                    <Image
+                      alt="AprilTag Localization"
+                      className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-auto"
+                      src={apriltag_localize}
+                      width={400}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* LiDAR Localization Section */}
-        <div className="space-y-12 sm:space-y-16">
+        <div className="space-y-12 sm:space-y-16 mt-12">
           <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
             <div className="p-6 sm:p-8">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
@@ -44,28 +124,8 @@ const SpotProject: FC = memo(() => {
               </h2>
               <div className="space-y-4">
                 <p className="text-sm sm:text-base md:text-lg text-gray-300">
-                Spot uses its onboard LiDAR sensor to scan the surrounding environment in real-time, generating precise three-dimensional point cloud data. The system compares these real-time collected 3D point cloud information with pre-established environmental maps. Through the 3D NDT (Normal Distributions Transform) algorithm, Spot can accurately calculate its position and orientation in space.
+                Spot employs an onboard 3D LiDAR sensor to continuously scan its surroundings, generating high-resolution point cloud data. This real-time data is cross-referenced with pre-established environmental maps using the <span className="text-purple-400 font-semibold">3D Normal Distributions Transform (NDT)</span> algorithm
                 </p>
-                {/* <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-300">
-                  <li><span className="text-purple-400 font-semibold">Real-time Scanning:</span> Onboard LiDAR sensor generates precise 3D point cloud data</li>
-                  <li><span className="text-purple-400 font-semibold">Map Comparison:</span> Real-time point cloud data compared with pre-established maps</li>
-                  <li><span className="text-purple-400 font-semibold">Position Calculation:</span> 3D NDT algorithm for accurate spatial positioning</li>
-                </ul> */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                  
-                  <Image
-                    alt="LiDAR Localization 1"
-                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    src={spot_lidar_localization}
-                    width={450}
-                  />
-                  <Image
-                    alt="LiDAR Localization 2"
-                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    src={spot_lidar_localization2}
-                    width={450}
-                  />
-                </div> */}
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="aspect-video">
                     <Image
@@ -86,70 +146,6 @@ const SpotProject: FC = memo(() => {
                     />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Map Switching System Section */}
-        <div className="space-y-12 sm:space-y-16 mt-12">
-          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6 sm:p-8">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
-                Map Switching System
-              </h2>
-              <div className="space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-gray-300">
-                To address the challenge of loading complete maps in large factory environments, we developed a map switching system that utilizes AprilTag markers as Spot's initial position reference points across different maps. The system automatically switches to corresponding area maps based on Spot's current location, while strategically placed AprilTag markers serve as reference points to ensure accurate positioning during map transitions. This solution not only reduces the system's computational load but also enhances navigation accuracy and reliability. By dividing large spaces into smaller area maps and integrating AprilTag positioning capabilities, we successfully achieved seamless navigation for Spot throughout extensive factory environments.
-                </p>
-                {/* <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-300">
-                  <li><span className="text-purple-400 font-semibold">AprilTag Integration:</span> Strategic marker placement for position reference</li>
-                  <li><span className="text-purple-400 font-semibold">Dynamic Mapping:</span> Automatic switching between area maps based on location</li>
-                  <li><span className="text-purple-400 font-semibold">Optimized Performance:</span> Reduced computational load while maintaining accuracy</li>
-                </ul> */}
-                <div className="flex justify-center my-6">
-                  <div className="w-1/2 sm:w-1/3 md:w-1/2">
-                    <Image
-                      alt="AprilTag Localization"
-                      className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 w-full h-auto"
-                      src={apriltag_localize}
-                      width={400}
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  <Image
-                    alt="Map Area 1"
-                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    src={map1}
-                    width={450}
-                  />
-                  <Image
-                    alt="Map Area 2"
-                    className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    src={map2}
-                    width={450}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* System Framework Section */}
-        <div className="space-y-12 sm:space-y-16 mt-12">
-          <div className="bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6 sm:p-8">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
-                System Framework
-              </h2>
-              <div className="flex justify-center">
-                <Image
-                  alt="System Framework"
-                  className="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                  src={switch_map_framework}
-                  width={900}
-                />
               </div>
             </div>
           </div>
@@ -197,6 +193,14 @@ const SpotProject: FC = memo(() => {
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-400">
                 City Science Lab Omniverse Digital Twin
               </h2>
+              <p className="text-sm sm:text-base md:text-lg text-gray-300">
+              Beyond physical navigation, Spot has been integrated into a digital twin environment via <span className="text-purple-400 font-semibold">NVIDIA Isaac Sim</span>. This enables:
+              </p>
+              <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-300 mt-2">
+                <li><span className="text-purple-400 font-semibold">Virtual simulation of navigation scenarios</span> to optimize movement strategies before deployment</li>
+                <li><span className="text-purple-400 font-semibold">Real-time visualization</span> of waypoints and routing paths</li>
+                <li><span className="text-purple-400 font-semibold">Enhanced predictive analysis</span>, improving operational reliability</li>
+              </ul>
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="aspect-video">
